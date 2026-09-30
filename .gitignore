@@ -1,0 +1,43 @@
+# OSDev_Learning_Hub .gitignore
+# -> Build artifacts are never committed.
+
+# Node
+node_modules/
+
+# Compiled objects & binaries
+*.o
+*.obj
+*.a
+*.lib
+*.elf
+*.bin
+kernel.bin
+*.exe
+
+# Disk / ISO images
+*.iso
+*.img
+*.qcow2
+*.vdi
+*.vmdk
+
+# Build / dist output
+build/
+dist/
+target/
+out/
+
+# Logs
+*.log
+
+# Toolchain local caches
+.cache/
+*.tmp
+
+# Editor
+.phoenix/
+.brackets.json.local
+Thumbs.db
+
+# Rust (Example_OS_Project/rust)
+Cargo.lock
