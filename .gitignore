@@ -41,3 +41,8 @@ Thumbs.db
 
 # Rust (Example_OS_Project/rust)
 Cargo.lock
+
+# Session context pack (regenerable) & local notes
+repomix-*.md
+repomix.config.json
+SESSION_HANDOFF.md
