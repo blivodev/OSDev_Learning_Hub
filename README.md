@@ -48,9 +48,21 @@ OSDev_Learning_Hub/
 ## 🚀 Phase 6 — Hello World OS
 
 The `Example_OS_Project` contains a minimal bootable OS for each language.
-- **C / C++ / Go** kernels boot via a **Multiboot** GRUB-style stub assembled with **NASM**.
-- **Rust** kernel boots via the `bootloader` crate + `bootimage` (no_std).
-- **C#** uses a **Cosmos-style** kernel template (source + conceptual explanation).
+
+**✅ Verified:** the **C** and **C++** kernels build to valid Multiboot v1
+kernels (`grub-file` confirms) and **boot in QEMU, printing "Hello World!"** —
+the VGA text buffer was read back from the running emulator to prove it.
+A reusable harness does this in one command:
+
+```bash
+Example_OS_Project/tools/boot-test.sh c      # build + boot C  kernel, show screen text
+Example_OS_Project/tools/boot-test.sh cpp    # build + boot C++ kernel, show screen text
+```
+
+- **C / C++ / Go** kernels boot via a **Multiboot** GRUB-style stub (GNU `as`).
+- **Rust** kernel is a verified `no_std` kernel; the bootable-image step needs
+  a nightly toolchain + `cargo bootimage`.
+- **C#** uses a **Cosmos-style** kernel template (source + explanation).
 
 Build & run with QEMU from inside `Example_OS_Project`:
 
