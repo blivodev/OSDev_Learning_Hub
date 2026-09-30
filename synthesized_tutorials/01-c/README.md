@@ -89,6 +89,18 @@ grub-file --is-x86-multiboot c/kernel.bin   # ✅ VALID Multiboot v1 kernel
 
 ## Watch and learn
 
-- [CS50x 2025 - Lecture 4 - Memory](https://youtu.be/kcRdFGbzR1I) — David Malan's classic lecture on pointers, hexadecimal addresses, the stack and heap, and how C manipulates memory — the exact mental model behind poking `0xB8000` and reading a VGA cell back.
-- [CS50x 2026 - Section 4 - Memory](https://youtu.be/Gjf0L3mkVtY) — A refreshed, hands-on walkthrough of C pointers, dynamic memory allocation, and files, reinforcing the pointer syntax your kernel's `vga_putchar` and `VGA_MEMORY` indexing rely on.
-- [C pointers explained](https://youtube.com/watch?v=DplxIq0mc_Y) — A concise crash course on what a pointer is, `&` vs `*`, pointers as function arguments, and dereferencing — ideal for grounding the `unsigned short*` cast to the VGA framebuffer.
+<details class="video-embed">
+<summary>▶ Watch: CS50x 2025 - Lecture 4 - Memory</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/kcRdFGbzR1I" title="CS50x 2025 - Lecture 4 - Memory" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>David Malan's classic lecture on pointers, hexadecimal addresses, the stack and heap, and how C manipulates memory — the exact mental model behind poking `0xB8000` and reading a VGA cell back.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: CS50x 2026 - Section 4 - Memory</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/Gjf0L3mkVtY" title="CS50x 2026 - Section 4 - Memory" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>A refreshed, hands-on walkthrough of C pointers, dynamic memory allocation, and files, reinforcing the pointer syntax your kernel's `vga_putchar` and `VGA_MEMORY` indexing rely on.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: C pointers explained</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/DplxIq0mc_Y" title="C pointers explained" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>A concise crash course on what a pointer is, `&` vs `*`, pointers as function arguments, and dereferencing — ideal for grounding the `unsigned short*` cast to the VGA framebuffer.</p>
+</details>

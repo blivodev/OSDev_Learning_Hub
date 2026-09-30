@@ -90,6 +90,18 @@ If that works, **you have written an operating system.** Everything from here �
 
 ## Watch and learn
 
-- [OS development 101 - How to make a bootloader part 1 - Hello World](https://www.youtube.com/watch?v=E_n0VtGSZQY) — Low Level Learning walks the whole recipe: bootable code that prints "Hello World" and boots.
-- [OS development 101 - How to make a bootloader part 2](https://www.youtube.com/watch?v=BQGbBCqUGCc) — The next step in the same series, moving from a static boot sector toward a real loadable kernel.
-- [Building an OS - 1 - Hello world](https://www.youtube.com/watch?v=9t-SPTC7Tczc) — Nanobyte's complete from-scratch hello-world OS: assemble, boot it from a floppy, see it run.
+<details class="video-embed">
+<summary>▶ Watch: OS development 101 - How to make a bootloader part 1 - Hello World</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/E_n0VtGSZQY" title="OS development 101 - How to make a bootloader part 1 - Hello World" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Low Level Learning walks the whole recipe: bootable code that prints "Hello World" and boots.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: OS development 101 - How to make a bootloader part 2</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/BQGbBCqUGCc" title="OS development 101 - How to make a bootloader part 2" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>The next step in the same series, moving from a static boot sector toward a real loadable kernel.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Building an OS - 1 - Hello world</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/9t-SPTC7Tczc" title="Building an OS - 1 - Hello world" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Nanobyte's complete from-scratch hello-world OS: assemble, boot it from a floppy, see it run.</p>
+</details>

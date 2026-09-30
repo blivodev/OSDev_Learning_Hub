@@ -59,7 +59,23 @@ Hello World!
 
 Videos matched to building an OS in C# and .NET with Cosmos, the kit this folder uses.
 
-- [Cosmos Tutorial Part 1 - Setting Up And First Command!](https://www.youtube.com/watch?v=RTkeqkFzC3w) — hands-on Cosmos setup and the first command loop, mirroring the `Kernel.cs` in this folder.
-- [Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header](https://www.youtube.com/watch?v=FkrpUaGThTQ) — the bare-metal kernel lifecycle that Cosmos automates for you, shown in C.
-- [How does an OS boot? //Source Dive// 001](https://www.youtube.com/watch?v=KkenLT8S9Hs) — what really happens between pressing power and your Cosmos kernel's `Run` method.
-- [QEMU/KVM for absolute beginners](https://www.youtube.com/watch?v=BgZHbCDFODk) — how to run the VM that boots your Cosmos ISO.
+<details class="video-embed">
+<summary>▶ Watch: Cosmos Tutorial Part 1 - Setting Up And First Command!</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/RTkeqkFzC3w" title="Cosmos Tutorial Part 1 - Setting Up And First Command!" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>hands-on Cosmos setup and the first command loop, mirroring the `Kernel.cs` in this folder.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/FkrpUaGThTQ" title="Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>the bare-metal kernel lifecycle that Cosmos automates for you, shown in C.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: How does an OS boot? //Source Dive// 001</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/KkenLT8S9Hs" title="How does an OS boot? //Source Dive// 001" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>what really happens between pressing power and your Cosmos kernel's `Run` method.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: QEMU/KVM for absolute beginners</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/BgZHbCDFODk" title="QEMU/KVM for absolute beginners" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>how to run the VM that boots your Cosmos ISO.</p>
+</details>

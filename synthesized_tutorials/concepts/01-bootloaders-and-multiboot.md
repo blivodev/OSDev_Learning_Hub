@@ -73,6 +73,18 @@ You are **not** writing a bootloader — you're writing the kernel. That's an en
 
 ## Watch and learn
 
-- [OS development 101 - How to make a bootloader part 1 - Hello World](https://www.youtube.com/watch?v=E_n0VtGSZQY) — Low Level Learning builds a bootloader from scratch and boots it, covering what happens at PC startup and real mode.
-- [OS development 101 - How to make a bootloader part 2](https://www.youtube.com/watch?v=BQGbBCqUGCc) — The follow-up that takes the bootloader further and shows bootable code in action.
-- [Building an OS - 7 - Finishing the bootloader, migrating to GCC](https://www.youtube.com/watch?v=qr8d7bZLPHg) — Nanobyte rounds out the bootloader and hands off to a compiled kernel, the same job GRUB/Multiboot loaders automate.
+<details class="video-embed">
+<summary>▶ Watch: OS development 101 - How to make a bootloader part 1 - Hello World</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/E_n0VtGSZQY" title="OS development 101 - How to make a bootloader part 1 - Hello World" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Low Level Learning builds a bootloader from scratch and boots it, covering what happens at PC startup and real mode.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: OS development 101 - How to make a bootloader part 2</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/BQGbBCqUGCc" title="OS development 101 - How to make a bootloader part 2" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>The follow-up that takes the bootloader further and shows bootable code in action.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Building an OS - 7 - Finishing the bootloader, migrating to GCC</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/qr8d7bZLPHg" title="Building an OS - 7 - Finishing the bootloader, migrating to GCC" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Nanobyte rounds out the bootloader and hands off to a compiled kernel, the same job GRUB/Multiboot loaders automate.</p>
+</details>

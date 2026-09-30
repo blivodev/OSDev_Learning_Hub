@@ -69,7 +69,23 @@ make -j$(nproc) all-gcc && make install-gcc
 
 Videos matched to writing and booting a kernel in Go (and why it needs a cross-compiled runtime).
 
-- [GopherCon 2025: An Operating System in Go - Patricio Whittingslow](https://www.youtube.com/watch?v=SvsdVe1kgSU) — a live talk on building an OS in Go, the systems-programming question this folder explores.
-- [Can I Build an Operating System in Go?](https://www.youtube.com/watch?v=uotfXZDLAEA) — a practical look at the feasibility (and hurdles) of a Go kernel.
-- [Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header](https://www.youtube.com/watch?v=FkrpUaGThTQ) — the bare-metal boot target (Multiboot + QEMU) this Go stub ultimately produces, in a C walkthrough.
-- [How does an OS boot? //Source Dive// 001](https://www.youtube.com/watch?v=KkenLT8S9Hs) — the boot sequence your `boot.s` engages on hardware.
+<details class="video-embed">
+<summary>▶ Watch: GopherCon 2025: An Operating System in Go - Patricio Whittingslow</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/SvsdVe1kgSU" title="GopherCon 2025: An Operating System in Go - Patricio Whittingslow" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>a live talk on building an OS in Go, the systems-programming question this folder explores.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Can I Build an Operating System in Go?</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/uotfXZDLAEA" title="Can I Build an Operating System in Go?" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>a practical look at the feasibility (and hurdles</p>
+</details>) of a Go kernel.
+<details class="video-embed">
+<summary>▶ Watch: Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/FkrpUaGThTQ" title="Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>the bare-metal boot target (Multiboot + QEMU</p>
+</details>) this Go stub ultimately produces, in a C walkthrough.
+<details class="video-embed">
+<summary>▶ Watch: How does an OS boot? //Source Dive// 001</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/KkenLT8S9Hs" title="How does an OS boot? //Source Dive// 001" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>the boot sequence your `boot.s` engages on hardware.</p>
+</details>

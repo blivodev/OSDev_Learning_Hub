@@ -78,8 +78,28 @@ Example_OS_Project/
 
 Curated YouTube videos matched to what this project does — booting a Multiboot kernel and printing "Hello World!" in QEMU.
 
-- [Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header](https://www.youtube.com/watch?v=FkrpUaGThTQ) — David Callanan's series start: boots a Multiboot2 64-bit kernel in QEMU, just like this project.
-- [Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code](https://www.youtube.com/watch?v=wz9CZBeXR6U) — sets up the stack, long mode, and prints from C — the same path this kernel takes to print "Hello World!".
-- [1 - How to make an operating system from scratch](https://www.youtube.com/watch?v=rr-9w2gITDM) — a beginner OSdev walkthrough that builds and boots a kernel with QEMU.
-- [How does an OS boot? //Source Dive// 001](https://www.youtube.com/watch?v=KkenLT8S9Hs) — Low Byte Productions explains the boot process your Multiboot header rides on.
-- [QEMU/KVM for absolute beginners](https://www.youtube.com/watch?v=BgZHbCDFODk) — how the emulator this project uses works and how to drive it.
+<details class="video-embed">
+<summary>▶ Watch: Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/FkrpUaGThTQ" title="Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>David Callanan's series start: boots a Multiboot2 64-bit kernel in QEMU, just like this project.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/wz9CZBeXR6U" title="Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>sets up the stack, long mode, and prints from C — the same path this kernel takes to print "Hello World!".</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: 1 - How to make an operating system from scratch</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/rr-9w2gITDM" title="1 - How to make an operating system from scratch" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>a beginner OSdev walkthrough that builds and boots a kernel with QEMU.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: How does an OS boot? //Source Dive// 001</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/KkenLT8S9Hs" title="How does an OS boot? //Source Dive// 001" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Low Byte Productions explains the boot process your Multiboot header rides on.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: QEMU/KVM for absolute beginners</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/BgZHbCDFODk" title="QEMU/KVM for absolute beginners" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>how the emulator this project uses works and how to drive it.</p>
+</details>

@@ -100,6 +100,18 @@ For learning, **BIOS + GRUB/Multiboot** (or the Rust `bootloader` crate) is the 
 
 ## Watch and learn
 
-- [How Computers BOOT: From Startup to Viruses](https://www.youtube.com/watch?v=rmgla4yeCXw) — Computerphile's walk through the entire boot sequence, from power-on reset to handing control to the OS.
-- [What is Bootstrapping Anyway?](https://www.youtube.com/watch?v=Pu7LvnxV6N0) — Matt Godbolt builds up the bootstrap chain to show where the very first code on a machine comes from.
-- [OS development 101 - How to make a bootloader part 1 - Hello World](https://www.youtube.com/watch?v=E_n0VtGSZQY) — Low Level Learning covers what happens at PC startup and real mode before writing bootable code.
+<details class="video-embed">
+<summary>▶ Watch: How Computers BOOT: From Startup to Viruses</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/rmgla4yeCXw" title="How Computers BOOT: From Startup to Viruses" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Computerphile's walk through the entire boot sequence, from power-on reset to handing control to the OS.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: What is Bootstrapping Anyway?</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/Pu7LvnxV6N0" title="What is Bootstrapping Anyway?" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Matt Godbolt builds up the bootstrap chain to show where the very first code on a machine comes from.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: OS development 101 - How to make a bootloader part 1 - Hello World</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/E_n0VtGSZQY" title="OS development 101 - How to make a bootloader part 1 - Hello World" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Low Level Learning covers what happens at PC startup and real mode before writing bootable code.</p>
+</details>

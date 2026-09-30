@@ -69,6 +69,18 @@ __asm__ volatile("sti");   // enable interrupts
 
 ## Watch and learn
 
-- [CPU Interrupts](https://www.youtube.com/watch?v=tGMSARJk7cA) — Computerphile uses a robot analogy to explain how the CPU handles interrupts from devices like the keyboard.
-- [Building an OS - 8 - Interrupts, IDT, GDT](https://www.youtube.com/watch?v=5LbXClJhxcs) — Nanobyte sets up the kernel GDT and introduces interrupts while building the IDT.
-- [Building an OS - 10 - Hardware interrupts, PIC](https://www.youtube.com/watch?v=FD48Lx7Rnx0) — Nanobyte implements a driver for the 8259 PIC and handles real hardware interrupts.
+<details class="video-embed">
+<summary>▶ Watch: CPU Interrupts</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/tGMSARJk7cA" title="CPU Interrupts" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Computerphile uses a robot analogy to explain how the CPU handles interrupts from devices like the keyboard.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Building an OS - 8 - Interrupts, IDT, GDT</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/5LbXClJhxcs" title="Building an OS - 8 - Interrupts, IDT, GDT" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Nanobyte sets up the kernel GDT and introduces interrupts while building the IDT.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Building an OS - 10 - Hardware interrupts, PIC</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/FD48Lx7Rnx0" title="Building an OS - 10 - Hardware interrupts, PIC" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Nanobyte implements a driver for the 8259 PIC and handles real hardware interrupts.</p>
+</details>

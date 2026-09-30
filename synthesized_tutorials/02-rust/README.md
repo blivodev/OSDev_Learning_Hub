@@ -186,7 +186,19 @@ What was actually verified for this language:
 
 ## Watch and learn
 
-- [Writing an OS in Rust - Part 1 - A Freestanding Rust Binary](https://www.youtube.com/watch?v=rH5jnbJ3tL4) — A video walkthrough of Philipp Oppermann's blog series, staring with the very `#![no_std] #![no_main]` freestanding binary you just built in this chapter.
+<details class="video-embed">
+<summary>▶ Watch: Writing an OS in Rust - Part 1 - A Freestanding Rust Binary</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/rH5jnbJ3tL4" title="Writing an OS in Rust - Part 1 - A Freestanding Rust Binary" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>A video walkthrough of Philipp Oppermann's blog series, staring with the very `#![no_std] #![no_main]` freestanding binary you just built in this chapter.</p>
+</details>
 - [Rust OS - playlist](https://www.youtube.com/playlist?list=PLib6-zlkjfXkdCjQgrZhmfJOWBk_C2FTY) — The full video series through the "Writing an OS in Rust" posts, from the freestanding binary and minimal kernel onward, so you can follow the `unsafe` `0xB8000` write and `_start` entry point visually.
-- [Rust: What is Ownership and Borrowing?](https://www.youtube.com/watch?v=79phqVpE7cU) — The core ownership rules explained — move vs clone, references, and the borrow checker — which is exactly why Rust makes you write `unsafe` around a raw pointer to the framebuffer.
-- [Understanding Ownership in Rust](https://www.youtube.com/watch?v=VFIOSWy93H0) — A clear deep-dive into the three ownership rules and how moves, clones, and references interact with the stack and heap — the memory model behind a language with no garbage collector.
+<details class="video-embed">
+<summary>▶ Watch: Rust: What is Ownership and Borrowing?</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/79phqVpE7cU" title="Rust: What is Ownership and Borrowing?" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>The core ownership rules explained — move vs clone, references, and the borrow checker — which is exactly why Rust makes you write `unsafe` around a raw pointer to the framebuffer.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Understanding Ownership in Rust</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/VFIOSWy93H0" title="Understanding Ownership in Rust" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>A clear deep-dive into the three ownership rules and how moves, clones, and references interact with the stack and heap — the memory model behind a language with no garbage collector.</p>
+</details>

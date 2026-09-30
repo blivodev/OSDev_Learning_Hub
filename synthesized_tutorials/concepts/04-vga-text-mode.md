@@ -91,6 +91,18 @@ That's it. That is literally all a "Hello World" OS does — but it's the *proof
 
 ## Watch and learn
 
-- [How VGA Works](https://www.youtube.com/watch?v=5exFKr-JJtg) — Tech Tangents explains VGA signals and hardware, the display standard your text-mode hello world drives.
-- [Building an OS - 1 - Hello world](https://www.youtube.com/watch?v=9t-SPTC7Tczc) — Nanobyte writes a hello-world program in assembly and boots it from a floppy, the classic first step.
-- [Building an OS - 5 - How to implement printf](https://www.youtube.com/watch?v=dG8PV6xqm4s) — Nanobyte builds a `printf` that writes formatted text to the screen, a gateway to real VGA text output.
+<details class="video-embed">
+<summary>▶ Watch: How VGA Works</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/5exFKr-JJtg" title="How VGA Works" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Tech Tangents explains VGA signals and hardware, the display standard your text-mode hello world drives.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Building an OS - 1 - Hello world</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/9t-SPTC7Tczc" title="Building an OS - 1 - Hello world" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Nanobyte writes a hello-world program in assembly and boots it from a floppy, the classic first step.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Building an OS - 5 - How to implement printf</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/dG8PV6xqm4s" title="Building an OS - 5 - How to implement printf" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Nanobyte builds a `printf` that writes formatted text to the screen, a gateway to real VGA text output.</p>
+</details>

@@ -122,8 +122,28 @@ of these concepts ([bootloaders](../../GLOSSARY/bootloader.md "A small program t
 
 Videos matched to building your toolchain and booting this kernel in QEMU.
 
-- [QEMU/KVM for absolute beginners](https://www.youtube.com/watch?v=BgZHbCDFODk) — learn what QEMU is and how to run a VM, the environment this project boots in.
-- [QEMU: A proper guide!](https://www.youtube.com/watch?v=AAfFewePE7c) — a close look at QEMU launch options, useful for the `qemu-system-i386 -kernel kernel.bin` commands here.
-- [Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header](https://www.youtube.com/watch?v=FkrpUaGThTQ) — shows assembling and booting a Multiboot kernel in QEMU exactly like `setup.md`.
-- [1 - How to make an operating system from scratch](https://www.youtube.com/watch?v=rr-9w2gITDM) — a step-by-step environment/build/boot walkthrough matching the setup guide.
-- [How does an OS boot? //Source Dive// 001](https://www.youtube.com/watch?v=KkenLT8S9Hs) — background on firmware, bootloader and kernel startup covered by this setup page.
+<details class="video-embed">
+<summary>▶ Watch: QEMU/KVM for absolute beginners</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/BgZHbCDFODk" title="QEMU/KVM for absolute beginners" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>learn what QEMU is and how to run a VM, the environment this project boots in.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: QEMU: A proper guide!</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/AAfFewePE7c" title="QEMU: A proper guide!" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>a close look at QEMU launch options, useful for the `qemu-system-i386 -kernel kernel.bin` commands here.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/FkrpUaGThTQ" title="Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>shows assembling and booting a Multiboot kernel in QEMU exactly like `setup.md`.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: 1 - How to make an operating system from scratch</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/rr-9w2gITDM" title="1 - How to make an operating system from scratch" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>a step-by-step environment/build/boot walkthrough matching the setup guide.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: How does an OS boot? //Source Dive// 001</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/KkenLT8S9Hs" title="How does an OS boot? //Source Dive// 001" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>background on firmware, bootloader and kernel startup covered by this setup page.</p>
+</details>

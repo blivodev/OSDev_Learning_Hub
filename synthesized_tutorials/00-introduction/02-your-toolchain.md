@@ -130,7 +130,23 @@ That's the entire core loop. Everything else — Makefiles, ISO generation, [cro
 
 ## Watch and learn
 
-- [How C++ Works](https://www.youtube.com/watch?v=SfGuIVzE_Os) — The Cherno explains how source files become an executable, covering the preprocessor, compiler, and linker roles.
-- [How the C++ Compiler Works](https://www.youtube.com/watch?v=3tIqpEmWMLI) — A deep dive into compiling: preprocessing, tokenizing, the abstract syntax tree, and object files.
-- [Machine Code Explained](https://www.youtube.com/watch?v=8VsiYWW9r48) — Computerphile's Matt Godbolt takes you from machine code up, the language the CPU actually executes.
-- [How CPUs Do Math(s)](https://www.youtube.com/watch?v=nhXevKMm3JI) — Matt Godbolt shows how the CPU executes arithmetic at the gate level, tying together all the tools in your toolchain.
+<details class="video-embed">
+<summary>▶ Watch: How C++ Works</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/SfGuIVzE_Os" title="How C++ Works" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>The Cherno explains how source files become an executable, covering the preprocessor, compiler, and linker roles.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: How the C++ Compiler Works</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/3tIqpEmWMLI" title="How the C++ Compiler Works" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>A deep dive into compiling: preprocessing, tokenizing, the abstract syntax tree, and object files.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Machine Code Explained</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/8VsiYWW9r48" title="Machine Code Explained" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Computerphile's Matt Godbolt takes you from machine code up, the language the CPU actually executes.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: How CPUs Do Math(s)</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/nhXevKMm3JI" title="How CPUs Do Math(s)" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Matt Godbolt shows how the CPU executes arithmetic at the gate level, tying together all the tools in your toolchain.</p>
+</details>

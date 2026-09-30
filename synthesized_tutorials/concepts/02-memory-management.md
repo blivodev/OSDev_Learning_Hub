@@ -69,7 +69,23 @@ The language doesn't matter here — you'll write the same page-table code in C,
 
 ## Watch and learn
 
-- [How Computer Memory Works](https://www.youtube.com/watch?v=XETZoRYdtkw) — Computerphile explains how logic gates build the memory circuits that make up your machine's RAM.
-- [The Call Stack and Stack Overflows (example in C)](https://www.youtube.com/watch?v=jVzSBkbfdiw) — Jacob Sorber shows how the stack, locals, and heap are laid out in a C program's memory.
-- [Stack vs Heap Memory in C++](https://www.youtube.com/watch?v=wJ1L2nSIV1s) — The Cherno breaks down the two memory regions you manage by hand when writing C++.
-- [WHY IS THE HEAP SO SLOW?](https://www.youtube.com/watch?v=ioJkA7Mw2-U) — Core Dumped explains how an operating system allocates dynamic memory and why it costs a system call.
+<details class="video-embed">
+<summary>▶ Watch: How Computer Memory Works</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/XETZoRYdtkw" title="How Computer Memory Works" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Computerphile explains how logic gates build the memory circuits that make up your machine's RAM.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: The Call Stack and Stack Overflows (example in C)</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/jVzSBkbfdiw" title="The Call Stack and Stack Overflows (example in C)" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Jacob Sorber shows how the stack, locals, and heap are laid out in a C program's memory.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Stack vs Heap Memory in C++</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/wJ1L2nSIV1s" title="Stack vs Heap Memory in C++" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>The Cherno breaks down the two memory regions you manage by hand when writing C++.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: WHY IS THE HEAP SO SLOW?</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/ioJkA7Mw2-U" title="WHY IS THE HEAP SO SLOW?" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Core Dumped explains how an operating system allocates dynamic memory and why it costs a system call.</p>
+</details>

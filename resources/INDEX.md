@@ -40,11 +40,43 @@ Curated list of free, beginner-friendly OS-development material beyond the prima
 
 Curated YouTube playlists and single videos for visual learners, matched to the hub's paths.
 
-- [Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header](https://www.youtube.com/watch?v=FkrpUaGThTQ) — David Callanan's series, a clean C/assembly kernel walkthrough for any path.
-- [Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code](https://www.youtube.com/watch?v=wz9CZBeXR6U) — continues into long mode, stack setup and printing.
-- [Writing an OS in Rust - Part 1 - A Freestanding Rust Binary](https://www.youtube.com/watch?v=rH5jnbJ3tL4) — visual companion to the Rust `no_std` path (os.phil-opp.com).
-- [1 - How to make an operating system from scratch](https://www.youtube.com/watch?v=rr-9w2gITDM) — a general OSdev-from-scratch walkthrough for beginners of any language.
-- [GopherCon 2025: An Operating System in Go - Patricio Whittingslow](https://www.youtube.com/watch?v=SvsdVe1kgSU) — an OS-in-Go talk for the Go/Bare Bones path.
-- [Cosmos Tutorial Part 1 - Setting Up And First Command!](https://www.youtube.com/watch?v=RTkeqkFzC3w) — the C#/Cosmos path in action.
-- [How does an OS boot? //Source Dive// 001](https://www.youtube.com/watch?v=KkenLT8S9Hs) — Low Byte Productions on the boot process behind every kernel here.
-- [QEMU/KVM for absolute beginners](https://www.youtube.com/watch?v=BgZHbCDFODk) — learn the emulator all paths boot their kernels in.
+<details class="video-embed">
+<summary>▶ Watch: Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/FkrpUaGThTQ" title="Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>David Callanan's series, a clean C/assembly kernel walkthrough for any path.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/wz9CZBeXR6U" title="Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>continues into long mode, stack setup and printing.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Writing an OS in Rust - Part 1 - A Freestanding Rust Binary</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/rH5jnbJ3tL4" title="Writing an OS in Rust - Part 1 - A Freestanding Rust Binary" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>visual companion to the Rust `no_std` path (os.phil-opp.com</p>
+</details>).
+<details class="video-embed">
+<summary>▶ Watch: 1 - How to make an operating system from scratch</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/rr-9w2gITDM" title="1 - How to make an operating system from scratch" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>a general OSdev-from-scratch walkthrough for beginners of any language.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: GopherCon 2025: An Operating System in Go - Patricio Whittingslow</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/SvsdVe1kgSU" title="GopherCon 2025: An Operating System in Go - Patricio Whittingslow" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>an OS-in-Go talk for the Go/Bare Bones path.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Cosmos Tutorial Part 1 - Setting Up And First Command!</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/RTkeqkFzC3w" title="Cosmos Tutorial Part 1 - Setting Up And First Command!" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>the C#/Cosmos path in action.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: How does an OS boot? //Source Dive// 001</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/KkenLT8S9Hs" title="How does an OS boot? //Source Dive// 001" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Low Byte Productions on the boot process behind every kernel here.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: QEMU/KVM for absolute beginners</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/BgZHbCDFODk" title="QEMU/KVM for absolute beginners" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>learn the emulator all paths boot their kernels in.</p>
+</details>

@@ -199,7 +199,23 @@ What was actually verified for this language:
 
 ## Watch and learn
 
-- [The Scheduler Saga - Kavya Joshi (GopherCon 2018)](https://www.youtube.com/watch?v=YHRO5WQGh0k) — A deep dive into the Go runtime's scheduler that powers goroutines — the runtime machinery your freestanding kernel has to stub out with empty `__go_*` functions.
-- [Understanding Allocations: the Stack and the Heap - GopherCon SG 2019](https://www.youtube.com/watch?v=ZMZpH4yT7M0) — How Go decides whether a value goes on the stack or the heap — the memory model behind why a bare-metal Go kernel can't rely on normal runtime allocation.
-- [Understanding Escape Analysis to Speed Up Your Code - Bill Kennedy](https://www.youtube.com/watch?v=FUm0pfgWehI) — Escape analysis and the Go compiler's memory decisions, explaining the allocator behavior a runtime-free Go kernel ends up replacing.
-- [Controlling the go runtime - Patrick Hawley (GopherCon 2019)](https://www.youtube.com/watch?v=us9hfJqncV8) — What the Go runtime manages for you (GC, goroutines, scheduling) and how to control it — exactly the component this chapter trades for empty stubs on bare metal.
+<details class="video-embed">
+<summary>▶ Watch: The Scheduler Saga - Kavya Joshi (GopherCon 2018)</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/YHRO5WQGh0k" title="The Scheduler Saga - Kavya Joshi (GopherCon 2018)" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>A deep dive into the Go runtime's scheduler that powers goroutines — the runtime machinery your freestanding kernel has to stub out with empty `__go_*` functions.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Understanding Allocations: the Stack and the Heap - GopherCon SG 2019</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/ZMZpH4yT7M0" title="Understanding Allocations: the Stack and the Heap - GopherCon SG 2019" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>How Go decides whether a value goes on the stack or the heap — the memory model behind why a bare-metal Go kernel can't rely on normal runtime allocation.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Understanding Escape Analysis to Speed Up Your Code - Bill Kennedy</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/FUm0pfgWehI" title="Understanding Escape Analysis to Speed Up Your Code - Bill Kennedy" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Escape analysis and the Go compiler's memory decisions, explaining the allocator behavior a runtime-free Go kernel ends up replacing.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Controlling the go runtime - Patrick Hawley (GopherCon 2019)</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/us9hfJqncV8" title="Controlling the go runtime - Patrick Hawley (GopherCon 2019)" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>What the Go runtime manages for you (GC, goroutines, scheduling</p>
+</details>) and how to control it — exactly the component this chapter trades for empty stubs on bare metal.

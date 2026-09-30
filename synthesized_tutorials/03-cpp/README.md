@@ -185,7 +185,19 @@ What was actually verified for this language:
 
 ## Watch and learn
 
-- [POINTERS in C++ (The Cherno)](https://www.youtube.com/watch?v=DTxHyVn0ODg) — The Cherno's most-watched episode on what pointers are and how they point into memory — the same `unsigned short*` model your kernel uses to reach the VGA framebuffer at `0xB8000`.
-- [REFERENCES in C++ (The Cherno)](https://www.youtube.com/watch?v=IzoFn3dfsPA) — References vs. pointers and C-linkage-adjacent semantics, clarifying how the VGA driver's values pass around the namespace without copying.
-- [How the C++ Compiler Works (The Cherno)](https://www.youtube.com/watch?v=3tIqpEmWMLI) — Exactly what name mangling is and why a C++ compiler renames `kernel_main` — the mechanism your `extern "C"` exists to defeat so `boot.s` can resolve the symbol.
+<details class="video-embed">
+<summary>▶ Watch: POINTERS in C++ (The Cherno)</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/DTxHyVn0ODg" title="POINTERS in C++ (The Cherno)" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>The Cherno's most-watched episode on what pointers are and how they point into memory — the same `unsigned short*` model your kernel uses to reach the VGA framebuffer at `0xB8000`.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: REFERENCES in C++ (The Cherno)</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/IzoFn3dfsPA" title="REFERENCES in C++ (The Cherno)" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>References vs. pointers and C-linkage-adjacent semantics, clarifying how the VGA driver's values pass around the namespace without copying.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: How the C++ Compiler Works (The Cherno)</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/3tIqpEmWMLI" title="How the C++ Compiler Works (The Cherno)" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Exactly what name mangling is and why a C++ compiler renames `kernel_main` — the mechanism your `extern "C"` exists to defeat so `boot.s` can resolve the symbol.</p>
+</details>
 - [C++ full playlist (The Cherno)](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) — The complete beginner series covering memory, arrays, and low-level details that underpin the freestanding C++ kernel.

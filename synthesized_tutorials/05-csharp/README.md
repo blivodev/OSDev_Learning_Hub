@@ -194,5 +194,13 @@ What was actually verified for this chapter:
 ## Watch and learn
 
 - [The Operating System Construction Kit: Cosmos! [Cosmos Quest #1]](https://www.youtube.com/watch?v=Khff1xxyEHI) — A hands-on demo of writing C# with the Cosmos OS kit and booting it as a real operating system — the exact "build an OS with C#" workflow this chapter documents.
-- [Exploring .NET's Memory Management — A Trip Down Memory Lane (JetBrains)](https://www.youtube.com/watch?v=9FEfy9y0fFQ) — How the .NET GC, CLR, and intermediate language manage memory and hidden allocations — the runtime reality behind the managed IL your C# kernel compiles to.
-- [.NET GC - part 1 (Maoni Stephens)](https://www.youtube.com/watch?v=vqMky3uw4uI) — The .NET Garbage Collector's lead engineer explains generations, marking, and compaction — why a managed runtime like the one Cosmos brings along exists in the first place.
+<details class="video-embed">
+<summary>▶ Watch: Exploring .NET's Memory Management — A Trip Down Memory Lane (JetBrains)</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/9FEfy9y0fFQ" title="Exploring .NET's Memory Management — A Trip Down Memory Lane (JetBrains)" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>How the .NET GC, CLR, and intermediate language manage memory and hidden allocations — the runtime reality behind the managed IL your C# kernel compiles to.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: .NET GC - part 1 (Maoni Stephens)</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/vqMky3uw4uI" title=".NET GC - part 1 (Maoni Stephens)" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>The .NET Garbage Collector's lead engineer explains generations, marking, and compaction — why a managed runtime like the one Cosmos brings along exists in the first place.</p>
+</details>

@@ -52,7 +52,23 @@ rust/
 
 Videos matched to this `no_std` Rust kernel and the Writing an OS in Rust series it follows.
 
-- [Writing an OS in Rust - Part 1 - A Freestanding Rust Binary](https://www.youtube.com/watch?v=rH5jnbJ3tL4) — the exact blog this kernel follows, video-walked: a freestanding `no_std` Rust binary.
-- [Writing an OS in Rust - Part 4 - Testing](https://www.youtube.com/watch?v=zTzwgKac8kA) — continues the series with testing, handy once your kernel compiles.
-- [Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header](https://www.youtube.com/watch?v=FkrpUaGThTQ) — an alternative hands-on kernel series to see the same boot concepts in another language.
-- [Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code](https://www.youtube.com/watch?v=wz9CZBeXR6U) — printing to screen from a bare-metal kernel, the low-level sibling of this Rust VGA driver.
+<details class="video-embed">
+<summary>▶ Watch: Writing an OS in Rust - Part 1 - A Freestanding Rust Binary</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/rH5jnbJ3tL4" title="Writing an OS in Rust - Part 1 - A Freestanding Rust Binary" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>the exact blog this kernel follows, video-walked: a freestanding `no_std` Rust binary.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Writing an OS in Rust - Part 4 - Testing</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/zTzwgKac8kA" title="Writing an OS in Rust - Part 4 - Testing" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>continues the series with testing, handy once your kernel compiles.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/FkrpUaGThTQ" title="Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>an alternative hands-on kernel series to see the same boot concepts in another language.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/wz9CZBeXR6U" title="Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>printing to screen from a bare-metal kernel, the low-level sibling of this Rust VGA driver.</p>
+</details>
