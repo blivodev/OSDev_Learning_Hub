@@ -87,3 +87,9 @@ Hello World!
 If that works, **you have written an operating system.** Everything from here — paging, interrupts, scheduling, filesystems — is adding features to an OS that already boots.
 
 > **Now go build it:** the five language walkthroughs in `01-c/` → `05-csharp/`, with real code in [`Example_OS_Project/`](../../Example_OS_Project/).
+
+## Watch and learn
+
+- [OS development 101 - How to make a bootloader part 1 - Hello World](https://www.youtube.com/watch?v=E_n0VtGSZQY) — Low Level Learning walks the whole recipe: bootable code that prints "Hello World" and boots.
+- [OS development 101 - How to make a bootloader part 2](https://www.youtube.com/watch?v=BQGbBCqUGCc) — The next step in the same series, moving from a static boot sector toward a real loadable kernel.
+- [Building an OS - 1 - Hello world](https://www.youtube.com/watch?v=9t-SPTC7Tczc) — Nanobyte's complete from-scratch hello-world OS: assemble, boot it from a floppy, see it run.

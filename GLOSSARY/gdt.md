@@ -30,6 +30,8 @@ bits 56–63 : base, high
 The GDT is the [segment](memory-management.md) counterpart to the [IDT](idt.md): the [IDT](idt.md) descriptors point at handler offsets *within* a segment named by the GDT. While `Example_OS_Project` currently leans on the flat environment left by its bootloader, the GDT becomes explicit once you move toward user-mode code, [syscalls](syscall.md), or long mode, which has its own 64-bit GDT with null, code, and data entries.
 
 ## Watch / listen
+[- OSDev Lecture Series 4: Global Descriptor Table - AptRock327](https://www.youtube.com/watch?v=0nT_2aIOTq8) — GDT and segmentation explained
+[- Building an OS - 8 - Interrupts, IDT, GDT - nanobyte](https://www.youtube.com/watch?v=5LbXClJhxcs) — GDT setup in a real OS
 - [OSDev Wiki — Global Descriptor Table](https://wiki.osdev.org/Global_Descriptor_Table) — free, authoritative
 - [Wikipedia — Global Descriptor Table](https://en.wikipedia.org/wiki/Global_Descriptor_Table) — free, authoritative
 

@@ -33,6 +33,8 @@ Real memory is divided into **physical pages** (usually 4 KiB each). The simples
 Memory management is the core subject of `synthesized_tutorials/concepts/02-memory-management.md` — the document this page is grounded in. The os01 book and the Phil Opp Rust series "both spend serious chapters here for exactly this reason." The practical follow-ons in this hub are the [frame allocator](frame-allocator.md), [paging](paging.md), and [heap allocation](heap-allocation.md) pages, and the language-specific difficulty of [garbage collection](garbage-collection.md) on bare metal (Go and C#) versus full control (C, C++, Rust).
 
 ## Watch / listen
+[- The Most Successful Idea in Computer Science - Core Dumped](https://www.youtube.com/watch?v=LDhoD4IVElk) — how virtual memory and address spaces work
+[- Stack vs Heap Memory in C++ - The Cherno](https://www.youtube.com/watch?v=wJ1L2nSIV1s) — the manual memory model kernels use
 - [OSDev Wiki — Memory Management](https://wiki.osdev.org/Memory_management) — free, authoritative
 - [OSDev Wiki — Memory Map (x86)](https://wiki.osdev.org/Memory_Map_%28x86%29) — free, authoritative
 - [Blog "Writing an OS in Rust" — Memory management chapters](https://os.phil-opp.com/) — free

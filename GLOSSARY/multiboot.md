@@ -64,6 +64,7 @@ sequenceDiagram
 Multiboot is the protocol the whole hub's learning path is built on. The `synthesized_tutorials/concepts/01-bootloaders-and-multiboot.md` concept page is entirely about it, and `synthesized_tutorials/00-introduction/01-how-a-computer-boots.md` introduces the magic `0x1BADB002` handshake. In `Example_OS_Project/c/boot.s` the actual 12-byte Multiboot header (MAGIC `0x1BADB002`, FLAGS `ALIGN|MEMINFO`, CHECKSUM) is emitted at the top of the `.multiboot` section, and `Example_OS_Project/c/linker.ld` places that section first and loads the kernel at 1 MiB with `. = 1M;`. See also [Bootloader](bootloader.md), [GRUB](grub.md), [Limine](limine.md), and [Entry Point](entry-point.md).
 
 ## Watch / listen
+[- How Computers BOOT: From Startup to Viruses - Dave's Garage](https://www.youtube.com/watch?v=rmgla4yeCXw) — how a bootloader takes over from firmware
 - [OSDev Wiki — Multiboot](https://wiki.osdev.org/Multiboot) — free, authoritative
 - [OSDev Wiki — Bare Bones](https://wiki.osdev.org/Bare_Bones) — free; the canonical Multiboot tutorial
 

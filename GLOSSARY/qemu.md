@@ -41,6 +41,7 @@ flowchart LR
 - The hub ships tools that read the screen back from QEMU, e.g. `Example_OS_Project/tools/read_vga_text.py`.
 
 ## Watch / listen
+[- QEMU/KVM for absolute beginners - Veronica Explains](https://www.youtube.com/watch?v=BgZHbCDFODk) — running virtual machines with QEMU
 - [QEMU — Official site](https://www.qemu.org/) — free, authoritative
 - [OSDev Wiki — QEMU](https://wiki.osdev.org/QEMU) — free and specific to kernel testing
 

@@ -66,3 +66,10 @@ The language doesn't matter here — you'll write the same page-table code in C,
 | C# | GC runtime (managed heap) | Needs a whole framework (Cosmos) to bootstrap |
 
 > **Next:** [`03-interrupts-and-the-idt.md`](03-interrupts-and-the-idt.md).
+
+## Watch and learn
+
+- [How Computer Memory Works](https://www.youtube.com/watch?v=XETZoRYdtkw) — Computerphile explains how logic gates build the memory circuits that make up your machine's RAM.
+- [The Call Stack and Stack Overflows (example in C)](https://www.youtube.com/watch?v=jVzSBkbfdiw) — Jacob Sorber shows how the stack, locals, and heap are laid out in a C program's memory.
+- [Stack vs Heap Memory in C++](https://www.youtube.com/watch?v=wJ1L2nSIV1s) — The Cherno breaks down the two memory regions you manage by hand when writing C++.
+- [WHY IS THE HEAP SO SLOW?](https://www.youtube.com/watch?v=ioJkA7Mw2-U) — Core Dumped explains how an operating system allocates dynamic memory and why it costs a system call.

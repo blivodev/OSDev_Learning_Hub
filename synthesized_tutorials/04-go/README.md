@@ -194,3 +194,12 @@ What was actually verified for this language:
 > empty runtime stubs and the shared `boot.s` also reinforce **direct hardware
 > I/O** through the [VGA framebuffer](../../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written") (concepts/04) — just reached through one
 > more layer of abstraction than C or C++.
+
+---
+
+## Watch and learn
+
+- [The Scheduler Saga - Kavya Joshi (GopherCon 2018)](https://www.youtube.com/watch?v=YHRO5WQGh0k) — A deep dive into the Go runtime's scheduler that powers goroutines — the runtime machinery your freestanding kernel has to stub out with empty `__go_*` functions.
+- [Understanding Allocations: the Stack and the Heap - GopherCon SG 2019](https://www.youtube.com/watch?v=ZMZpH4yT7M0) — How Go decides whether a value goes on the stack or the heap — the memory model behind why a bare-metal Go kernel can't rely on normal runtime allocation.
+- [Understanding Escape Analysis to Speed Up Your Code - Bill Kennedy](https://www.youtube.com/watch?v=FUm0pfgWehI) — Escape analysis and the Go compiler's memory decisions, explaining the allocator behavior a runtime-free Go kernel ends up replacing.
+- [Controlling the go runtime - Patrick Hawley (GopherCon 2019)](https://www.youtube.com/watch?v=us9hfJqncV8) — What the Go runtime manages for you (GC, goroutines, scheduling) and how to control it — exactly the component this chapter trades for empty stubs on bare metal.

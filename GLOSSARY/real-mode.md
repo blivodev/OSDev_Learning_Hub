@@ -27,6 +27,8 @@ flowchart LR
 In `synthesized_tutorials/00-introduction/01-how-a-computer-boots.md` real mode appears as the mode the BIOS path starts in — "BIOS is old, simple... It boots into a 16-bit mode first." The hub's canonical learning path (BIOS + [GRUB](grub.md) + [Multiboot](multiboot.md)) depends on the bootloader dragging the CPU out of real mode into [Protected Mode](protected-mode.md) so it can load the kernel at 1 MiB. The `Example_OS_Project` kernels assume protected (or via QEMU, directly) mode already — `Example_OS_Project/c/boot.s` writes straight to memory and calls C code, which requires the protected-mode CPU state the bootloader establishes.
 
 ## Watch / listen
+[- How Computers BOOT: From Startup to Viruses - Dave's Garage](https://www.youtube.com/watch?v=rmgla4yeCXw) — shows the 16-bit real-mode start of boot
+[- Intro to x86 Assembly Language (Part 1)](https://www.youtube.com/watch?v=wLXIWKUWpSs) — registers and real-mode machine code
 - [OSDev Wiki — Real Mode](https://wiki.osdev.org/Real_Mode) — free, authoritative
 - [Wikipedia — Real mode](https://en.wikipedia.org/wiki/Real_mode) — free overview
 

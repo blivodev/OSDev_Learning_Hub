@@ -34,3 +34,17 @@ Curated list of free, beginner-friendly OS-development material beyond the prima
 - **NASM** ([assembler](../GLOSSARY/assembler.md "Turns assembly language into machine-code object files")): https://www.nasm.us/
 - **[GRUB](../GLOSSARY/grub.md "The free GNU bootloader that loads Multiboot kernels")** ([bootloader](../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it")): https://www.gnu.org/software/grub/
 - **[Limine](../GLOSSARY/limine.md "A modern bootloader supporting Multiboot 2 and 64-bit kernels")** (modern [bootloader](../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it") used by [Cosmos](../GLOSSARY/cosmos.md "An open-source C# operating-system kit") & Rust bootloader): https://limine-bootloader.org/
+
+
+## Video resources
+
+Curated YouTube playlists and single videos for visual learners, matched to the hub's paths.
+
+- [Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header](https://www.youtube.com/watch?v=FkrpUaGThTQ) — David Callanan's series, a clean C/assembly kernel walkthrough for any path.
+- [Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code](https://www.youtube.com/watch?v=wz9CZBeXR6U) — continues into long mode, stack setup and printing.
+- [Writing an OS in Rust - Part 1 - A Freestanding Rust Binary](https://www.youtube.com/watch?v=rH5jnbJ3tL4) — visual companion to the Rust `no_std` path (os.phil-opp.com).
+- [1 - How to make an operating system from scratch](https://www.youtube.com/watch?v=rr-9w2gITDM) — a general OSdev-from-scratch walkthrough for beginners of any language.
+- [GopherCon 2025: An Operating System in Go - Patricio Whittingslow](https://www.youtube.com/watch?v=SvsdVe1kgSU) — an OS-in-Go talk for the Go/Bare Bones path.
+- [Cosmos Tutorial Part 1 - Setting Up And First Command!](https://www.youtube.com/watch?v=RTkeqkFzC3w) — the C#/Cosmos path in action.
+- [How does an OS boot? //Source Dive// 001](https://www.youtube.com/watch?v=KkenLT8S9Hs) — Low Byte Productions on the boot process behind every kernel here.
+- [QEMU/KVM for absolute beginners](https://www.youtube.com/watch?v=BgZHbCDFODk) — learn the emulator all paths boot their kernels in.

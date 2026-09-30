@@ -88,3 +88,9 @@ flowchart TD
 That's it. That is literally all a "Hello World" OS does — but it's the *proof* that your entire toolchain works and you own the machine.
 
 > **Next:** [`05-the-hello-world-of-oses.md`](05-the-hello-world-of-oses.md) — the one kernel you'll build in all five languages.
+
+## Watch and learn
+
+- [How VGA Works](https://www.youtube.com/watch?v=5exFKr-JJtg) — Tech Tangents explains VGA signals and hardware, the display standard your text-mode hello world drives.
+- [Building an OS - 1 - Hello world](https://www.youtube.com/watch?v=9t-SPTC7Tczc) — Nanobyte writes a hello-world program in assembly and boots it from a floppy, the classic first step.
+- [Building an OS - 5 - How to implement printf](https://www.youtube.com/watch?v=dG8PV6xqm4s) — Nanobyte builds a `printf` that writes formatted text to the screen, a gateway to real VGA text output.

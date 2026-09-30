@@ -32,6 +32,7 @@ flowchart TD
 In `synthesized_tutorials/00-introduction/01-how-a-computer-boots.md`, the hub states plainly: "Firmware is the true first program" — the BIOS (older) or UEFI (newer) software burned onto the motherboard whose one job on boot is to find a bootloader and run it. The [BIOS](bios.md) and [UEFI](uefi.md) glossary pages are the two concrete faces of firmware this hub builds its learning path on, and the boot chain it describes (firmware → [Bootloader](bootloader.md) → kernel at 1 MiB) is the scaffold for every `Example_OS_Project` kernel.
 
 ## Watch / listen
+[- How Computers BOOT: From Startup to Viruses - Dave's Garage](https://www.youtube.com/watch?v=rmgla4yeCXw) — walks the firmware-to-OS boot chain
 - [Wikipedia — Firmware](https://en.wikipedia.org/wiki/Firmware) — free, authoritative overview
 - [OSDev Wiki — BIOS](https://wiki.osdev.org/BIOS) — free; covers the BIOS flavor of firmware
 - [OSDev Wiki — UEFI](https://wiki.osdev.org/UEFI) — free; covers the UEFI flavor of firmware

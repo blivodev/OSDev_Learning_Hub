@@ -27,6 +27,7 @@ The `.multiboot` section must come first so the Magic Number (`0x1BADB002`) is a
 The whole hub builds one thing: a kernel. The C, C++, Rust, Go, and C# variants in `Example_OS_Project/` are all the same program written against each language's freestanding rules. The walkthrough is grounded in files such as `Example_OS_Project/rust/src/main.rs` (the Rust `_start` kernel) and `synthesized_tutorials/00-introduction/02-your-toolchain.md` (why a kernel needs an assembler, compiler, linker, and QEMU). Concept grounding for what the kernel must own lives in `synthesized_tutorials/concepts/02-memory-management.md`.
 
 ## Watch / listen
+[- The Question Nobody Ever Explains: Where Does the Kernel End? - Core Dumped](https://www.youtube.com/watch?v=ZmPIxfCggFw) — what a kernel is and where it sits
 - [OSDev Wiki — Kernel](https://wiki.osdev.org/Kernel) — free, authoritative
 - [OSDev Wiki — Bare Bones (writing a minimal kernel)](https://wiki.osdev.org/Bare_Bones) — free, authoritative
 - [Rust standard library documentation](https://doc.rust-lang.org/) — free official docs

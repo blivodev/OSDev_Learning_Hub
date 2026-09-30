@@ -63,3 +63,13 @@ make -j$(nproc) all-gcc && make install-gcc
 > a Go *unikernel* that runs normal Go apps on bare metal, for when you
 > outgrow this hand-rolled stub. For learning the low-level details, this
 > `boot.s` + `kernel.go` + `terminal.go` stub is the right start.
+
+
+## Watch and learn
+
+Videos matched to writing and booting a kernel in Go (and why it needs a cross-compiled runtime).
+
+- [GopherCon 2025: An Operating System in Go - Patricio Whittingslow](https://www.youtube.com/watch?v=SvsdVe1kgSU) — a live talk on building an OS in Go, the systems-programming question this folder explores.
+- [Can I Build an Operating System in Go?](https://www.youtube.com/watch?v=uotfXZDLAEA) — a practical look at the feasibility (and hurdles) of a Go kernel.
+- [Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header](https://www.youtube.com/watch?v=FkrpUaGThTQ) — the bare-metal boot target (Multiboot + QEMU) this Go stub ultimately produces, in a C walkthrough.
+- [How does an OS boot? //Source Dive// 001](https://www.youtube.com/watch?v=KkenLT8S9Hs) — the boot sequence your `boot.s` engages on hardware.

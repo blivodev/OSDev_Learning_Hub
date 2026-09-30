@@ -28,6 +28,7 @@ The frame allocator deals in *physical* pages; page tables and the MMU are what 
 The physical/virtual split underpins `synthesized_tutorials/concepts/02-memory-management.md`, the hub's grounding source for this page, and is essential to understanding [paging](paging.md). The minimal kernels in `Example_OS_Project/` write to `0xB8000` — a *physical* (identity-mapped) address — without any page tables yet, but a real kernel introduces virtual mapping on top of the physical frame allocator.
 
 ## Watch / listen
+[- The Most Successful Idea in Computer Science - Core Dumped](https://www.youtube.com/watch?v=LDhoD4IVElk) — virtual address spaces vs physical RAM
 - [Wikipedia — Virtual memory](https://en.wikipedia.org/wiki/Virtual_memory) — free
 - [OSDev Wiki — Paging](https://wiki.osdev.org/Paging) — free, authoritative
 - [Blog "Writing an OS in Rust" — Paging Introduction](https://os.phil-opp.com/paging-introduction/) — free

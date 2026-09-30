@@ -66,3 +66,9 @@ __asm__ volatile("sti");   // enable interrupts
 | 48–255 | Software / your custom | [syscalls](../../GLOSSARY/syscall.md "The way user programs ask the kernel for services"), custom events |
 
 > **Next:** [`04-vga-text-mode.md`](04-vga-text-mode.md).
+
+## Watch and learn
+
+- [CPU Interrupts](https://www.youtube.com/watch?v=tGMSARJk7cA) — Computerphile uses a robot analogy to explain how the CPU handles interrupts from devices like the keyboard.
+- [Building an OS - 8 - Interrupts, IDT, GDT](https://www.youtube.com/watch?v=5LbXClJhxcs) — Nanobyte sets up the kernel GDT and introduces interrupts while building the IDT.
+- [Building an OS - 10 - Hardware interrupts, PIC](https://www.youtube.com/watch?v=FD48Lx7Rnx0) — Nanobyte implements a driver for the 8259 PIC and handles real hardware interrupts.

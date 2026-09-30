@@ -26,6 +26,7 @@ flowchart LR
 The `synthesized_tutorials/concepts/01-bootloaders-and-multiboot.md` concept page notes that Multiboot v1 (`0x1BADB002`) is the 32-bit protocol "what most Bare Bones tutorials use," and `synthesized_tutorials/00-introduction/01-how-a-computer-boots.md` draws the BIOS path ending at "Protected mode 32-bit" before the kernel runs. The `Example_OS_Project` kernels run in 32-bit protected mode once [GRUB](grub.md) loads them: `Example_OS_Project/c/boot.s` executes `movl`, `call`, `cli`, and `hlt` — all real machine instructions that rely on the protected-mode CPU state the bootloader establishes. See also [Real Mode](real-mode.md), [Long Mode](long-mode.md), and [Multiboot](multiboot.md).
 
 ## Watch / listen
+[- How a Single Bit Inside Your Processor Shields Your OS's Integrity - Core Dumped](https://www.youtube.com/watch?v=H4SDPLiUnv4) — CPU privileged vs restricted execution modes
 - [OSDev Wiki — Protected Mode](https://wiki.osdev.org/Protected_Mode) — free, authoritative
 - [Wikipedia — Protected mode](https://en.wikipedia.org/wiki/Protected_mode) — free overview
 

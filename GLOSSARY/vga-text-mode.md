@@ -44,6 +44,7 @@ The memory at `0xB8000` is the [VGA framebuffer](vga-framebuffer.md). A small te
 The entire beginner flow in `04-vga-text-mode.md` and `Example_OS_Project/c/kernel.c` builds on text mode: `kernel.c` defines `VGA_WIDTH 80`, `VGA_HEIGHT 25`, `VGA_MEMORY ((unsigned short*)0xB8000)`, and `COLOR_WHITE_ON_BLACK 0x0F`, then `vga_putchar`/`vga_clear`/`vga_write` drive it. `boot.s` hands control to `kernel_main`, which writes "Hello World!" and halts. It is the proof that your entire toolchain works — and the same `0xB8000` [framebuffer](vga-framebuffer.md) is what higher-level display modes replace later.
 
 ## Watch / listen
+[- Writing an OS in Rust - Part 3 - VGA Text Mode - Uncle Scientist](https://www.youtube.com/watch?v=DA2zIAkE26Q) — printing to the VGA text buffer
 - [OSDev Wiki — Text Mode Cursor](https://wiki.osdev.org/Text_Mode_Cursor) — free, authoritative (related)
 - [OSDev Wiki — VGA Hardware](https://wiki.osdev.org/VGA_Hardware) — free, authoritative
 - [Wikipedia — VGA text mode](https://en.wikipedia.org/wiki/VGA_text_mode) — free, authoritative

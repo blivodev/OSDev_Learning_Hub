@@ -84,3 +84,11 @@ grub-file --is-x86-multiboot c/kernel.bin   # ✅ VALID Multiboot v1 kernel
 > **[bootloaders](../../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it")/[Multiboot](../../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002")** (concepts/01), **memory layout** via the linker
 > script (concepts/02), and **direct hardware I/O** through the
 > [VGA framebuffer](../../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written") (concepts/04).
+
+---
+
+## Watch and learn
+
+- [CS50x 2025 - Lecture 4 - Memory](https://youtu.be/kcRdFGbzR1I) — David Malan's classic lecture on pointers, hexadecimal addresses, the stack and heap, and how C manipulates memory — the exact mental model behind poking `0xB8000` and reading a VGA cell back.
+- [CS50x 2026 - Section 4 - Memory](https://youtu.be/Gjf0L3mkVtY) — A refreshed, hands-on walkthrough of C pointers, dynamic memory allocation, and files, reinforcing the pointer syntax your kernel's `vga_putchar` and `VGA_MEMORY` indexing rely on.
+- [C pointers explained](https://youtube.com/watch?v=DplxIq0mc_Y) — A concise crash course on what a pointer is, `&` vs `*`, pointers as function arguments, and dereferencing — ideal for grounding the `unsigned short*` cast to the VGA framebuffer.

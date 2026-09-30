@@ -37,6 +37,7 @@ The same IDs reused for hardware IRQs need the [PIC / APIC](pic-apic.md) remap s
 `03-interrupts-and-the-idt.md` walks through building this exactly as above — the C `lidt` snippet and the Rust `extern "x86-interrupt"` timer handler both appear there. It is the first real OS feature most kernels implement after the [GDT](gdt.md), and it is the prerequisite for [syscalls](syscall.md), which occupy the 48–255 software range.
 
 ## Watch / listen
+[- Building an OS - 8 - Interrupts, IDT, GDT - nanobyte](https://www.youtube.com/watch?v=5LbXClJhxcs) — setting up an IDT in a real OS
 - [OSDev Wiki — Interrupt Descriptor Table](https://wiki.osdev.org/Interrupt_Descriptor_Table) — free, authoritative
 - [OSDev Wiki — Interrupts](https://wiki.osdev.org/Interrupts) — free, authoritative
 

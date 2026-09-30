@@ -70,3 +70,9 @@ You are **not** writing a bootloader — you're writing the kernel. That's an en
 | **Rust bootloader crate** | depends | Handles it for you, no assembly needed |
 
 > **Next:** [`02-memory-management.md`](02-memory-management.md).
+
+## Watch and learn
+
+- [OS development 101 - How to make a bootloader part 1 - Hello World](https://www.youtube.com/watch?v=E_n0VtGSZQY) — Low Level Learning builds a bootloader from scratch and boots it, covering what happens at PC startup and real mode.
+- [OS development 101 - How to make a bootloader part 2](https://www.youtube.com/watch?v=BQGbBCqUGCc) — The follow-up that takes the bootloader further and shows bootable code in action.
+- [Building an OS - 7 - Finishing the bootloader, migrating to GCC](https://www.youtube.com/watch?v=qr8d7bZLPHg) — Nanobyte rounds out the bootloader and hands off to a compiled kernel, the same job GRUB/Multiboot loaders automate.

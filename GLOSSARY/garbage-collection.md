@@ -23,6 +23,8 @@ So while a C or Rust kernel hands out memory through its own [frame allocator](f
 Garbage collection appears throughout the hub as the *contrast* that explains why C, C++, and Rust are the naturals for minimal kernels while Go and C# need scaffolding. It's discussed in `synthesized_tutorials/concepts/02-memory-management.md` (the memory-model comparison table) and in the toolchain chapter (`synthesized_tutorials/00-introduction/02-your-toolchain.md`), where C# is noted as having "no direct equivalent — needs Cosmos/NativeAOT." The C# kernel path in the hub leans on [Cosmos OS](cosmos.md) precisely because of this.
 
 ## Watch / listen
+[- Garbage Collection (Mark & Sweep) - Computerphile](https://www.youtube.com/watch?v=c32zXYAK7CI) — how a tracing GC reclaims memory
+[- Rust and RAII Memory Management - Computerphile](https://www.youtube.com/watch?v=pTMvh6VzDls) — the no-GC alternative kernels use
 - [Wikipedia — Garbage collection (computer science)](https://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29) — free
 - [Go documentation — Garbage collection](https://go.dev/doc/gc-guide) — free official docs
 

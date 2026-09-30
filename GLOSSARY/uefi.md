@@ -29,6 +29,7 @@ flowchart LR
 The hub's `synthesized_tutorials/00-introduction/01-how-a-computer-boots.md` chapter explicitly sets up the UEFI path as the modern alternative to BIOS, booting into 64-bit [Long Mode](long-mode.md) and using [Limine](limine.md) or the Rust `bootloader` crate rather than GRUB. While the `Example_OS_Project` kernels boot through the simpler BIOS + Multiboot route (see `c/boot.s`), the docs make clear that UEFI is what a modern production OS would target, and that it starts in [Long Mode](long-mode.md) instead of [Real Mode](real-mode.md).
 
 ## Watch / listen
+[- Windows Secure Boot Compromised! - Dave's Garage](https://www.youtube.com/watch?v=7sYzwb6eUgQ) — explains how UEFI secure boot works and why it matters
 - [OSDev Wiki — UEFI](https://wiki.osdev.org/UEFI) — free, authoritative
 - [Wikipedia — UEFI](https://en.wikipedia.org/wiki/UEFI) — free overview of the specification
 

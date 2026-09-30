@@ -31,6 +31,7 @@ The three attributes here matter: `#[no_mangle]` stops the compiler from manglin
 `no_main` sits right next to `no_std` at the top of `Example_OS_Project/rust/src/main.rs` and is walked through step-by-step in `synthesized_tutorials/02-rust/README.md` (Step 2, "The entry point"). It's also the Rust mirror of the linker's `ENTRY(_start)` directive and the C stub in `boot.s` that jumps into `_start`/`main` — see `synthesized_tutorials/00-introduction/02-your-toolchain.md` where every language's entry story begins in assembly.
 
 ## Watch / listen
+[- Writing an OS in Rust - Part 1 - A Freestanding Rust Binary - Uncle Scientist](https://www.youtube.com/watch?v=rH5jnbJ3tL4) — a freestanding binary with no main entry
 - [Rust — `no_mangle` (Reference, official)](https://doc.rust-lang.org/reference/abi.html#the-mangle-attribute) — free official docs
 - [Blog "Writing an OS in Rust" — A Freestanding Rust Binary](https://os.phil-opp.com/freestanding-rust-binary/) — free
 - [OSDev Wiki — Boot Sequence](https://wiki.osdev.org/Boot_Sequence) — free, authoritative

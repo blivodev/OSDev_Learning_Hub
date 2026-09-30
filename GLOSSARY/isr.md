@@ -29,6 +29,7 @@ Each ISR is tied to one vector. The CPU exceptions (vectors 0–31) each have ca
 `03-interrupts-and-the-idt.md` names the ISR as one of the pieces you set up for interrupts and shows the Rust timer ISR above. In `Example_OS_Project` the kernel currently does not use ISRs (it prints and halts), so this is the natural next milestone once you want a timer tick or a keyboard driver.
 
 ## Watch / listen
+[- Building an OS - 8 - Interrupts, IDT, GDT - nanobyte](https://www.youtube.com/watch?v=5LbXClJhxcs) — writing interrupt service routines
 - [OSDev Wiki — Interrupt Service Routines](https://wiki.osdev.org/Interrupt_Service_Routines) — free, authoritative
 - [OSDev Wiki — Interrupt descriptor table and the IDT](https://wiki.osdev.org/Interrupt_Descriptor_Table) — free, authoritative
 

@@ -188,3 +188,11 @@ What was actually verified for this chapter:
 > directly (concepts/04), C# delegates that hardware I/O to a framework —
 > which is exactly why, when you *must* control hardware bit-by-bit, you reach
 > for C, and when you just want a working OS quickly, C# + Cosmos wins.
+
+---
+
+## Watch and learn
+
+- [The Operating System Construction Kit: Cosmos! [Cosmos Quest #1]](https://www.youtube.com/watch?v=Khff1xxyEHI) — A hands-on demo of writing C# with the Cosmos OS kit and booting it as a real operating system — the exact "build an OS with C#" workflow this chapter documents.
+- [Exploring .NET's Memory Management — A Trip Down Memory Lane (JetBrains)](https://www.youtube.com/watch?v=9FEfy9y0fFQ) — How the .NET GC, CLR, and intermediate language manage memory and hidden allocations — the runtime reality behind the managed IL your C# kernel compiles to.
+- [.NET GC - part 1 (Maoni Stephens)](https://www.youtube.com/watch?v=vqMky3uw4uI) — The .NET Garbage Collector's lead engineer explains generations, marking, and compaction — why a managed runtime like the one Cosmos brings along exists in the first place.

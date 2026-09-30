@@ -45,6 +45,7 @@ flowchart TD
 "Freestanding" is the concept that ties all five languages in this hub together. Every kernel in `Example_OS_Project/` is built freestanding, and the Rust walkthrough (`synthesized_tutorials/02-rust/README.md`) makes it explicit at the very top of `rust/src/main.rs`: `#![no_std]` says "do NOT link the standard library." The concept chapter that explains the whole idea is `synthesized_tutorials/00-introduction/02-your-toolchain.md`, which defines the compiler as "freestanding vs hosted."
 
 ## Watch / listen
+[- Writing an OS in Rust - Part 1 - A Freestanding Rust Binary - Uncle Scientist](https://www.youtube.com/watch?v=rH5jnbJ3tL4) — building a Rust binary with no standard library
 - [OSDev Wiki — Bare Bones (freestanding kernel)](https://wiki.osdev.org/Bare_Bones) — free, authoritative
 - [Rust — The `no_std` environment (official docs)](https://doc.rust-lang.org/reference/names/crates.html) — free official docs
 - [Wikipedia — Freestanding and hosted environments](https://en.wikipedia.org/wiki/Freestanding_and_hosted_environments) — free

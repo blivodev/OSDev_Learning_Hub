@@ -127,3 +127,10 @@ qemu-system-i386 -kernel myos.bin              # boot it!
 That's the entire core loop. Everything else — Makefiles, ISO generation, [cross-compilers](../../GLOSSARY/cross-compiler.md "A compiler that builds code for a different CPU/OS than the one it runs on") — is polish on top of these four commands.
 
 > **Next:** the shared concept chapters in [`../concepts/`](../concepts/).
+
+## Watch and learn
+
+- [How C++ Works](https://www.youtube.com/watch?v=SfGuIVzE_Os) — The Cherno explains how source files become an executable, covering the preprocessor, compiler, and linker roles.
+- [How the C++ Compiler Works](https://www.youtube.com/watch?v=3tIqpEmWMLI) — A deep dive into compiling: preprocessing, tokenizing, the abstract syntax tree, and object files.
+- [Machine Code Explained](https://www.youtube.com/watch?v=8VsiYWW9r48) — Computerphile's Matt Godbolt takes you from machine code up, the language the CPU actually executes.
+- [How CPUs Do Math(s)](https://www.youtube.com/watch?v=nhXevKMm3JI) — Matt Godbolt shows how the CPU executes arithmetic at the gate level, tying together all the tools in your toolchain.

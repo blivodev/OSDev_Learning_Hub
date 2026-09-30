@@ -25,6 +25,7 @@ When you disable `std`, you must also satisfy whatever the compiler can no longe
 `no_std` is the Rust expression of "freestanding," and the whole Rust kernel in `Example_OS_Project/rust/src/main.rs` hangs on it. The tutorial `synthesized_tutorials/02-rust/README.md` calls the three attributes (`no_std`, `no_main`, `#[panic_handler]`) the friction points that "map directly to a real OS-level concern," and notes that `no_std`/`no_main` are your first encounter with **what a runtime is and what it assumes**, bridging to bootloaders and direct hardware I/O.
 
 ## Watch / listen
+[- Writing an OS in Rust - Part 1 - A Freestanding Rust Binary - Uncle Scientist](https://www.youtube.com/watch?v=rH5jnbJ3tL4) — disabling std for bare-metal code
 - [Rust — `std` vs `core` (official crate docs)](https://doc.rust-lang.org/core/) — free official docs
 - [Rust — The `no_std` guide (official docs)](https://doc.rust-lang.org/1.64.0/reference/names/crates.html) — free official docs
 - [Blog "Writing an OS in Rust" — A Freestanding Rust Binary](https://os.phil-opp.com/freestanding-rust-binary/) — free

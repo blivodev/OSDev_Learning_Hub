@@ -50,6 +50,7 @@ From that first instruction on, there is **no operating system underneath you an
 The entry point is the exact junction where bootloader and kernel meet. `synthesized_tutorials/00-introduction/01-how-a-computer-boots.md` defines it in its "key terms" table as "the symbol (usually `_start`) the bootloader jumps to." `Example_OS_Project/c/boot.s` defines and exports `_start`, `Example_OS_Project/c/linker.ld` declares `ENTRY(_start)`, and the bootloader ([GRUB](grub.md) or QEMU `-kernel`) performs the jump. See also [Multiboot](multiboot.md) and [Linker](linker.md).
 
 ## Watch / listen
+[- How the C++ Linker Works - The Cherno](https://www.youtube.com/watch?v=H4s55GgAg0I) — how the entry point is found and linked
 - [OSDev Wiki — Bare Bones](https://wiki.osdev.org/Bare_Bones) — free; shows the `_start` entry point and bootstrap stack
 - [OSDev Wiki — Kernel Entry Point](https://wiki.osdev.org/Kernel_Entry_Point) — free, authoritative
 

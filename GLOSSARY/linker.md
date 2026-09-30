@@ -46,6 +46,7 @@ flowchart LR
 - `synthesized_tutorials/00-introduction/02-your-toolchain.md` §3 shows the linker script and calls `ld` one of the four pillars: *"You control where the kernel loads (1 MiB) via a linker script."*
 
 ## Watch / listen
+[- How the C++ Linker Works - The Cherno](https://www.youtube.com/watch?v=H4s55GgAg0I) — symbol resolution and linking
 - [OSDev Wiki — Linker Scripts](https://wiki.osdev.org/Linker_Scripts) — free, authoritative
 - [OSDev Wiki — Bare Bones](https://wiki.osdev.org/Bare_Bones) — shows `ld` in a full boot
 - [GNU ld manual — Linker Scripts](https://sourceware.org/binutils/docs/ld/Scripts.html) — official free docs

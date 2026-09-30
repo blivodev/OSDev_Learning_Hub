@@ -46,3 +46,13 @@ rust/
 | No panic runtime | `#[panic_handler]` that `hlt`s |
 | Writing to the screen | raw pointer write to `0xB8000` inside `unsafe {}` |
 | Never returning | `_start -> !` loops forever |
+
+
+## Watch and learn
+
+Videos matched to this `no_std` Rust kernel and the Writing an OS in Rust series it follows.
+
+- [Writing an OS in Rust - Part 1 - A Freestanding Rust Binary](https://www.youtube.com/watch?v=rH5jnbJ3tL4) — the exact blog this kernel follows, video-walked: a freestanding `no_std` Rust binary.
+- [Writing an OS in Rust - Part 4 - Testing](https://www.youtube.com/watch?v=zTzwgKac8kA) — continues the series with testing, handy once your kernel compiles.
+- [Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header](https://www.youtube.com/watch?v=FkrpUaGThTQ) — an alternative hands-on kernel series to see the same boot concepts in another language.
+- [Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code](https://www.youtube.com/watch?v=wz9CZBeXR6U) — printing to screen from a bare-metal kernel, the low-level sibling of this Rust VGA driver.

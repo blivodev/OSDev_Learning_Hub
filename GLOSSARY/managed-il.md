@@ -36,6 +36,7 @@ flowchart LR
 - `Example_OS_Project/csharp/ExampleOS.csproj` — a C# project whose IL is processed by Cosmos.
 
 ## Watch / listen
+[- Garbage Collection (Mark & Sweep) - Computerphile](https://www.youtube.com/watch?v=c32zXYAK7CI) — the GC runtime managed languages rely on
 - [Microsoft Learn — Managed code and the .NET runtime](https://learn.microsoft.com/en-us/dotnet/standard/managed-code) — free, authoritative
 - [Microsoft Learn — .NET Intermediate Language (IL)](https://learn.microsoft.com/en-us/dotnet/standard/managed-code) — free overview
 

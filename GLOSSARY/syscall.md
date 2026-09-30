@@ -21,6 +21,7 @@ For a minimal teaching kernel a common first syscall family is tiny: `write` (pu
 `03-interrupts-and-the-idt.md` explicitly carves out IDT slots 48–255 for "Software / your custom" purposes and names syscalls as the canonical example. It is a forward-looking term: `Example_OS_Project` is still a ring-0 "Hello World" kernel, so syscalls are what you reach for once you add user mode, which in turn relies on the [GDT](gdt.md), [IDT](idt.md), and [Paging](paging.md) foundations.
 
 ## Watch / listen
+[- How a Single Bit Inside Your Processor Shields Your OS's Integrity - Core Dumped](https://www.youtube.com/watch?v=H4SDPLiUnv4) — the mode switch that syscalls use
 - [OSDev Wiki — System Calls](https://wiki.osdev.org/System_Calls) — free, authoritative
 - [Wikipedia — System call](https://en.wikipedia.org/wiki/System_call) — free, authoritative
 

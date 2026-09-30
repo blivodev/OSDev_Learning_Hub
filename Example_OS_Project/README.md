@@ -70,3 +70,16 @@ Example_OS_Project/
 
 **Read [`docs/setup.md`](docs/setup.md) first.** Then open the C kernel —
 `c/boot.s` → `c/kernel.c` → `c/linker.ld` — every line is commented.
+
+
+---
+
+## Watch and learn
+
+Curated YouTube videos matched to what this project does — booting a Multiboot kernel and printing "Hello World!" in QEMU.
+
+- [Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header](https://www.youtube.com/watch?v=FkrpUaGThTQ) — David Callanan's series start: boots a Multiboot2 64-bit kernel in QEMU, just like this project.
+- [Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code](https://www.youtube.com/watch?v=wz9CZBeXR6U) — sets up the stack, long mode, and prints from C — the same path this kernel takes to print "Hello World!".
+- [1 - How to make an operating system from scratch](https://www.youtube.com/watch?v=rr-9w2gITDM) — a beginner OSdev walkthrough that builds and boots a kernel with QEMU.
+- [How does an OS boot? //Source Dive// 001](https://www.youtube.com/watch?v=KkenLT8S9Hs) — Low Byte Productions explains the boot process your Multiboot header rides on.
+- [QEMU/KVM for absolute beginners](https://www.youtube.com/watch?v=BgZHbCDFODk) — how the emulator this project uses works and how to drive it.

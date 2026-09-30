@@ -97,3 +97,9 @@ For learning, **BIOS + GRUB/Multiboot** (or the Rust `bootloader` crate) is the 
 | **1 MiB** | The conventional address where kernels are loaded |
 
 > **Next:** [`02-your-toolchain.md`](02-your-toolchain.md) — the compiler, assembler, linker, and emulator you'll use.
+
+## Watch and learn
+
+- [How Computers BOOT: From Startup to Viruses](https://www.youtube.com/watch?v=rmgla4yeCXw) — Computerphile's walk through the entire boot sequence, from power-on reset to handing control to the OS.
+- [What is Bootstrapping Anyway?](https://www.youtube.com/watch?v=Pu7LvnxV6N0) — Matt Godbolt builds up the bootstrap chain to show where the very first code on a machine comes from.
+- [OS development 101 - How to make a bootloader part 1 - Hello World](https://www.youtube.com/watch?v=E_n0VtGSZQY) — Low Level Learning covers what happens at PC startup and real mode before writing bootable code.

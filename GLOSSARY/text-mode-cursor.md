@@ -26,6 +26,7 @@ The Cosmos C# kernel's `Console.Write`/`Console.Clear` use a cursor under the ho
 - `Example_OS_Project/tools/read_vga_text.py` — reads the text buffer, whose 2000-cell layout depends on cursor convention.
 
 ## Watch / listen
+[- Writing an OS in Rust - Part 3 - VGA Text Mode - Uncle Scientist](https://www.youtube.com/watch?v=DA2zIAkE26Q) — driving the text-mode cursor
 - [OSDev Wiki — Text UI](https://wiki.osdev.org/Text_UI) — free, covers the buffer + cursor
 - [OSDev Wiki — Text Mode Cursor](https://wiki.osdev.org/Text_Mode_Cursor) — free, the port-based hardware cursor
 

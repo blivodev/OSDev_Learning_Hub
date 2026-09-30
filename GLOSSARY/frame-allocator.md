@@ -31,6 +31,7 @@ The math shows the key numbers: the bitmap needs `total_memory / 4096 / 8` bytes
 The frame allocator is the foundational piece of `synthesized_tutorials/concepts/02-memory-management.md`, the hub's memory-management concept document. It's the first memory manager a kernel builds, sitting below [paging](paging.md) (which consumes these physical frames) and [heap allocation](heap-allocation.md) (which sits on top). The minimal kernels in `Example_OS_Project/` don't allocate yet, but the moment a kernel wants a stack, variables, or a heap, the frame allocator is where physical memory management begins.
 
 ## Watch / listen
+[- Writing an OS in Rust - Part 9 - Paging Implementation - Uncle Scientist](https://www.youtube.com/watch?v=80h0uQq1jO0) — allocating physical frames for page tables
 - [OSDev Wiki — Memory Management](https://wiki.osdev.org/Memory_management) — free, authoritative
 - [Blog "Writing an OS in Rust" — Page Tables and Frame Allocator](https://os.phil-opp.com/) — free
 

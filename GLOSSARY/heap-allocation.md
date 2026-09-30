@@ -20,6 +20,9 @@ The heap is built *on top of* those pages, usually using paging. In Rust specifi
 `Example_OS_Project/rust/src/main.rs` deliberately does not allocate yet — it only writes to the `0xB8000` framebuffer and loops. Heap allocation is the layer this hub's memory chapter (`synthesized_tutorials/concepts/02-memory-management.md`) builds toward: first manage physical pages, then build higher-level allocation on top. It is the bridge between the raw [frame allocator](frame-allocator.md) and the language runtime features like [garbage collection](garbage-collection.md).
 
 ## Watch / listen
+[- Writing an OS in Rust - Part 10 - Heap Allocation - Uncle Scientist](https://www.youtube.com/watch?v=hJpgu-LYrj8) — adding a heap allocator to a kernel
+[- Pulling Back the Curtain on the Heap - Jacob Sorber](https://www.youtube.com/watch?v=GIWeQ2I67rk) — what the heap is and how allocators manage it
+[- Stack vs Heap Memory in C++ - The Cherno](https://www.youtube.com/watch?v=wJ1L2nSIV1s) — stack vs heap explained
 - [OSDev Wiki — Memory Allocation](https://wiki.osdev.org/Memory_Allocation) — free, authoritative
 - [Rust — GlobalAlloc trait (official docs)](https://doc.rust-lang.org/std/alloc/trait.GlobalAlloc.html) — free official docs
 - [Blog "Writing an OS in Rust" — Heap Allocation](https://os.phil-opp.com/heap-allocation/) — free

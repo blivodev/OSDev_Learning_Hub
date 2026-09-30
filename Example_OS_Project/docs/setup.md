@@ -116,3 +116,14 @@ of these concepts ([bootloaders](../../GLOSSARY/bootloader.md "A small program t
 | Rust `error: linker not found` | add `rust-lld` / use the `bootimage` flow; ensure `llvm-tools-preview` |
 | GRUB "no multiboot header found" on real disk | use a cross-compiler (`i686-elf-gcc`); see OSDev wiki |
 | QEMU shows nothing / black screen on **Windows PowerShell** | run QEMU from WSL or use `-nographic -serial stdio` |
+
+
+## Watch and learn
+
+Videos matched to building your toolchain and booting this kernel in QEMU.
+
+- [QEMU/KVM for absolute beginners](https://www.youtube.com/watch?v=BgZHbCDFODk) — learn what QEMU is and how to run a VM, the environment this project boots in.
+- [QEMU: A proper guide!](https://www.youtube.com/watch?v=AAfFewePE7c) — a close look at QEMU launch options, useful for the `qemu-system-i386 -kernel kernel.bin` commands here.
+- [Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header](https://www.youtube.com/watch?v=FkrpUaGThTQ) — shows assembling and booting a Multiboot kernel in QEMU exactly like `setup.md`.
+- [1 - How to make an operating system from scratch](https://www.youtube.com/watch?v=rr-9w2gITDM) — a step-by-step environment/build/boot walkthrough matching the setup guide.
+- [How does an OS boot? //Source Dive// 001](https://www.youtube.com/watch?v=KkenLT8S9Hs) — background on firmware, bootloader and kernel startup covered by this setup page.

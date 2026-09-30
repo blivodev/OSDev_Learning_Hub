@@ -181,3 +181,12 @@ What was actually verified for this language:
 > hardware I/O** via the [VGA framebuffer](../../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written") (concepts/04). The `unsafe` raw
 > pointer, the never-returning `_start`, and the panic handler are Rust
 > spelling out the very rules C lets you swallow silently.
+
+---
+
+## Watch and learn
+
+- [Writing an OS in Rust - Part 1 - A Freestanding Rust Binary](https://www.youtube.com/watch?v=rH5jnbJ3tL4) — A video walkthrough of Philipp Oppermann's blog series, staring with the very `#![no_std] #![no_main]` freestanding binary you just built in this chapter.
+- [Rust OS - playlist](https://www.youtube.com/playlist?list=PLib6-zlkjfXkdCjQgrZhmfJOWBk_C2FTY) — The full video series through the "Writing an OS in Rust" posts, from the freestanding binary and minimal kernel onward, so you can follow the `unsafe` `0xB8000` write and `_start` entry point visually.
+- [Rust: What is Ownership and Borrowing?](https://www.youtube.com/watch?v=79phqVpE7cU) — The core ownership rules explained — move vs clone, references, and the borrow checker — which is exactly why Rust makes you write `unsafe` around a raw pointer to the framebuffer.
+- [Understanding Ownership in Rust](https://www.youtube.com/watch?v=VFIOSWy93H0) — A clear deep-dive into the three ownership rules and how moves, clones, and references interact with the stack and heap — the memory model behind a language with no garbage collector.

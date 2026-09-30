@@ -28,6 +28,8 @@ On x86_64, address translation is done by a **multi-level page table** — the h
 Paging is covered in depth in `synthesized_tutorials/concepts/02-memory-management.md`, which is the grounding source for this page. The minimal `Hello World!` kernels in `Example_OS_Project/` don't set up paging yet (they write straight to the identity-mapped `0xB8000` framebuffer), but paging is the *next* memory tool every serious kernel reaches for after the frame allocator. See also [physical vs virtual memory](physical-virtual-memory.md).
 
 ## Watch / listen
+[- Writing an OS in Rust - Part 9 - Paging Implementation - Uncle Scientist](https://www.youtube.com/watch?v=80h0uQq1jO0) — implementing x86 page tables in a kernel
+[- The Most Successful Idea in Computer Science - Core Dumped](https://www.youtube.com/watch?v=LDhoD4IVElk) — why paging and virtual memory exist
 - [OSDev Wiki — Page Tables](https://wiki.osdev.org/Page_Tables) — free, authoritative
 - [OSDev Wiki — Paging](https://wiki.osdev.org/Paging) — free, authoritative
 - [Blog "Writing an OS in Rust" — Paging Introduction](https://os.phil-opp.com/paging-introduction/) — free

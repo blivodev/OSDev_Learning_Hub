@@ -34,6 +34,8 @@ sequenceDiagram
 The very first kernel in `Example_OS_Project/c/kernel.c` prints "Hello World!" and halts forever — it can skip interrupts. You need them the moment you want a timer tick or keyboard input. The tutorial `synthesized_tutorials/concepts/03-interrupts-and-the-idt.md` explains the full setup, and `Example_OS_Project/c/boot.s` ends with `cli` / `hlt` to stop IRQs before parking the CPU.
 
 ## Watch / listen
+[- Program, Interrupted - Computerphile](https://www.youtube.com/watch?v=54BrU82ANww) — how interrupts stop the CPU
+[- Signals: Make Ctrl+C Do Anything You Want - Core Dumped](https://www.youtube.com/watch?v=m6WXrC9Mxzo) — interrupts and how the kernel delivers them
 - [OSDev Wiki — Interrupts](https://wiki.osdev.org/Interrupts) — free, authoritative
 - [OSDev Wiki — Interrupts in detail](https://wiki.osdev.org/Interrupts_in_detail) — free, authoritative
 

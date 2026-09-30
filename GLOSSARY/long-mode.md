@@ -34,6 +34,7 @@ Not every kernel project targets long mode. The classic **Multiboot v1** protoco
 The `synthesized_tutorials/00-introduction/01-how-a-computer-boots.md` chapter marks long mode as the destination of the UEFI path — "UEFI is modern and 64-bit native" booting into "64-bit long mode," then running a 64-bit kernel via [Limine](limine.md) or the Rust `bootloader` crate. It also lists long mode as a bootloader duty ("set the CPU into a sane, known state (32-bit protected mode, later 64-bit long mode)"). While the hub's simplest `Example_OS_Project` kernels run 32-bit via GRUB+Multiboot v1, long mode is the mode a fully modern 64-bit build of this hub's ideas would target. See also [Protected Mode](protected-mode.md), [UEFI](uefi.md), and [Limine](limine.md).
 
 ## Watch / listen
+[- Writing an OS in Rust - Part 2 - A Minimal Rust Kernel - Uncle Scientist](https://www.youtube.com/watch?v=AYyybz3gm6A) — building and booting a 64-bit kernel
 - [OSDev Wiki — Long Mode](https://wiki.osdev.org/Long_Mode) — free, authoritative
 - [OSDev Wiki — Setting Up Long Mode](https://wiki.osdev.org/Setting_Up_Long_Mode) — free, step-by-step
 - [Wikipedia — x86-64](https://en.wikipedia.org/wiki/X86-64) — free overview of the 64-bit extension

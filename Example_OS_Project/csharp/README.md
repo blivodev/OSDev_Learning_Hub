@@ -53,3 +53,13 @@ Hello World!
 
 > Full Cosmos source is vendored in `path_csharp_os/Cosmos/` if you want to
 > read how the framework itself is built.
+
+
+## Watch and learn
+
+Videos matched to building an OS in C# and .NET with Cosmos, the kit this folder uses.
+
+- [Cosmos Tutorial Part 1 - Setting Up And First Command!](https://www.youtube.com/watch?v=RTkeqkFzC3w) — hands-on Cosmos setup and the first command loop, mirroring the `Kernel.cs` in this folder.
+- [Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header](https://www.youtube.com/watch?v=FkrpUaGThTQ) — the bare-metal kernel lifecycle that Cosmos automates for you, shown in C.
+- [How does an OS boot? //Source Dive// 001](https://www.youtube.com/watch?v=KkenLT8S9Hs) — what really happens between pressing power and your Cosmos kernel's `Run` method.
+- [QEMU/KVM for absolute beginners](https://www.youtube.com/watch?v=BgZHbCDFODk) — how to run the VM that boots your Cosmos ISO.

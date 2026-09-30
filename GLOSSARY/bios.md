@@ -30,6 +30,7 @@ flowchart LR
 The `synthesized_tutorials/00-introduction/01-how-a-computer-boots.md` chapter describes the BIOS path in detail — the power-on self-test, the scan for a bootloader, and the jump into it — and explains that BIOS boots into 16-bit real mode first, then relies on a bootloader to reach 32-bit protected mode. It is the firmware world that the hub's canonical **BIOS + GRUB/Multiboot** learning path sits on top of. The hub's bootloader ([GRUB](grub.md)) is what moves the CPU out of BIOS's real mode and into [Protected Mode](protected-mode.md) so it can load the kernel at [1 MiB](multiboot.md) via [Multiboot](multiboot.md).
 
 ## Watch / listen
+[- How Computers BOOT: From Startup to Viruses - Dave's Garage](https://www.youtube.com/watch?v=rmgla4yeCXw) — walks the full BIOS boot chain, from reset to OS
 - [OSDev Wiki — BIOS](https://wiki.osdev.org/BIOS) — free, authoritative
 - [Wikipedia — BIOS](https://en.wikipedia.org/wiki/BIOS) — free overview of the boot firmward and its history
 

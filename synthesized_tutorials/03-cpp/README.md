@@ -180,3 +180,12 @@ What was actually verified for this language:
 > hardware I/O** through the [VGA framebuffer](../../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written") at `0xB8000` (concepts/04). The
 > `extern "C"` and freestanding flags are the language-specific price of
 > talking to hardware with nothing underneath you.
+
+---
+
+## Watch and learn
+
+- [POINTERS in C++ (The Cherno)](https://www.youtube.com/watch?v=DTxHyVn0ODg) — The Cherno's most-watched episode on what pointers are and how they point into memory — the same `unsigned short*` model your kernel uses to reach the VGA framebuffer at `0xB8000`.
+- [REFERENCES in C++ (The Cherno)](https://www.youtube.com/watch?v=IzoFn3dfsPA) — References vs. pointers and C-linkage-adjacent semantics, clarifying how the VGA driver's values pass around the namespace without copying.
+- [How the C++ Compiler Works (The Cherno)](https://www.youtube.com/watch?v=3tIqpEmWMLI) — Exactly what name mangling is and why a C++ compiler renames `kernel_main` — the mechanism your `extern "C"` exists to defeat so `boot.s` can resolve the symbol.
+- [C++ full playlist (The Cherno)](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) — The complete beginner series covering memory, arrays, and low-level details that underpin the freestanding C++ kernel.
