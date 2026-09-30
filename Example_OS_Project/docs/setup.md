@@ -2,7 +2,7 @@
 
 This folder contains a **minimal bootable operating system** that prints
 **"Hello World!"** — implemented in **five languages**: C, C++, Rust, Go, and C#.
-The goal is to prove your toolchain works by booting a real kernel in QEMU.
+The goal is to prove your toolchain works by booting a real [kernel](../../GLOSSARY/kernel.md "The core program that owns the machine and manages hardware") in [QEMU](../../GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing").
 
 ## Table of contents
 1. [What's here](#whats-here)
@@ -18,11 +18,11 @@ The goal is to prove your toolchain works by booting a real kernel in QEMU.
 ## What's here
 | Language | Folder | Entry point | Boot method |
 |----------|--------|-------------|-------------|
-| C | `c/` | `kernel_main()` in `kernel.c` | Multiboot (GRUB/QEMU -kernel) |
+| C | `c/` | `kernel_main()` in `kernel.c` | [Multiboot](../../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002") ([GRUB](../../GLOSSARY/grub.md "The free GNU bootloader that loads Multiboot kernels")/QEMU -kernel) |
 | C++ | `cpp/` | `extern "C" kernel_main()` in `kernel.c++` | Multiboot |
 | Rust | `rust/` | `_start()` in `src/main.rs` | `bootloader` crate + `bootimage` |
-| Go | `go/` | `Main()` in `kernel.go` | Multiboot + gccgo |
-| C# | `csharp/` | `Kernel.Run()` in `Kernel.cs` | Cosmos kit |
+| Go | `go/` | `Main()` in `kernel.go` | Multiboot + [gccgo](../../GLOSSARY/gccgo.md "GCC's Go front-end, used to compile Go kernels bare-metal") |
+| C# | `csharp/` | `Kernel.Run()` in `Kernel.cs` | [Cosmos](../../GLOSSARY/cosmos.md "An open-source C# operating-system kit") kit |
 
 ## Environment prerequisites
 The C, C++, and Go kernels need a **32-bit Multiboot cross build**; Rust needs
@@ -105,7 +105,7 @@ sequenceDiagram
     K->>K: HLT (halts forever)
 ```
 See `../synthesized_tutorials/` for a full beginner guide that explains each
-of these concepts (bootloaders, memory management, interrupts, VGA text mode).
+of these concepts ([bootloaders](../../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it"), [memory management](../../GLOSSARY/memory-management.md "How a kernel tracks used and free RAM and hands it out safely"), [interrupts](../../GLOSSARY/interrupt.md "A hardware signal that makes the CPU run a registered handler"), [VGA text mode](../../GLOSSARY/vga-text-mode.md "The 80x25 character display mode a minimal kernel writes to")).
 
 ## Troubleshooting
 | Symptom | Fix |

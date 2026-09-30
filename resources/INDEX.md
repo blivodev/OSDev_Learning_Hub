@@ -3,7 +3,7 @@
 Curated list of free, beginner-friendly OS-development material beyond the primary per-path selections.
 
 ## Core learning (all free)
-- **OSDev Wiki** — https://wiki.osdev.org — *the* community reference. Start with: Getting Started, Beginner Mistakes, Bare Bones, Meaty Skeleton, VGA font/graphics, Interrupts, Paging.
+- **OSDev Wiki** — https://wiki.osdev.org — *the* community reference. Start with: Getting Started, Beginner Mistakes, Bare Bones, Meaty Skeleton, VGA font/graphics, [Interrupts](../GLOSSARY/interrupt.md "A hardware signal that makes the CPU run a registered handler"), [Paging](../GLOSSARY/paging.md "Translates virtual addresses to physical RAM via page tables").
 - **OSDev Wiki — Meaty Skeleton** — https://wiki.osdev.org/Meaty_Skeleton — a clean project-structure template (kernel + libk split).
 - **Little OS Book** — a concise, beginner-friendly guide to a minimal OS in C (small practical examples covering booting, interrupts, memory).
 - **Baeldung: How to Start Building an OS** — https://www.baeldung.com/cs/building-os — good high-level orientation with links by language.
@@ -26,11 +26,11 @@ Curated list of free, beginner-friendly OS-development material beyond the prima
 | Any | OSDev forums | https://forum.osdev.org/ |
 
 ## Hardware / manuals (free)
-- **Intel 64 & IA-32 Architectures Software Developer's Manuals** — free PDF from Intel (Programmer's ref for x86).
+- **Intel 64 & IA-32 Architectures Software Developer's Manuals** — free PDF from Intel (Programmer's ref for [x86](../GLOSSARY/x86.md "The CPU architecture family this hub targets")).
 - **OSDev wiki's "Resources" page** — hundreds of free datasheets & specs.
 
 ## Nice-to-know
-- **QEMU** (emulator): https://www.qemu.org/
-- **NASM** (assembler): https://www.nasm.us/
-- **GRUB** (bootloader): https://www.gnu.org/software/grub/
-- **Limine** (modern bootloader used by Cosmos & Rust bootloader): https://limine-bootloader.org/
+- **[QEMU](../GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing")** (emulator): https://www.qemu.org/
+- **NASM** ([assembler](../GLOSSARY/assembler.md "Turns assembly language into machine-code object files")): https://www.nasm.us/
+- **[GRUB](../GLOSSARY/grub.md "The free GNU bootloader that loads Multiboot kernels")** ([bootloader](../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it")): https://www.gnu.org/software/grub/
+- **[Limine](../GLOSSARY/limine.md "A modern bootloader supporting Multiboot 2 and 64-bit kernels")** (modern [bootloader](../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it") used by [Cosmos](../GLOSSARY/cosmos.md "An open-source C# operating-system kit") & Rust bootloader): https://limine-bootloader.org/

@@ -26,15 +26,15 @@ flowchart TD
 Let's unpack each step.
 
 ### 1. Firmware is the true first program
-The **BIOS** (older) or **UEFI** (newer) is software burned onto the motherboard, not stored on your disk. Its one job on boot: **find a bootloader and run it**.
+The **[BIOS](../../GLOSSARY/bios.md "The motherboard firmware that starts the machine and finds a bootloader")** (older) or **[UEFI](../../GLOSSARY/uefi.md "Modern firmware that boots into 64-bit long mode natively")** (newer) is software burned onto the motherboard, not stored on your disk. Its one job on boot: **find a [bootloader](../../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it") and run it**.
 
 ### 2. The bootloader is not your kernel
-A **bootloader** (GRUB, Limine, or the Rust `bootloader` crate) is a small program whose job is to:
-- set the CPU into a sane, known state (32-bit protected mode, later 64-bit long mode),
+A **[bootloader](../../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it")** ([GRUB](../../GLOSSARY/grub.md "The free GNU bootloader that loads Multiboot kernels"), [Limine](../../GLOSSARY/limine.md "A modern bootloader supporting Multiboot 2 and 64-bit kernels"), or the Rust `bootloader` crate) is a small program whose job is to:
+- set the CPU into a sane, known state (32-bit [protected mode](../../GLOSSARY/protected-mode.md "The 32-bit CPU mode Multiboot v1 kernels run in"), later 64-bit [long mode](../../GLOSSARY/long-mode.md "The 64-bit CPU mode modern kernels run in")),
 - load your kernel image from disk into RAM,
-- and `jmp` to your kernel's entry point.
+- and `jmp` to your kernel's [entry point](../../GLOSSARY/entry-point.md "The symbol (usually _start) the bootloader jumps to").
 
-You don't have to be a bootloader expert to write an OS — you just have to produce a kernel the bootloader can find. On x86 that means speaking the **Multiboot protocol**.
+You don't have to be a bootloader expert to write an OS — you just have to produce a kernel the bootloader can find. On [x86](../../GLOSSARY/x86.md "The CPU architecture family this hub targets") that means speaking the **Multiboot protocol**.
 
 ### 3. Multiboot — the "hello" handshake
 The **Multiboot** spec says: *"If you want a standard bootloader to load you, put a magic header at the very start of your kernel image."*
@@ -43,7 +43,7 @@ The **Multiboot** spec says: *"If you want a standard bootloader to load you, pu
 0x1BADB002   <- "magic" number the bootloader looks for
 ```
 
-A kernel that carries this header at its start can be booted by GRUB on real hardware *and* by QEMU for testing. Every "bare bones" tutorial — C, C++, Go — starts by writing this header in assembly.
+A kernel that carries this header at its start can be booted by GRUB on real hardware *and* by [QEMU](../../GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing") for testing. Every "bare bones" tutorial — C, C++, Go — starts by writing this header in assembly.
 
 ### 4. Your kernel takes over
 Once the bootloader jumps to `_start`, there is **no operating system underneath you anymore**. The `printf` you used in your first C program? Gone. `malloc`? Gone. Threads, files, network? None of it exists until **you** build it.

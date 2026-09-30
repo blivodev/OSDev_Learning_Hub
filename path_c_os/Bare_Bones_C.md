@@ -7,15 +7,15 @@
 
 ## Overview
 
-Write a simple 32-bit x86 kernel and boot it with the **GRUB** bootloader using the **Multiboot** boot protocol.
+Write a simple 32-bit [x86](../GLOSSARY/x86.md "The CPU architecture family this hub targets") kernel and boot it with the **[GRUB](../GLOSSARY/grub.md "The free GNU bootloader that loads Multiboot kernels")** bootloader using the **[Multiboot](../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002")** boot protocol.
 
 Tools used:
-- **GNU Linker** (`ld`) — link object files into the final kernel.
-- **GNU Assembler** (`as`, or optionally **NASM**) — assemble instructions into object files of machine code.
+- **[GNU Linker](../GLOSSARY/linker.md "Merges object files into one image at a chosen address")** (`ld`) — link object files into the final kernel.
+- **[GNU Assembler](../GLOSSARY/assembler.md "Turns assembly language into machine-code object files")** (`as`, or optionally **NASM**) — assemble instructions into object files of machine code.
 - **GNU Compiler Collection** (`gcc`) — compile high-level C into assembly.
 - **C** — write the high-level kernel logic.
-- **GRUB** — bootloader that loads us into 32-bit protected mode (paging disabled).
-- **ELF** — executable format controlling where/how the kernel is loaded.
+- **GRUB** — bootloader that loads us into 32-bit [protected mode](../GLOSSARY/protected-mode.md "The 32-bit CPU mode Multiboot v1 kernels run in") (paging disabled).
+- **[ELF](../GLOSSARY/elf.md "The executable format that lets a bootloader load your kernel")** — executable format controlling where/how the kernel is loaded.
 
 > Windows users can complete this from WSL, MinGW, or Cygwin.
 
@@ -23,7 +23,7 @@ Tools used:
 
 ## 1. Building a Cross-Compiler
 
-You need a cross-compiler targeting `i686-elf`. Setting one up is essential and non-optional (this is where the OSDev tutorial's *GCC Cross-Compiler* page matters most). For a quick beginner test on a normal machine you can sometimes use native x86_64 GCC with Multiboot, but a real target uses `i686-elf-gcc`.
+You need a [cross-compiler](../GLOSSARY/cross-compiler.md "A compiler that builds code for a different CPU/OS than the one it runs on") targeting `i686-elf`. Setting one up is essential and non-optional (this is where the OSDev tutorial's *GCC Cross-Compiler* page matters most). For a quick beginner test on a normal machine you can sometimes use native x86_64 GCC with [Multiboot](../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002"), but a real target uses `i686-elf-gcc`.
 
 ---
 
@@ -105,7 +105,7 @@ void kernel_main(void) {
 
 ## 4. Linking (`linker.ld`)
 
-Tells the linker where to place sections and sets the entry point:
+Tells the [linker](../GLOSSARY/linker.md "Merges object files into one image at a chosen address") where to place sections and sets the [entry point](../GLOSSARY/entry-point.md "The symbol (usually _start) the bootloader jumps to"):
 
 ```ld
 ENTRY(_start)

@@ -7,7 +7,7 @@ Before you have a hard drive, a keyboard, or a framebuffer driver, you can alrea
 
 ## What VGA text mode is
 
-In text mode, the screen is a grid of **80 columns × 25 rows** = 2000 cells. Each cell is **2 bytes**:
+In [text mode](../../GLOSSARY/vga-text-mode.md "The 80x25 character display mode a minimal kernel writes to"), the screen is a grid of **80 columns × 25 rows** = 2000 cells. Each cell is **2 bytes**:
 
 ```
 ┌────────────┬────────────┐
@@ -45,7 +45,7 @@ color byte:
 
 ## The universal "Hello World" driver
 
-Here's the same 20-line VGA terminal driver in C. **Every** language version in this hub builds the same logic — only the syntax differs:
+Here's the same 20-line [VGA terminal driver](../../GLOSSARY/vga-text-mode.md "The 80x25 character display mode a minimal kernel writes to") in C. **Every** language version in this hub builds the same logic — only the syntax differs:
 
 ```c
 #define VGA_WIDTH  80
@@ -83,7 +83,7 @@ flowchart TD
 ```
 
 ## What QEMU shows you
-![Screenshot]: Add a screenshot here — a black QEMU window with white text reading "Hello World!".
+![Screenshot]: Add a screenshot here — a black [QEMU](../../GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing") window with white text reading "Hello World!".
 
 That's it. That is literally all a "Hello World" OS does — but it's the *proof* that your entire toolchain works and you own the machine.
 

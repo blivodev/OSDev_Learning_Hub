@@ -16,7 +16,7 @@ flowchart TD
 
 | Step | Language-indep. concept | Language file |
 |------|-------------------------|---------------|
-| 1 | Entry point + CPU setup | `boot.s` (assembler) |
+| 1 | [Entry point](../../GLOSSARY/entry-point.md "The symbol (usually _start) the bootloader jumps to") + CPU setup | `boot.s` (assembler) |
 | 2 | Multiboot magic `0x1BADB002` | `boot.s` (in `.multiboot` section) |
 | 3 | A 16 KiB stack so calls work | `boot.s` |
 | 4 | The C/rust/go/etc. entry | `kernel.c` / `main.rs` / `kernel.go` |
@@ -24,7 +24,7 @@ flowchart TD
 
 ## Why every language needs the same boot.s
 
-The CPU boots into a primitive state: **no stack, real mode, nothing set up**. That setup *must* be done in assembly, because your high-level language's compiler has no idea a stack doesn't exist yet. So even the Rust tutorial uses a tiny bit of assembly (or the `bootloader` crate which bundles it).
+The CPU boots into a primitive state: **no stack, [real mode](../../GLOSSARY/real-mode.md "The 16-bit CPU mode x86 starts in, with no memory protection"), nothing set up**. That setup *must* be done in [assembly](../../GLOSSARY/assembler.md "Turns assembly language into machine-code object files"), because your high-level language's compiler has no idea a stack doesn't exist yet. So even the Rust tutorial uses a tiny bit of assembly (or the `bootloader` crate which bundles it).
 
 Here's the universal bootstrap that powers the C, C++ and Go kernels in `Example_OS_Project`:
 
@@ -76,7 +76,7 @@ Whatever language you choose, your final command looks like this:
 make run-c        # or run-cpp, run-rust, run-go
 ```
 
-and QEMU pops up a black window with:
+and [QEMU](../../GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing") pops up a black window with:
 
 ```
 Hello World!

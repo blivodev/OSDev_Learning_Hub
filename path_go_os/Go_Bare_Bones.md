@@ -11,7 +11,7 @@ Go was **not designed for OS development** — you'll be fighting the language. 
 
 ## Cross-compiler
 
-Set up a GCC cross-compiler with Go enabled to get `i686-elf-gccgo`:
+Set up a GCC [cross-compiler](../GLOSSARY/cross-compiler.md "A compiler that builds code for a different CPU/OS than the one it runs on") with Go enabled to get `i686-elf-gccgo`:
 
 ```bash
 ../gcc-x.y.z/configure --target=i686-elf --prefix="$PREFIX" \
@@ -28,7 +28,7 @@ This is the hard manual step (building a Go-enabled cross-compiler).
 
 ## Bootstrap Assembly (`boot.s`)
 
-Same Multiboot header as C; then sets up a stack and calls `main`:
+Same [Multiboot](../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002") header as C; then sets up a stack and calls `main`:
 
 ```nasm
 .set ALIGN,    1<<0
@@ -113,7 +113,7 @@ func Main() {
 
 ## Linker script (`linker.ld`) and build
 
-Same shape as the C Bare Bones linker script (`. = 1M;`, `.text`, `.rodata`, `.data`, `.bss`).
+Same shape as the C Bare Bones [linker](../GLOSSARY/linker.md "Merges object files into one image at a chosen address") script (`. = 1M;`, `.text`, `.rodata`, `.data`, `.bss`).
 
 ```bash
 i686-elf-as boot.s -o boot.o
@@ -125,6 +125,6 @@ qemu-system-i386 -kernel myos.bin
 ---
 
 ## Key takeaways (beginner)
-1. Go needs a **Go-enabled cross-compiler** (`gccgo`) — that's the steepest part.
+1. Go needs a **Go-enabled [cross-compiler](../GLOSSARY/cross-compiler.md "A compiler that builds code for a different CPU/OS than the one it runs on")** (`gccgo`) — that's the steepest part.
 2. The **Go runtime expects stub symbols** (`__go_register_gc_roots`, `__go_runtime_error`) — provide empty ones.
 3. You'll need your **own memory allocator** (sbrk) before Go can do much.

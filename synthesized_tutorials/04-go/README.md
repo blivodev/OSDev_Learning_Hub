@@ -4,8 +4,8 @@
 verified code in `Example_OS_Project/go/`.*
 
 ## What you'll have at the end
-A Multiboot Go kernel that, once built with a Go-enabled cross-compiler,
-boots in QEMU and prints:
+A [Multiboot](../../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002") Go [kernel](../../GLOSSARY/kernel.md "The core program that owns the machine and manages hardware") that, once built with a Go-enabled [cross-compiler](../../GLOSSARY/cross-compiler.md "A compiler that builds code for a different CPU/OS than the one it runs on"),
+boots in [QEMU](../../GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing") and prints:
 ```
 Hello World!
 Welcome to your very own operating system (Go edition).
@@ -53,7 +53,7 @@ self-contained binaries the standard `go` tool makes. That lets you pass
 
 ## Step 2 — `boot.s`: the Go-runtime stub symbols
 
-`go/boot.s` is the shared Multiboot bootstrap, plus one Go-specific addition.
+`go/boot.s` is the shared [Multiboot](../../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002") bootstrap, plus one Go-specific addition.
 The Go toolchain still expects a couple of runtime entry points to exist; we
 define them as **empty functions that just `ret`** so the link succeeds:
 
@@ -177,7 +177,7 @@ What was actually verified for this language:
   `go vet` and format cleanly with `gofmt` — this is the honest claim, because
   the *documented* build step cannot run in an environment without the
   `i686-elf-gccgo` cross-compiler.
-- The **structure** (Multiboot header at `0x1BADB002`, `call main`, the two
+- The **structure** ([Multiboot](../../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002") header at `0x1BADB002`, `call main`, the two
   runtime stubs, `linker.ld` at 1 MiB) was reviewed and matches the OSDev
   "Go Bare Bones" recipe, with the VGA write correctly marked `unsafe` in the
   Go idiom.
@@ -189,7 +189,8 @@ What was actually verified for this language:
 > **Bridge to OS concepts:** Go makes you confront the **difference between a
 > runtime-owning language and a freestanding one** — the same line that
 > separates "an app someone runs" from "something that is the OS" (concepts/02
-> **memory management**, concepts/01 **bootloaders and Multiboot**). The
+> **[memory management](../../GLOSSARY/memory-management.md "How a kernel tracks used and free RAM and hands it out safely")**, concepts/01
+> **[bootloaders](../../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it") and [Multiboot](../../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002")**). The
 > empty runtime stubs and the shared `boot.s` also reinforce **direct hardware
-> I/O** through the VGA framebuffer (concepts/04) — just reached through one
+> I/O** through the [VGA framebuffer](../../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written") (concepts/04) — just reached through one
 > more layer of abstraction than C or C++.

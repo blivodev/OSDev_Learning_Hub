@@ -4,14 +4,14 @@
 verified code in `Example_OS_Project/cpp/`.*
 
 ## What you'll have at the end
-An ELF kernel that boots in QEMU and prints:
+An [ELF](../../GLOSSARY/elf.md "The executable format that lets a bootloader load your kernel") [kernel](../../GLOSSARY/kernel.md "The core program that owns the machine and manages hardware") that boots in [QEMU](../../GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing") and prints:
 ```
 Hello World!
 Welcome to your very own operating system (C++ edition).
 ```
 The C++ version looks a lot like the C one from Chapter 01 — same `boot.s`,
-same `linker.ld`, same VGA framebuffer — but it teaches the **two things that
-are actually different about C++ on bare metal**: how the entry point keeps
+same `linker.ld`, same [VGA framebuffer](../../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written") — but it teaches the **two things that
+are actually different about C++ on bare metal**: how the [entry point](../../GLOSSARY/entry-point.md "The symbol (usually _start) the bootloader jumps to") keeps
 `extern "C"` linkage so assembly can call it, and the compiler flags that
 shut off C++ features (exceptions, RTTI) that would need a runtime you don't
 have.
@@ -35,7 +35,7 @@ spelled exactly `kernel_main` — name-mangling would break the link.
 
 ## Step 1 — Same bootstrap, different entry point
 
-`cpp/boot.s` is the *same* shared Multiboot bootstrap the C kernel uses
+`cpp/boot.s` is the *same* shared [Multiboot](../../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002") bootstrap the C kernel uses
 (it's literally shared across the C, C++ and Go kernels in this project).
 One line matters for our story:
 
@@ -169,14 +169,14 @@ What was actually verified for this language:
   under `-Wall -Wextra`.
 - The produced `kernel.bin` is a **32-bit i386 ELF** with the `.multiboot`
   header of the shared `boot.s` — the same bootstrap that was confirmed as a
-  valid Multiboot v1 kernel for the C edition, now carrying the C++ entry point.
+  valid [Multiboot](../../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002") v1 kernel for the C edition, now carrying the C++ entry point.
 - Booting it in QEMU prints `Hello World!` plus the C++-edition welcome line
   (the same VGA framebuffer read which the C chapter documents).
 
 > **Bridge to OS concepts:** C++ teaches the **link-time contract between
 > your bootstrap and your kernel** — the exported symbol `boot.s` calls
-> (concepts/01 **bootloaders and Multiboot**), the **memory layout** the
+> (concepts/01 **[bootloaders](../../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it") and [Multiboot](../../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002")**), the **memory layout** the
 > linker demands so the kernel lands at 1 MiB (concepts/02), and **direct
-> hardware I/O** through the VGA framebuffer at `0xB8000` (concepts/04). The
+> hardware I/O** through the [VGA framebuffer](../../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written") at `0xB8000` (concepts/04). The
 > `extern "C"` and freestanding flags are the language-specific price of
 > talking to hardware with nothing underneath you.

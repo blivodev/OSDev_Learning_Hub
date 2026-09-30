@@ -1,6 +1,6 @@
 # Synthesized Tutorials — The Beginner's Guide to Writing Your Own OS
 
-> **Everything here is original, consolidated content** written for this hub. It is *not* copy-pasted from any source book. It distills the shared ideas from the resources in `path_*_os/` into one beginner-friendly guide that takes you from **basic language syntax** to **real OS concepts** (bootloaders, memory management, interrupts — and more).
+> **Everything here is original, consolidated content** written for this hub. It is *not* copy-pasted from any source book. It distills the shared ideas from the resources in `path_*_os/` into one beginner-friendly guide that takes you from **basic language syntax** to **real OS concepts** ([bootloaders](../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it"), [memory management](../GLOSSARY/memory-management.md "How a kernel tracks used and free RAM and hands it out safely"), [interrupts](../GLOSSARY/interrupt.md "A hardware signal that makes the CPU run a registered handler") — and more).
 
 ## How to read this guide
 
@@ -27,11 +27,11 @@ synthesized_tutorials/
 
 Every OS has a **boot sequence** and a **way to talk to the screen**. No matter the language, the recipe is always the same:
 
-1. **Boot** — a bootloader (GRUB, Limine, or the Rust `bootloader` crate) loads your kernel at **1 MiB** and jumps to your entry point.
-2. **Write to VGA text memory at `0xB8000`** — the 80×25 text framebuffer. Each cell is 2 bytes: the character and its color.
+1. **Boot** — a bootloader (GRUB, Limine, or the Rust `bootloader` crate) loads your [kernel](../GLOSSARY/kernel.md "The core program that owns the machine and manages hardware") at **1 MiB** and jumps to your [entry point](../GLOSSARY/entry-point.md "The symbol (usually _start) the bootloader jumps to").
+2. **Write to VGA text memory at `0xB8000`** — the 80×25 [text framebuffer](../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written"). Each cell is 2 bytes: the character and its color.
 3. **Loop forever** (or `hlt`) — a kernel never returns; there's no OS underneath to return to.
 
-The only thing that changes between languages is **how you compile freestanding code** and **how the entry point is called**. Everything else — paging, interrupts, memory allocation — is language-agnostic *concept* work.
+The only thing that changes between languages is **how you compile [freestanding](../GLOSSARY/freestanding.md "Code compiled assuming no OS or standard library exists") code** and **how the entry point is called**. Everything else — [paging](../GLOSSARY/paging.md "Translates virtual addresses to physical RAM via page tables"), interrupts, memory allocation — is language-agnostic *concept* work.
 
 ## Chapter map (each is original)
 

@@ -4,7 +4,7 @@
 documented code in `Example_OS_Project/csharp/`.*
 
 ## What you'll have at the end
-A C# kernel, built with the **Cosmos OS kit**, that boots and drops you into
+A C# [kernel](../../GLOSSARY/kernel.md "The core program that owns the machine and manages hardware"), built with the **Cosmos OS kit**, that boots and drops you into
 an interactive prompt:
 ```
 Cosmos booted successfully. Let's go!
@@ -15,10 +15,10 @@ Welcome to your very own operating system (C# edition).
 Before anything else, the honest headline this chapter teaches: **C# has no
 practical hand-rolled bare-metal path for a beginner.** Every language so far
 (C, C++, Rust, Go) compiles to *native machine code* and hands you the raw
-`0xB8000` framebuffer. C# compiles to **managed IL** and needs a runtime —
+`0xB8000` framebuffer. C# compiles to **[managed IL](../../GLOSSARY/managed-il.md "The intermediate language C# compiles to, which needs a runtime")** and needs a runtime —
 garbage collector, JIT, base class library — and bootstrapping that runtime on
 bare metal is a huge project. So, per the OSDev_Learning_Hub plan, the C#
-chapter is the **edge case**: you use the **Cosmos OS kit** as the framework,
+chapter is the **edge case**: you use the **[Cosmos OS kit](../../GLOSSARY/cosmos.md "An open-source C# operating-system kit")** as the framework,
 and write your OS logic in familiar C#.
 
 ## The flow, in one picture
@@ -44,7 +44,7 @@ the rest.
 | Compiles to            | native machine code| native machine code | native (via gccgo) | **managed IL**          |
 | Needs a runtime?       | no (`-ffreestanding`) | no (`no_std`)    | minimal (stubs)       | **yes — GC + BCL**      |
 | Can poke 0xB8000 directly? | yes            | yes (`unsafe`)    | yes (`unsafe`)        | not as a beginner       |
-| Realistic bare-metal path | full control    | full control      | stub + gccgo          | **needs Cosmos/NativeAOT** |
+| Realistic bare-metal path | full control    | full control      | stub + gccgo          | **needs [Cosmos](../../GLOSSARY/cosmos.md "An open-source C# operating-system kit")/[NativeAOT](../../GLOSSARY/nativeaot.md ".NET's ahead-of-time compiler that turns IL into native code")** |
 
 The column that matters is *"Needs a runtime?"*. C++ you met: exceptions and
 RTTI needed a runtime, so you compiled them out with `-fno-exceptions
@@ -58,7 +58,7 @@ and Cosmos *is* that runtime, compiled ahead-of-time to native code.
 
 The beginner-friendly C# path, then, is: **let Cosmos do the bootloader and
 the runtime; write your OS logic in familiar C#.** `ExampleOS.csproj` even
-notes that Cosmos compiles via NativeAOT / IL2CPU — it turns your IL into a
+notes that Cosmos compiles via [NativeAOT](../../GLOSSARY/nativeaot.md ".NET's ahead-of-time compiler that turns IL into native code") / [IL2CPU](../../GLOSSARY/il2cpu.md "Cosmos's original IL-to-x86 compiler") — it turns your IL into a
 bootable, native OS while you keep writing `Console.*`.
 
 ## Step 2 — `Kernel.cs`: a Cosmos kernel, not a hand-rolled one
@@ -134,7 +134,7 @@ each one views raw memory:
   `unsafe` keyword) but is *not* how you work with this language — Cosmos
   gives you `Console` abstractions instead.
 
-That progression *is* the lesson: as the language manages more for you (GC,
+That progression *is* the lesson: as the language manages more for you ([GC](../../GLOSSARY/garbage-collection.md "Automatic memory reclamation used by managed runtimes"),
 safety, runtime), direct hardware I/O moves further from your reach — until,
 with C#, it moves behind a framework.
 
@@ -183,8 +183,8 @@ What was actually verified for this chapter:
 > **Bridge to OS concepts:** C# is the clearest object lesson in **what a
 > runtime actually is and why it's hard** — the exact gap C++ avoided with
 > `-fno-exceptions -fno-rtti`, Go papered over with stubs, and C never had
-> (concepts/02 **memory management**, concepts/01 **bootloaders and
-> Multiboot**). Where the other languages reached the **VGA framebuffer**
+> (concepts/02 **[memory management](../../GLOSSARY/memory-management.md "How a kernel tracks used and free RAM and hands it out safely")**, concepts/01 **bootloaders and
+> [Multiboot](../../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002")**). Where the other languages reached the **[VGA framebuffer](../../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written")**
 > directly (concepts/04), C# delegates that hardware I/O to a framework —
 > which is exactly why, when you *must* control hardware bit-by-bit, you reach
 > for C, and when you just want a working OS quickly, C# + Cosmos wins.

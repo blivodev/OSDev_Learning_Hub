@@ -21,7 +21,7 @@ Press `Ctrl+Shift+Z` (or **View → Extension Manager**) and search for:
 Phoenix Code ships with Git, a built-in Terminal, and Markdown preview out
 of the box, so you can build and run straight from the editor:
 1. Open the **Terminal** panel (View → Terminal).
-2. Run `make run-c` to boot the C kernel in QEMU — you don't need to leave
+2. Run `make run-c` to boot the C [kernel](../../GLOSSARY/kernel.md "The core program that owns the machine and manages hardware") in [QEMU](../../GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing") — you don't need to leave
    the editor.
 
 ## 3. Editor config already in place

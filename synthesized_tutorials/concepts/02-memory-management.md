@@ -3,7 +3,7 @@
 *Original content written for OSDev_Learning_Hub.*
 
 ## In one sentence
-A kernel must keep track of **what memory exists, what's used, and what's free**, and hand it out safely — because unlike a normal program, there's no OS underneath to do it.
+A [kernel](../../GLOSSARY/kernel.md "The core program that owns the machine and manages hardware") must keep track of **what memory exists, what's used, and what's free**, and hand it out safely — because unlike a normal program, there's no OS underneath to do it.
 
 ## The mental model
 
@@ -17,11 +17,11 @@ flowchart TD
     end
 ```
 
-Your very first kernel can ignore memory management (it just writes to screen and halts). But the *moment* you want variables, stacks, or `malloc`, you must build a memory manager. The os01 book and the Phil Opp Rust series both spend serious chapters here for exactly this reason.
+Your very first kernel can ignore [memory management](../../GLOSSARY/memory-management.md "How a kernel tracks used and free RAM and hands it out safely") (it just writes to screen and halts). But the *moment* you want variables, stacks, or `malloc`, you must build a memory manager. The os01 book and the Phil Opp Rust series both spend serious chapters here for exactly this reason.
 
 ## The frame allocator — the simplest memory manager
 
-Real memory is divided into **physical pages** (usually 4 KiB each). A *frame allocator* tracks which pages are free:
+Real memory is divided into **physical pages** (usually 4 KiB each). A *[frame allocator](../../GLOSSARY/frame-allocator.md "The simplest manager that tracks which 4 KiB physical pages are free")* tracks which pages are free:
 
 ```c
 // A super-simplified bitmap allocator (concept only)
@@ -42,7 +42,7 @@ One bit per 4 KiB page. That's the whole idea behind a **buddy allocator** and e
 
 ## Paging — the address translator
 
-Modern CPUs use **paging**: the CPU translates every *virtual address* your kernel's pointers use into a *physical address* of real RAM, using page tables.
+Modern CPUs use [paging](../../GLOSSARY/paging.md "Translates virtual addresses to physical RAM via page tables"): the CPU translates every *virtual address* your kernel's pointers use into a *physical address* of real RAM, using [page tables](../../GLOSSARY/paging.md "Translates virtual addresses to physical RAM via page tables").
 
 ```mermaid
 flowchart LR

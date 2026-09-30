@@ -4,7 +4,7 @@
 verified code in `Example_OS_Project/rust/`.*
 
 ## What you'll have at the end
-A freestanding Rust kernel that prints:
+A [freestanding](../../GLOSSARY/freestanding.md "Code compiled assuming no OS or standard library exists") Rust [kernel](../../GLOSSARY/kernel.md "The core program that owns the machine and manages hardware") that prints:
 ```
 Hello World!
 Welcome to your very own operating system (Rust edition).
@@ -152,7 +152,7 @@ run:  cargo bootimage --target x86_64-unknown-none
       qemu-system-x86_64 -drive format=raw,file=target/x86_64-unknown-none/debug/bootimage-example_os_rust.bin
 ```
 
-1. **`cargo build`** produces the freestanding ELF — **verified on stable**
+1. **`cargo build`** produces the freestanding [ELF](../../GLOSSARY/elf.md "The executable format that lets a bootloader load your kernel") — **verified on stable**
    Rust. This is your kernel.
 2. **A bootable image** needs more: `cargo bootimage` bundles your ELF with
    the `bootloader` crate into a BIOS-bootable raw disk, and that crate
@@ -176,8 +176,8 @@ What was actually verified for this language:
   guarantee), with `-> !` letting the loop be written honestly.
 
 > **Bridge to OS concepts:** Rust's `no_std`/`no_main` are your first real
-> encounter with **what a runtime is and what it assumes** — a bridge to
-> bootloaders and how a kernel is entered (concepts/01) and to **direct
-> hardware I/O** via the VGA framebuffer (concepts/04). The `unsafe` raw
+> **what a runtime is and what it assumes** — a bridge to
+> [bootloaders](../../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it") and how a kernel is entered (concepts/01) and to **direct
+> hardware I/O** via the [VGA framebuffer](../../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written") (concepts/04). The `unsafe` raw
 > pointer, the never-returning `_start`, and the panic handler are Rust
 > spelling out the very rules C lets you swallow silently.

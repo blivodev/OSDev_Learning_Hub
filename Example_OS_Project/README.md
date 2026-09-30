@@ -4,7 +4,7 @@
 
 This is the hands-on half of `OSDev_Learning_Hub`. The theory lives in
 [`synthesized_tutorials/`](../synthesized_tutorials/) — this folder is where
-you actually build and boot a real kernel in [QEMU](https://www.qemu.org/).
+you actually build and boot a real [kernel](../GLOSSARY/kernel.md "The core program that owns the machine and manages hardware") in [QEMU](https://www.qemu.org/).
 
 ```mermaid
 flowchart TD
@@ -54,11 +54,11 @@ Example_OS_Project/
 ## Language status matrix
 | Language | Bootable? | Verified in this hub | Manual step remaining |
 |----------|-----------|----------------------|------------------------|
-| **C**    | ✅ | ✅ **boots in QEMU, prints "Hello World!"** (read back from VGA) | none |
+| **C**    | ✅ | ✅ **boots in [QEMU](../GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing"), prints "Hello World!"** (read back from VGA) | none |
 | **C++**  | ✅ | ✅ **boots in QEMU, prints "Hello World!"** (read back from VGA) | none |
 | **Rust** | ✅ | ✅ compiles as a `no_std` kernel | install nightly + `cargo bootimage`, then `make run` |
-| **Go**   | ⚠️ | ✅ code vets/gofmt-clean | build `i686-elf-gccgo` cross-compiler, then `make run-go` |
-| **C#**   | ⚠️ | ✅ code is a valid Cosmos kernel | install Cosmos + VS2022, then `dotnet build` |
+| **Go**   | ⚠️ | ✅ code vets/gofmt-clean | build `i686-elf-gccgo` [cross-compiler](../GLOSSARY/cross-compiler.md "A compiler that builds code for a different CPU/OS than the one it runs on"), then `make run-go` |
+| **C#**   | ⚠️ | ✅ code is a valid [Cosmos](../GLOSSARY/cosmos.md "An open-source C# operating-system kit") kernel | install Cosmos + VS2022, then `dotnet build` |
 
 > **Why Go and C# aren't fully bootable here:** Go needs a Go-enabled
 > cross-compiler (`gccgo`), and C# needs the Cosmos OS framework — neither

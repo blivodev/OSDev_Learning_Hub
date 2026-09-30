@@ -2,20 +2,20 @@
 
 > This path is the **edge case** documented in the OSDev_Learning_Hub plan:
 > C# has no practical hand-rolled bare-metal path for a beginner, so we
-> use the **Cosmos OS kit** as the framework and explain why.
+> use the [Cosmos OS kit](../../GLOSSARY/cosmos.md "An open-source C# operating-system kit") as the framework and explain why.
 
 ## Why C# is different from C/Rust/Go
 | | C / C++ | Rust | Go | C# |
 |---|---------|------|----|----|
-| Compiles to | native machine code | native machine code | native (via gccgo) | **managed IL** |
+| Compiles to | native machine code | native machine code | native (via gccgo) | **[managed IL](../../GLOSSARY/managed-il.md "The intermediate language C# compiles to, which needs a runtime")** |
 | Needs a runtime? | no (`-ffreestanding`) | no (`no_std`) | minimal (stubs) | **yes — GC + BCL** |
-| Can poke 0xB8000 directly? | yes | yes (`unsafe`) | yes (`unsafe`) | not as a beginner |
-| Realistic bare-metal path | full control | full control | stub + gccgo | **needs Cosmos/NativeAOT** |
+| Can poke [0xB8000](../../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written") directly? | yes | yes (`unsafe`) | yes (`unsafe`) | not as a beginner |
+| Realistic bare-metal path | full control | full control | stub + gccgo | **needs [Cosmos](../../GLOSSARY/cosmos.md "An open-source C# operating-system kit")/[NativeAOT](../../GLOSSARY/nativeaot.md ".NET's ahead-of-time compiler that turns IL into native code")** |
 
 C# targets Microsoft's **.NET runtime**. Bootstrapping that runtime on bare
 metal is a huge engineering project — which is exactly what **Cosmos OS**
 already did. So the beginner-friendly C# path is: *let Cosmos do the
-bootloader + runtime, and write your OS logic in familiar C#.*
+[bootloader](../../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it") + runtime, and write your OS logic in familiar C#.*
 
 ## What's in this folder
 - `Kernel.cs` — a complete Cosmos kernel (BeforeRun + Run lifecycle, with a tiny command loop).

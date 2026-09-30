@@ -4,17 +4,17 @@
 verified code in `Example_OS_Project/c/`.*
 
 ## What you'll have at the end
-A 5 KB kernel that boots in QEMU and prints:
+A 5 KB [kernel](../../GLOSSARY/kernel.md "The core program that owns the machine and manages hardware") that boots in [QEMU](../../GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing") and prints:
 ```
 Hello World!
 Welcome to your very own operating system (C edition).
 ```
 **This is real and verified** — the exact files below booted in QEMU and
-the VGA framebuffer was read back to confirm the text.
+the [VGA framebuffer](../../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written") was read back to confirm the text.
 
 ## Step 1 — `boot.s` (the Multiboot bootstrap)
 Every C bare-metal kernel needs a tiny assembly file to (a) declare the
-Multiboot header so a bootloader recognizes it, and (b) give the CPU a
+[Multiboot](../../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002") header so a [bootloader](../../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it") recognizes it, and (b) give the CPU a
 stack (it has none when it boots). Full file: `c/boot.s`.
 
 The three lines that matter most:
@@ -81,6 +81,6 @@ grub-file --is-x86-multiboot c/kernel.bin   # ✅ VALID Multiboot v1 kernel
 ```
 
 > **Bridge to OS concepts:** you just touched three core OS ideas —
-> **bootloaders/Multiboot** (concepts/01), **memory layout** via the linker
-> script (concepts/02), and **direct hardware I/O** through the VGA
-> framebuffer (concepts/04).
+> **[bootloaders](../../GLOSSARY/bootloader.md "A small program that loads your kernel into memory and jumps to it")/[Multiboot](../../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002")** (concepts/01), **memory layout** via the linker
+> script (concepts/02), and **direct hardware I/O** through the
+> [VGA framebuffer](../../GLOSSARY/vga-framebuffer.md "The memory at 0xB8000 where screen text is written") (concepts/04).

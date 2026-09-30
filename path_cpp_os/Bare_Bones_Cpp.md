@@ -11,7 +11,7 @@ Writing a kernel in C++ is easy, but **not all language features are available**
 - **Exceptions** require special runtime support → usually disabled (`-fno-exceptions`).
 - **Memory allocation / RTTI** need runtime support → disabled (`-fno-rtti`).
 
-The one essential trick: **give `kernel_main` C linkage** with `extern "C"`. Without it, the compiler mangles the symbol name (adds type info), which breaks the call from the assembly stub.
+The one essential trick: **give `kernel_main` [C linkage](../GLOSSARY/extern-c.md "C++ keyword giving a function C linkage so its name isn't mangled")** with `extern "C"`. Without it, the compiler mangles the symbol name (adds type info), which breaks the call from the assembly stub.
 
 ```cpp
 #include <stdint.h>
@@ -48,13 +48,13 @@ Save as `kernel.c++`.
 i686-elf-g++ -c kernel.c++ -o kernel.o -ffreestanding -O2 -Wall -Wextra -fno-exceptions -fno-rtti
 ```
 
-(`g++` instead of `gcc`, plus `-fno-exceptions -fno-rtti` for a freestanding C++ kernel.)
+(`g++` instead of `gcc`, plus `-fno-exceptions -fno-rtti` for a [freestanding](../GLOSSARY/freestanding.md "Code compiled assuming no OS or standard library exists") C++ kernel.)
 
-The bootstrap assembly (`boot.s`), linker script, and QEMU test are identical to the C Bare Bones tutorial — see `path_c_os/Bare_Bones_C.md`.
+The bootstrap assembly (`boot.s`), [linker](../GLOSSARY/linker.md "Merges object files into one image at a chosen address") script, and [QEMU](../GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing") test are identical to the C Bare Bones tutorial — see `path_c_os/Bare_Bones_C.md`.
 
 ---
 
 ## Key takeaways (beginner)
 1. **`extern "C"`** on the entry point — avoids C++ name mangling.
 2. **`-ffreestanding -fno-exceptions -fno-rtti`** — you can't use the parts of C++ that need a runtime.
-3. Everything else (Multiboot, `0xB8000`, 1 MiB link origin) is the same as C.
+3. Everything else ([Multiboot](../GLOSSARY/multiboot.md "The protocol that lets a bootloader load any kernel; magic 0x1BADB002"), `0xB8000`, 1 MiB link origin) is the same as C.

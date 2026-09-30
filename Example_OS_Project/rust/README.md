@@ -1,10 +1,10 @@
 # Rust kernel — build & run
 
-A minimal `no_std` "Hello World!" kernel following the **Writing an OS in
+A minimal `no_std` "Hello World!" [kernel](../../GLOSSARY/kernel.md "The core program that owns the machine and manages hardware") following the **Writing an OS in
 Rust** series (os.phil-opp.com).
 
 ## Status
-- ✅ **Kernel compiles** as a freestanding `no_std` binary (verified).
+- ✅ **Kernel compiles** as a [freestanding](../../GLOSSARY/freestanding.md "Code compiled assuming no OS or standard library exists") `no_std` binary (verified).
 - 🔧 **Bootable image**: produced with the `bootloader` crate, which needs a
   **nightly** toolchain + `cargo bootimage` (see below). The kernel source
   is complete; only the bootable-image assembly tool is nightly-only.

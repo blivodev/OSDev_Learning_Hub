@@ -22,27 +22,27 @@ flowchart LR
 
 | Tool | What it does | Why you need it |
 |------|--------------|-----------------|
-| **Assembler** (NASM / GNU `as`) | Turns `boot.s` assembly into machine-code object files | You write 30-50 lines of assembly for the boot entry + Multiboot header |
+| **[Assembler](../../GLOSSARY/assembler.md "Turns assembly language into machine-code object files")** (NASM / GNU `as`) | Turns `boot.s` assembly into machine-code object files | You write 30-50 lines of assembly for the boot entry + Multiboot header |
 | **Compiler** (`gcc` / `g++` / `rustc` / `gccgo` / `dotnet`) | Turns high-level source into assembly/object files | Your kernel's real logic lives in a high-level language |
-| **Linker** (`ld`) | Glues object files into one kernel image at a chosen address | You control *where* the kernel loads (1 MiB) via a **linker script** |
-| **Emulator** (QEMU) | Runs your kernel like a real PC, but safely | You can't test on real hardware every minute; QEMU boots instantly |
+| **[Linker](../../GLOSSARY/linker.md "Merges object files into one image at a chosen address")** (`ld`) | Glues object files into one kernel image at a chosen address | You control *where* the kernel loads (1 MiB) via a **[linker script](../../GLOSSARY/linker.md "Merges object files into one image at a chosen address")** |
+| **Emulator** ([QEMU](../../GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing")) | Runs your kernel like a real PC, but safely | You can't test on real hardware every minute; QEMU boots instantly |
 
 ---
 
 ## 1. The assembler — because the boot story is assembly
 
-The CPU's very first steps are raw and simple, which is why the entry point is written in **assembly** — even in the Rust and C++ tutorials. Assembly lets you:
+The CPU's very first steps are raw and simple, which is why the [entry point](../../GLOSSARY/entry-point.md "The symbol (usually _start) the bootloader jumps to") is written in **assembly** — even in the Rust and C++ tutorials. Assembly lets you:
 - emit the Multiboot header bytes exactly,
 - set up a stack pointer,
 - call the high-level `_start`/`main` function.
 
-You don't need to become an assembly wizard. You need *one* boilerplate file, and this hub gives it to you commented. Video-game-era reality: the CPU starts in **16-bit real mode** with no stack, so the very first instructions are about getting a stack and jumping to your compiled code.
+You don't need to become an assembly wizard. You need *one* boilerplate file, and this hub gives it to you commented. Video-game-era reality: the CPU starts in **16-bit [real mode](../../GLOSSARY/real-mode.md "The 16-bit CPU mode x86 starts in, with no memory protection")** with no stack, so the very first instructions are about getting a stack and jumping to your compiled code.
 
 ## 2. The compiler — freestanding vs hosted
 
 Here's the concept that ties *all five languages* together:
 
-> A normal program is **hosted**: it assumes an OS + standard library exist. A kernel is **freestanding**: it assumes *nothing*.
+> A normal program is **[hosted](../../GLOSSARY/hosted.md "A normal program that assumes an OS and libc exist underneath")**: it assumes an OS + standard library exist. A kernel is **[freestanding](../../GLOSSARY/freestanding.md "Code compiled assuming no OS or standard library exists")**: it assumes *nothing*.
 
 Compare:
 
@@ -124,6 +124,6 @@ ld -T linker.ld -o myos.bin boot.o kernel.o    # link into one image
 qemu-system-i386 -kernel myos.bin              # boot it!
 ```
 
-That's the entire core loop. Everything else — Makefiles, ISO generation, cross-compilers — is polish on top of these four commands.
+That's the entire core loop. Everything else — Makefiles, ISO generation, [cross-compilers](../../GLOSSARY/cross-compiler.md "A compiler that builds code for a different CPU/OS than the one it runs on") — is polish on top of these four commands.
 
 > **Next:** the shared concept chapters in [`../concepts/`](../concepts/).

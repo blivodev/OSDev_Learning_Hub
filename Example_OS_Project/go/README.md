@@ -1,12 +1,12 @@
 # Go kernel — build & run
 
-The Go kernel cannot be built with the **standard** `go build` toolchain —
+The Go [kernel](../../GLOSSARY/kernel.md "The core program that owns the machine and manages hardware") cannot be built with the **standard** `go build` toolchain —
 Go's runtime was not designed for bare metal. It requires a **Go-enabled
-cross-compiler** (`i686-elf-gccgo`), built from GCC source.
+[cross-compiler](../../GLOSSARY/cross-compiler.md "A compiler that builds code for a different CPU/OS than the one it runs on")** (`i686-elf-gccgo`), built from GCC source.
 
 ## Why the cross-compiler is unavoidable
 The OSDev "Go Bare Bones" tutorial's key insight: standard Go links a full
-runtime (GC, goroutines, `runtime` package) that needs an OS. A freestanding
+runtime (GC, goroutines, `runtime` package) that needs an OS. A [freestanding](../../GLOSSARY/freestanding.md "Code compiled assuming no OS or standard library exists")
 kernel uses `gccgo` with `-nostdlib` and **disables that runtime**, providing
 only the empty stub symbols (`__go_register_gc_roots`, `__go_runtime_error`)
 that the toolchain still expects — see `boot.s`.
