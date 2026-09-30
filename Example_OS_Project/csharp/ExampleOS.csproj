@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Example_OS_Project C# kernel — Cosmos-style project file.
+
+    In the real Cosmos DevKit, this .csproj references the Cosmos packages
+    and specific settings. This file is the *shape* of a Cosmos C# kernel
+    project so a beginner can see exactly what a C# OS project looks like.
+  -->
+
+  <PropertyGroup>
+    <!-- Cosmos targets are enabled via the DevKit. -->
+    <TargetFramework>net8.0</TargetFramework>
+    <!-- Suppress the "no Main" warning: Cosmos uses Kernel.Run(), not Main(). -->
+    <StartupObject>Kernel</StartupObject>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <!--
+    In the real Cosmos template these two PackageReferences are present:
+      <PackageReference Include="Cosmos.System" Version="..." />
+      <PackageReference Include="Cosmos.Build" Version="..." />
+    (They resolve from the Cosmos local feeds you get by installing the
+    DevKit — see docs/setup.md.)
+  -->
+
+</Project>

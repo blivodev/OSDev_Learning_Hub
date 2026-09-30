@@ -1,0 +1,7 @@
+# An optional nightly pin for the bootloader-based bootable-image step
+# (see Makefile's `run` target). The KERNEL itself builds fine on stable
+# with the x86_64-unknown-none target.
+[toolchain]
+channel = "stable"
+targets = ["x86_64-unknown-none"]
+components = ["rust-src", "llvm-tools"]

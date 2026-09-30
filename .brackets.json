@@ -1,0 +1,25 @@
+{
+  "language": {
+    ".c": "cpp",
+    ".c++": "cpp",
+    ".cpp": "cpp",
+    ".cxx": "cpp",
+    ".s": "assembly",
+    ".asm": "assembly",
+    ".rs": "rust",
+    ".go": "golang"
+  },
+  "spaceUnits": 4,
+  "showLineNumbers": true,
+  "linting.enabled": true,
+  "markdownPreview": true,
+  "brackets-file-exclude": [
+    "**/node_modules/**",
+    "**/target/**",
+    "**/build/**",
+    "**/*.o",
+    "**/*.bin",
+    "**/*.iso",
+    "**/*.qcow2"
+  ]
+}
