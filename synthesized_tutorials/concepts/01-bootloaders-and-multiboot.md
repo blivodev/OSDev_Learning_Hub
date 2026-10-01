@@ -19,6 +19,12 @@ sequenceDiagram
     Note over K: Kernel owns the machine now
 ```
 
+The whole handoff, as one chain of control passing from firmware to your kernel:
+
+![Boot chain](images/boot-chain.svg)
+
+*The boot chain: firmware → Stage 1 (MBR) → Stage 2 (GRUB) → your kernel's `_start`.*
+
 ## The Multiboot header — 12 bytes that change everything
 
 The header is a fixed 12-byte structure at the very start of the kernel image:

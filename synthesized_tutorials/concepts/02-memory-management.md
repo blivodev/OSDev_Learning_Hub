@@ -50,6 +50,12 @@ flowchart LR
     PT --> B[Physical addr in RAM]
 ```
 
+The translation visualized against the full address spaces:
+
+![Virtual to physical address map](images/addr-map.svg)
+
+*Page tables bridge your kernel's high virtual address (top-left) down to its physical frame in real RAM (right), with the low half for user processes.*
+
 Why it matters:
 - **Isolation:** each process thinks it owns the whole address space.
 - **Protection:** mark pages read-only / no-execute to stop bugs and attacks.

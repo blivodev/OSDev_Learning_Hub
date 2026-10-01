@@ -43,6 +43,12 @@ color byte:
  bits 3 2 1 0   = foreground
 ```
 
+Here's how the memory at `0xB8000` maps onto the grid of cells on screen:
+
+![VGA text framebuffer layout](images/vga-framebuffer.svg)
+
+*VGA text memory starts at `0xB8000`; every 2 bytes form one cell (character + color), laid out across an 80×25 grid.*
+
 ## The universal "Hello World" driver
 
 Here's the same 20-line [VGA terminal driver](../../GLOSSARY/vga-text-mode.md "The 80x25 character display mode a minimal kernel writes to") in C. **Every** language version in this hub builds the same logic — only the syntax differs:

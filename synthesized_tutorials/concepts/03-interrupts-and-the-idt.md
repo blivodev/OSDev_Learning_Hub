@@ -22,6 +22,12 @@ sequenceDiagram
     C-->>H: resumes what it was doing
 ```
 
+The same flow from hardware all the way to your handler:
+
+![Interrupt flow through the IDT](images/idt-irq.svg)
+
+*Hardware raises an IRQ → the PIC routes it to an interrupt number → the CPU looks it up in the IDT and jumps to your ISR, which returns via `iret`.*
+
 ## The pieces you set up
 
 1. **The IDT** — an array of descriptors telling the CPU where each handler lives.
