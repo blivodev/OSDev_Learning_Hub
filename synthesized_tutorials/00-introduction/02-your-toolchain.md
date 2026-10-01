@@ -150,3 +150,29 @@ That's the entire core loop. Everything else — Makefiles, ISO generation, [cro
 <iframe src="https://www.youtube-nocookie.com/embed/nhXevKMm3JI" title="How CPUs Do Math(s)" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p class=video-caption>Matt Godbolt shows how the CPU executes arithmetic at the gate level, tying together all the tools in your toolchain.</p>
 </details>
+<details class="video-embed">
+<summary>▶ Watch: How the C++ Linker Works</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/H4s55GgAg0I" title="How the C++ Linker Works" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>The Cherno covers the third pillar of this chapter: how the linker merges object files into one binary and places your entry point — exactly what controls where your kernel loads.</p>
+</details>
+
+**More toolchain picks**
+- ▶ [Machine Code Explained (Computerphile)](https://www.youtube-nocookie.com/embed/8VsiYWW9r48) — already above; the ground truth for what all four tools ultimately produce.
+- The commands at the top of this chapter are all you need — [`Writing an OS in Rust — A Freestanding Rust Binary`](https://os.phil-opp.com/freestanding-rust-binary/) shows the same four pillars in a language without `-ffreestanding` style flags.
+
+---
+
+## Further reading
+
+- [OSDev Wiki — GCC Cross-Compiler](https://wiki.osdev.org/GCC_Cross-Compiler) — the toolchain page par excellence; why you eventually want a compiler that targets your kernel's CPU, not your host.
+- [OSDev Wiki — Bare Bones](https://wiki.osdev.org/Bare_Bones) — the full `nasm → gcc → ld → qemu` sequence applied to an actual kernel.
+- [OSDev Wiki — Tutorials](https://wiki.osdev.org/Tutorials) — every environment/setup guide in one place, including toolchain prerequisites.
+- [Writing an OS in Rust — A Freestanding Rust Binary](https://os.phil-opp.com/freestanding-rust-binary/) — what "freestanding" really means, with a concrete build.
+- [nanobyte-dev/nanobyte_os (GitHub)](https://github.com/nanobyte-dev/nanobyte_os) — a real OS project whose build scripts download and compile their own GCC toolchain, as this chapter describes.
+
+---
+
+## Two traps beginners hit here
+
+1. **A host GCC vs a cross-compiler.** On a 32-bit machine a host GCC usually just works; on 64-bit it can silently produce 64-bit objects that won't boot as a Multiboot kernel — use `-m32` / `-ffreestanding` today, and plan for a real [cross-compiler](https://wiki.osdev.org/GCC_Cross-Compiler) later.
+2. **Ordering in the linker script.** The `.multiboot` section must be *first* in the output, or the magic number isn't at the front of the file and GRUB can't find your header. Reorder sections, and always re-check with `readelf`/`objdump` after linking.

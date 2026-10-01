@@ -115,3 +115,35 @@ For learning, **BIOS + GRUB/Multiboot** (or the Rust `bootloader` crate) is the 
 <iframe src="https://www.youtube-nocookie.com/embed/E_n0VtGSZQY" title="OS development 101 - How to make a bootloader part 1 - Hello World" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p class=video-caption>Low Level Learning covers what happens at PC startup and real mode before writing bootable code.</p>
 </details>
+<details class="video-embed">
+<summary>▶ Watch: BIOS and UEFI As Fast As Possible</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/zIYkol851dU" title="BIOS and UEFI As Fast As Possible" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Techquickie contrasts the two firmware worlds this chapter diagrams — old BIOS vs modern UEFI — in a few minutes.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: BIOS and UEFI Explained: How Your Computer Boots Up</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/DfnhkWsFjyY" title="BIOS and UEFI Explained: How Your Computer Boots Up" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>A friendly walkthrough of pressing power, POST, firmware finding a bootloader, and the handoff to the OS.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: OS Development - Low-level Boot-Sector Programming (1/9)</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/YvZhgRO7hL4" title="OS Development: Low-level Boot-Sector Programming (1/9)" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Shows the step *between* firmware and kernel: what a boot sector does before it hands control to your code.</p>
+</details>
+
+---
+
+## Further reading
+
+- [OSDev Wiki — Boot Sequence](https://wiki.osdev.org/Boot_Sequence) — POST, the master boot record, early environment, and kernel loading, all in detail.
+- [OSDev Wiki — Expanded Main Page](https://wiki.osdev.org/Expanded_Main_Page) — the start of the wiki covering every stage after the machine turns on.
+- [OSDev Wiki — Protected Mode](https://wiki.osdev.org/Protected_Mode) — the 32-bit mode BIOS-era kernels enter after 16-bit real mode.
+- [OSDev Wiki — Setting Up Long Mode](https://wiki.osdev.org/Setting_Up_Long_Mode) — reaching 64-bit mode, which modern UEFI boot paths require.
+- [OSDev Wiki — Multiboot](https://wiki.osdev.org/Multiboot) — the "hello" handshake your kernel uses so a bootloader can load it.
+- [Nick Blundell — *Writing a Simple Operating System from Scratch* (PDF)](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf) — chapter one walks precisely this power-on-to-bootloader story in real mode.
+
+---
+
+## One mental model that helps
+
+Think of the boot chain as a relay race with four handheld-off: **firmware →** (finds a bootable disk) **→ bootloader →** (loads your kernel at 1 MiB) **→ kernel →** (writes to `0xB8000`). Your job in every chapter of this hub is one leg of that relay: produce a kernel the bootloader can find. The "1 MiB" detail is just *where* the handoff happens — everything before it is the bootloader's problem, not yours.

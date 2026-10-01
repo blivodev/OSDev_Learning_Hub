@@ -88,3 +88,24 @@ You are **not** writing a bootloader — you're writing the kernel. That's an en
 <iframe src="https://www.youtube-nocookie.com/embed/qr8d7bZLPHg" title="Building an OS - 7 - Finishing the bootloader, migrating to GCC" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p class=video-caption>Nanobyte rounds out the bootloader and hands off to a compiled kernel, the same job GRUB/Multiboot loaders automate.</p>
 </details>
+<details class="video-embed">
+<summary>▶ Watch: How to make an operating system from scratch (part 1)</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/rr-9w2gITDM" title="1 - How to make an operating system from scratch" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>A complete from-scratch build: assemble the multiboot entry stub, compile a C kernel, and boot it in QEMU — the exact recipe this concept describes.</p>
+</details>
+
+**More bootloader picks**
+- ▶ [OS Development: Low-level Boot-Sector Programming (1/9)](https://www.youtube-nocookie.com/embed/YvZhgRO7hL4) starts one level below Multiboot, writing raw boot-sector code that GRUB would otherwise handle.
+- ▶ [BIOS and UEFI As Fast As Possible](https://www.youtube-nocookie.com/embed/zIYkol851dU) grounds you in the firmware that hands control to any bootloader.
+
+---
+
+## Further reading
+
+- [OSDev Wiki — Bare Bones](https://wiki.osdev.org/Bare_Bones) — the canonical first kernel tutorial; it is literally this concept in practice.
+- [OSDev Wiki — Multiboot](https://wiki.osdev.org/Multiboot) — how the header you wrote is interpreted by loaders.
+- [The Multiboot Specification (GNU/GRUB)](https://www.gnu.org/software/grub/manual/multiboot/multiboot.html) — the authoritative spec behind magic `0x1BADB002`.
+- [OSDev Wiki — Rolling Your Own Bootloader](https://wiki.osdev.org/Rolling_Your_Own_Bootloader) — what a bootloader actually does, if you ever want to write one by hand.
+- [OSDev Wiki — Bootloader](https://wiki.osdev.org/Bootloader) — bootloader theory: single vs two-stage design.
+- [*Making an OS (x86)* by Daedalus Community](https://github.com/davidcallanan/os-series) — a complete boot-to-kernel series with source.
+- [Nick Blundell — *Writing a Simple Operating System from Scratch* (PDF)](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf) — the classic free lecture notes; boots straight into this material.

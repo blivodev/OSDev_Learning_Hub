@@ -105,3 +105,27 @@ If that works, **you have written an operating system.** Everything from here �
 <iframe src="https://www.youtube-nocookie.com/embed/9t-SPTC7Tczc" title="Building an OS - 1 - Hello world" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p class=video-caption>Nanobyte's complete from-scratch hello-world OS: assemble, boot it from a floppy, see it run.</p>
 </details>
+<details class="video-embed">
+<summary>▶ Watch: Making an OS (x86) Chapter 1 - CPU, Assembly, Booting</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/MwPjvJ9ulSc" title="Making an OS (x86) Chapter 1 - CPU, Assembly, Booting" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Daedalus Community's first chapter: CPU basics, the assembly bootstrap stub, and booting — mirroring steps 1-5 of this recipe exactly.</p>
+</details>
+
+**More picks for the recipe**
+- The five language walkthroughs elsewhere in this hub *are* this chapter applied; any "bare bones" tutorial in any language follows the same five steps above.
+
+---
+
+## Further reading
+
+- [OSDev Wiki — Bare Bones](https://wiki.osdev.org/Bare_Bones) — the reference implementation of this exact five-step recipe in C + NASM.
+- [OSDev Wiki — Expanded Main Page](https://wiki.osdev.org/Expanded_Main_Page) — the hub of all OS-dev wiki resources, for whatever you tackle next.
+- [Writing an OS in Rust — A Minimal Rust Kernel](https://os.phil-opp.com/minimal-rust-kernel/) — the same five steps, done in Rust.
+- [*Making an OS (x86)* by Daedalus Community (os-series)](https://github.com/davidcallanan/os-series) — a full build-your-own-OS playlist with source code.
+- [Nick Blundell — *Writing a Simple Operating System from Scratch* (PDF)](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf) — free lecture notes that walk exactly this recipe from the real mode boot sector up.
+
+---
+
+## Why it's the same in every language (a reminder)
+
+The five steps here are the *why* behind the "language-agnostic" claim. C, C++, Rust, Go, and C# all still need: an assembly bootstrap, a Multiboot header, a stack, a call into your kernel, and a write to `0xB8000`. The only real difference is *where* the assembly lives — a hand-written `boot.s` in C/C++/Go, a bundled `bootloader` crate in Rust, or a managed boot path in Cosmos. Learn the five steps once and you can read any of them.

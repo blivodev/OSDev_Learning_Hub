@@ -21,6 +21,11 @@ is free, public, and verified. Use it like a bookmark bar — pick a category, d
 | 🎯 **By language — C#** | C# + .NET internals + Cosmos | [language-csharp.md](language-csharp.md) |
 | ⚙️ **Computer Architecture** | CPU, assembly, memory, hardware manuals, courses | [computer-architecture.md](computer-architecture.md) |
 | 🧩 **Systems Programming** | Linkers, ELF, concurrency, debuggers, virtual memory | [systems-programming.md](systems-programming.md) |
+| 🦿 **RISC-V** | ISA spec, bare-metal OS-dev, QEMU, boards, toolchains | [riscv.md](riscv.md) |
+| 🧭 **Other Architectures** | AVR (Arduino), Xtensa (ESP32), ARM, MIPS, OpenRISC | [architectures.md](architectures.md) |
+| 🛠️ **Tooling & Toolchains** | Build systems, linkers, debuggers, emulators, CI | [tooling.md](tooling.md) |
+| 🏗️ **Practice & Projects** | Hands-on builds, CTF, "build your own" repos | [practice.md](practice.md) |
+| 📈 **Learn by Difficulty** | Beginner → Very Hard ladder for all tutorials/books/videos | [learn-by-difficulty.md](learn-by-difficulty.md) |
 | 🎬 **Videos** | YouTube channels, series & playlists (OS dev + languages + architecture) | [videos.md](videos.md) |
 | 💬 **Communities** | Forums, Discord, subreddits, mail lists, IRC | [communities.md](communities.md) |
 
@@ -29,11 +34,13 @@ is free, public, and verified. Use it like a bookmark bar — pick a category, d
 ## Suggested reading order (bookmarks first)
 
 1. **You are here** → this index. Save these pages wherever you keep bookmarks.
-2. New to OS dev? Start with [OS Development](os-development.md) → the wikis & "from zero" series.
-3. Pick a language, then its language page (C / C++ / Rust / Go / C#).
-4. Brush up the hardware side in [Computer Architecture](computer-architecture.md).
-5. When a concept bites (linkers, paging, interrupts), open [Systems Programming](systems-programming.md).
-6. Learn by watching in [Videos](videos.md). Get involved in [Communities](communities.md).
+2. Not sure where you fit? Use the [Learn by Difficulty](learn-by-difficulty.md) ladder (Beginner → Very Hard).
+3. New to OS dev? Start with [OS Development](os-development.md) → the wikis & "from zero" series.
+4. Pick a language, then its language page (C / C++ / Rust / Go / C#).
+5. Brush up the hardware side in [Computer Architecture](computer-architecture.md), or the [RISC-V](riscv.md) / [other architectures](architectures.md) pages.
+6. When a concept bites (linkers, paging, interrupts), open [Systems Programming](systems-programming.md).
+7. Ready to do instead of read? See [Practice & Projects](practice.md).
+8. Learn by watching in [Videos](videos.md). Get involved in [Communities](communities.md).
 
 ---
 

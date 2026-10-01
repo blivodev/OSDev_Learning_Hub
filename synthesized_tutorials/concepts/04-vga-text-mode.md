@@ -106,3 +106,27 @@ That's it. That is literally all a "Hello World" OS does — but it's the *proof
 <iframe src="https://www.youtube-nocookie.com/embed/dG8PV6xqm4s" title="Building an OS - 5 - How to implement printf" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p class=video-caption>Nanobyte builds a `printf` that writes formatted text to the screen, a gateway to real VGA text output.</p>
 </details>
+<details class="video-embed">
+<summary>▶ Watch: How to make an operating system from scratch (part 1)</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/rr-9w2gITDM" title="1 - How to make an operating system from scratch" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Writes colored characters straight to memory and boots them — the same "Hello World" flow, with a colored-character twist that shows off the VGA color byte.</p>
+</details>
+
+**More VGA picks**
+- ▶ [How VGA Works (Tech Tangents)](https://www.youtube-nocookie.com/embed/5exFKr-JJtg) — already above; revisit it once you want to go past text mode into graphics/pixel modes.
+
+---
+
+## Further reading
+
+- [OSDev Wiki — VGA Hardware](https://wiki.osdev.org/VGA_Hardware) — the full hardware behind `0xB8000`, ports, and modes.
+- [OSDev Wiki — Text Mode Cursor](https://wiki.osdev.org/Text_Mode_Cursor) — how to move and show the blinking cursor in text mode.
+- [OSDev Wiki — Printing To Screen](https://wiki.osdev.org/Printing_To_Screen) — a short, concrete walkthrough of writing to VGA text memory.
+- [Writing an OS in Rust — VGA Text Mode](https://os.phil-opp.com/vga-text-mode/) — a clean, buffer-typed implementation of the identical driver in a different language.
+- [OSDev Wiki — Bare Bones](https://wiki.osdev.org/Bare_Bones) — the minimal kernel whose only visible output is this VGA "Hello World".
+
+---
+
+## A quick note on the color byte
+
+The `0x0F` in `vga[0] = 0x0F48` packs two things: background (upper nibble, `0`) and foreground (lower nibble, `F` for bright white). Mix in the blink bit (bit 7) and you have 16 foreground × 8 background × 2 blink combinations — more than enough to make your first OS look alive. Try `0x1F` for blue-on-white or `0x2A` for green-on-light-green and watch the screen change.

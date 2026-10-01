@@ -84,3 +84,28 @@ __asm__ volatile("sti");   // enable interrupts
 <iframe src="https://www.youtube-nocookie.com/embed/FD48Lx7Rnx0" title="Building an OS - 10 - Hardware interrupts, PIC" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p class=video-caption>Nanobyte implements a driver for the 8259 PIC and handles real hardware interrupts.</p>
 </details>
+<details class="video-embed">
+<summary>▶ Watch: Write your own Operating System 5: Interrupts</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/AgeX-U4dKSs" title="Write your own Operating System 5: Interrupts" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Builds an IDT, registers keyboard and timer handlers, and programs the PIC remap — a complete, tiny implementation of everything on this page.</p>
+</details>
+
+**More interrupt picks**
+- ▶ [CPU Interrupts (Computerphile)](https://www.youtube-nocookie.com/embed/tGMSARJk7cA) — the simple "robot stops everything to answer the door" intuition for how the CPU switches context.
+
+---
+
+## Further reading
+
+- [OSDev Wiki — Interrupts](https://wiki.osdev.org/Interrupts) — the overview of CPU exceptions vs hardware IRQs vs software interrupts.
+- [OSDev Wiki — Interrupt Descriptor Table](https://wiki.osdev.org/Interrupt_Descriptor_Table) — the exact structure of the table and every entry.
+- [OSDev Wiki — Interrupts Tutorial](https://wiki.osdev.org/Interrupts_tutorial) — a step-by-step "set up an IDT and enable interrupts" guide.
+- [OSDev Wiki — PIC](https://wiki.osdev.org/PIC) — the chip that routes hardware interrupts to the CPU.
+- [OSDev Wiki — 8259 PIC](https://wiki.osdev.org/8259_PIC) — technical detail on the legacy interrupt controller and its remap.
+- [Writing an OS in Rust — CPU Exceptions](https://os.phil-opp.com/cpu-exceptions/) — how a modern kernel registers handlers for the 256 IDT slots (Rust).
+
+---
+
+## A tip for when you implement it
+
+The bug that trips up most first-time IDT builders: **the PIC must be remapped** (offset 0-7 → 32-39) before you enable interrupts, or the first hardware interrupt collides with a CPU exception vector. The `sti` instruction enables interrupts globally, but no interrupts arrive until you've also told the PIC which vectors to use. Watch for that in both the Nanobyte and os-series implementations above.

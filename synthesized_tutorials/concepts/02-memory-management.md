@@ -89,3 +89,30 @@ The language doesn't matter here — you'll write the same page-table code in C,
 <iframe src="https://www.youtube-nocookie.com/embed/ioJkA7Mw2-U" title="WHY IS THE HEAP SO SLOW?" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p class=video-caption>Core Dumped explains how an operating system allocates dynamic memory and why it costs a system call.</p>
 </details>
+<details class="video-embed">
+<summary>▶ Watch: What's Virtual Memory? - Computerphile</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/5lFnKYCZT5o" title="What's Virtual Memory? - Computerphile" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>Dr Steve Bagley explains virtual memory, page tables, and how the MMU translates addresses — the exact "paging" ideas your kernel will implement.</p>
+</details>
+<details class="video-embed">
+<summary>▶ Watch: Memory Mapping - Computerphile</summary>
+<iframe src="https://www.youtube-nocookie.com/embed/di5WodGWTiY" title="Memory Mapping - Computerphile" width="100%" height="400" style="border:0;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p class=video-caption>A friendly, robot-and-"bouncer" analogy for how pages give each program its own view of memory — the reason paging exists.</p>
+</details>
+
+---
+
+## Further reading
+
+- [OSDev Wiki — Memory Management](https://wiki.osdev.org/Memory_Management) — the whole topic map: frames, paging, heap, and more.
+- [OSDev Wiki — Paging](https://wiki.osdev.org/Paging) — how virtual addresses become physical via page tables.
+- [OSDev Wiki — Setting Up Paging](https://wiki.osdev.org/Setting_Up_Paging) — the concrete page-table code for when you're ready to write it.
+- [OSDev Wiki — Page Frame Allocation](https://wiki.osdev.org/Page_Frame_Allocation) — the bitmap/buddy allocators behind the "one bit per page" idea here.
+- [OSDev Wiki — Detecting Memory (x86)](https://wiki.osdev.org/Detecting_Memory_(x86)) — where your kernel learns how much RAM actually exists (the Multiboot memory map).
+- [Writing an OS in Rust — Paging Introduction](https://os.phil-opp.com/paging-introduction/) — a clear walkthrough of a real page-table setup with code.
+
+---
+
+## A note on the heap (light add-on)
+
+The `malloc`-style heap your normal programs take for granted is actually built *on top of* paging plus a frame allocator. A kernel's heap is just a region of virtual pages that the kernel's own allocator hands out in small chunks. So the roadmap is: **frame allocator → paging → heap**. Don't try to skip ahead to `malloc` until the first two work — almost every OS-dev gotcha lives in that gap.
