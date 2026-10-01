@@ -162,6 +162,43 @@ A long, categorized, verified list of free OS-development material: wikis, from-
 - [MIT 6.S081 / xv6 talk material via the course](https://pdos.csail.mit.edu/6.828/) — lecture videos & labs for a full OS course.
 - [ops-class live lecture videos](https://www.ops-class.org/) — recorded, self-paced OS lectures.
 
+## Linux kernel internals (deep-dive resources)
+
+- [Linux Kernel Newbies](https://kernelnewbies.org/) — a community wiki for aspiring kernel developers: tutorials, a first-patch guide, a kernel glossary, and subsystem documentation.
+- [Kernelnewbies — LinuxChanges](https://kernelnewbies.org/LinuxChanges) — a human-readable changelog of what is new in every Linux kernel release.
+- [Kernelnewbies — First Kernel Patch](https://kernelnewbies.org/FirstKernelPatch) — the canonical step-by-step "how to get your first patch merged" tutorial.
+- [Lore — the Linux kernel mailing list archive](https://lore.kernel.org/lkml/) — the modern web + NNTP archive of every LKML message; read kernel code review as it happens.
+- [The Linux Kernel Documentation (docs.kernel.org)](https://docs.kernel.org/) — the generated, always-current API and subsystem docs (a fuller index than the HTML "latest" mirror).
+- [Linux Kernel docs — Locking](https://www.kernel.org/doc/html/latest/locking/index.html) — how the real kernel does concurrency: spinlocks, mutexes, rcu, semaphores, and lock ordering rules.
+- [Linux Kernel docs — Core Kernel API](https://www.kernel.org/doc/html/latest/core-api/index.html) — the core API reference (memory allocation, workqueues, printing, kobject) every driver/kernel author uses.
+- [Linux Kernel docs — License & Process rules](https://www.kernel.org/doc/html/latest/process/license-rules.html) — how kernel licensing works and the contribution process (DCO, subsystem maintainers).
+- [Bootlin — Linux kernel & driver development course (free PDF slides)](https://bootlin.com/doc/training/linux-kernel/) — a complete, free, self-paced training course covering kernel interfaces, memory management, and driver fundamentals.
+- [Bootlin — Embedded Linux system development course](https://bootlin.com/doc/training/embedded-linux/) — free course material on bootloaders, kernel configuration, cross-compilation, and device trees.
+- [LWN.net — Kernel section](https://lwn.net/Kernel/) — LWN's kernel coverage: merge-window summaries and technical writeups of the latest kernel changes. (Weekly edition is reader-supported.)
+- [Memfault Blog](https://www.memfault.com/blog) — a high-quality embedded/systems engineering blog; the "Interrupt" series (see the systems page) covers boot, linkers, and low-level debugging deeply.
+
+## OS-dev blogs & newsletters
+
+- [Interrupt — Memfault's engineering blog](https://interrupt.memfault.com/) — practical firmware/OS-dev posts: bootloaders, linker scripts, startup code, and debugging, all with working code.
+- [Interrupt — "Zero to main()"](https://interrupt.memfault.com/blog/zero-to-main-1) — a famous deep dive into what actually runs before `main()` on an embedded target (reset, vector table, .data/.bss, stack setup).
+- [Interrupt — How to write a bootloader from scratch](https://interrupt.memfault.com/blog/how-to-write-a-bootloader-from-scratch) — a grounded walkthrough of a real (non-x86) bootloader, useful conceptually for any architecture.
+- [Interrupt — How to write linker scripts for firmware](https://interrupt.memfault.com/blog/how-to-write-linker-scripts-for-firmware) — the clearest practical explanation of GNU ld linker scripts (MEMORY, SECTIONS, symbols) — essential for placing a kernel.
+- [cpu.land](https://cpu.land/) — a modern, friendly, visual guide to how a CPU actually executes code (smol bare-metal experiments in a browser VM). Great warm-up before real OSdev.
+- [book-os.org](https://book-os.org/) — an open collaborative book on operating-system engineering with practical from-scratch projects.
+
+## More "OS from scratch" series & projects (incl. UEFI / other ISAs)
+
+- [MikanOS — uchan-nos/mikanos](https://github.com/uchan-nos/mikanos) — a complete educational UEFI-based 64-bit kernel (bootloader + kernel) with the celebrated Japanese book "Zero kara Wakaru OS Jisaku Nyumon" (ゼロからのOS自作入門).
+- [MikanOS companion book — zero.osdev.jp](https://zero.osdev.jp/) — the free homepage for the book that builds MikanOS step by step (UEFI, paging, keyboard, graphics).
+- [Core OS (skyzh) — a tiny RISC-V OS & teaching repo](https://github.com/skyzh/core-os-riscv) — a minimal RISC-V OS and its book, great for ARM/RISC-V learners.
+- [jor1k — a JavaScript OpenRISC 1000 emulator running Linux in the browser](https://github.com/s-macke/jor1k) — watch an OS boot inside a web page; useful for studying boot, MMU, and drivers interactively.
+
+## Books (more free/OS-dev focused)
+
+- [Operating Systems: Three Easy Pieces (OSTEP)](https://pages.cs.wisc.edu/~remzi/OSTEP/) — see the classics section; included here again as a reminder that its paging/virtualization chapters are the best free conceptual intro before writing a kernel.
+- [xv6 book — mastering a tiny teaching Unix (MIT)](https://pdos.csail.mit.edu/6.S081/2020/xv6.html) — the free manual + annotated source for a real 6k-line kernel; the fastest route to "read a real OS."
+- [MINIX 3 — operating-system source & book companion site](https://minix3.org/) — Amoeba/Tanenbaum lineage: a small, inspectable Unix-like OS plus its classic OS-design textbook resources.
+
 ---
 
 *Maintained for the OSDev Learning Hub. Links verified September 2026; OSDev-wiki/forum/GRUB URLs return anti-bot HTTP 403 to scripts but are confirmed live in a browser and via content extraction.*

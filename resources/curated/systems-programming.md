@@ -90,6 +90,38 @@ Curated, verified links for the **systems side** of OS development: linkers & lo
 - **Linux kernel docs: Admin Guide / MM** — https://www.kernel.org/doc/html/latest/admin-guide/mm/index.html — user-facing view of paging, overcommit, and swap.
 - **Linux-insides (0xAX)** — https://github.com/0xAX/linux-insides — a free book reading the Linux kernel, with detailed paging/virtual-memory chapters. Readable at https://0xax.gitbooks.io/linux-insides/content/.
 
+## ELF & PE binary formats (format-level deep dives)
+
+- **ELF — an interactive reference** — https://en.wikibooks.org/wiki/X86_Disassembly — Wikibook's x86 disassembly text; good orientation for reading sections/relocations, plus the *X86 Assembly* sibling at https://en.wikibooks.org/wiki/X86_Assembly.
+- **man7: elf(5)** — https://man7.org/linux/man-pages/man5/elf.5.html — the canonical Linux man page for the ELF format (see *binary formats* above; repeated for the reader working on loaders).
+- **PE Format (Microsoft Learn)** — https://docs.microsoft.com/en-us/windows/win32/debug/pe-format — the official, thorough spec of the Windows Portable Executable format (headers, sections, imports, relocations, resources).
+- **MSDN: PE File Format intro** — https://msdn.microsoft.com/en-us/library/windows/desktop/ms809762.aspx — Matt Pietrek's classic "An In-Depth Look into the Win32 Portable Executable" article that made the PE format accessible.
+- **CodeProject — PE Format tutorial** — https://www.codeproject.com/Articles/13839/PE-Format — a readable Russian/English walkthrough of the PE headers and optional-header layout.
+- **Corkami — binary format posters & reference images** — https://github.com/corkami/pics/tree/master/binary — giant, beautiful, labeled diagrams of ELF, PE, Mach-O, and dozens of other formats; superb for quickly "seeing" a header layout. Corkami's author site is at https://github.com/corkami.
+- **Linkers and Loaders (John R. Levine, online)** — https://www.iecc.com/linker/ — the classic free book covering ELF, PE/COFF, Mach-O, and the algorithms behind linking/loading (see *binary formats* above).
+
+## Linker & loader deep dives
+
+- **Dynamic linker (ld.so) man page** — https://man7.org/linux/man-pages/man8/ld.so.8.html — how the Linux dynamic linker (`/lib/ld-linux.so`) finds and relocates shared objects at runtime.
+- **dlopen(3)** — https://man7.org/linux/man-pages/man3/dlopen.3.html — the runtime-loading API (dlopen/dlsym/dlclose) — the user-space side of dynamic linking.
+- **Interrupt — how to write linker scripts for firmware** — https://interrupt.memfault.com/blog/how-to-write-linker-scripts-for-firmware — the clearest practical GNU ld linker-script tutorial (MEMORY, SECTIONS, symbols) — directly reusable for kernel placement.
+- **patchelf** — https://github.com/NixOS/patchelf — a small tool to modify an ELF binary's dynamic linker/`RPATH` and headers; great for understanding ELF structure by editing it.
+- **ELF Pack/Packing (advanced)** — see the Corkami posters above for ELF packing/obfuscation layout.
+
+## Low-level debugging & binary analysis tools
+
+- **GDB manual (online, single PDF)** — https://www.sourceware.org/gdb/current/onlinedocs/gdb.pdf — the complete debugger manual in one PDF; the definitive reference for bare-metal remote debugging via QEMU.
+- **Ghidra (NSA)** — https://ghidra-sre.org/ — the free open-source reverse-engineering suite (decompiler + disassembler + loader for ELF/PE/Mach-O); invaluable for understanding binaries you didn't write. Source at https://github.com/NationalSecurityAgency/ghidra.
+- **Radare2** — https://rada.re/n/ — the terminal-first reverse-engineering framework (disassembly, binary parsing, debugging) — scriptable and very useful for inspecting your own kernel binaries. Source: https://github.com/radareorg/radare2.
+- **Rizin** — https://rizin.re/ — the actively rewired fork/continuation of radare2's core; a clean, modern binary-analysis engine.
+- **Capstone disassembly engine** — https://www.capstone-engine.org/ — the library that powers tools' instruction decoding for x86/ARM/RISC-V/MIPS; a clean way to write your own disassemblers/emulator front-ends.
+- **ghidra, radare2, rizin** — see above; all three load ELF and PE and let you inspect sections/relocations visually.
+- **cmu 15-410 / x86 bare-metal examples** — for *debugging your own kernel*, QEMU+gdb remains the tool; see QEMU in *Low-level debugging* above and https://github.com/cirosantilli/x86-bare-metal-examples for ready-to-trace examples.
+
+## CPU emulation & instruction-set experimentation
+
+- **Unicorn / Capstone / Keystone** — the CPU-emulation + disassembly + assembly trio used across CTF and RE tooling. Capstone: https://www.capstone-engine.org/ (see above); Keystone assembler: https://www.keystone-engine.org/ — write assembly for any ISA from Python/C and get bytes back, no real hardware needed.
+
 ## POSIX / Linux systems programming
 
 - **POSIX** (Wikipedia) — https://en.wikipedia.org/wiki/POSIX — the standard your OS aims to be compatible with.

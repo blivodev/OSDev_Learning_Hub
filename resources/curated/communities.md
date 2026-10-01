@@ -15,6 +15,8 @@ Categorized list of real online communities for operating-system and low-level d
 - **OSDev.wiki *Chat* page** – Maintained list of the OS-dev Discord invite plus FOSS alternatives (Matrix, Revolt). https://osdev.wiki/wiki/Chat
 - **#osdev on Matrix** – The OS-dev space on the Matrix protocol: `#osdev:matrix.org`. https://matrix.to/#/#osdev:matrix.org
 - **Project Discords** – SerenityOS, Redox, and other hobby-OS projects run their own Discords; find the current invite in each project's GitHub README (e.g. `github.com/SerenityOS/serenity`, `github.com/redox-os`).
+- **Redox OS Discord / community** – The Rust OS community (Redox is a from-scratch Rust OS); find the current invite in the project's GitHub README. https://github.com/redox-os/redox
+- **r/embedded Discord (official)** – Large, active embedded/bare-metal Discord; find the invite via the subreddit sidebar. https://www.reddit.com/r/embedded/
 
 ## Subreddits
 
@@ -22,17 +24,27 @@ Categorized list of real online communities for operating-system and low-level d
 - **r/OperatingSystems** – General OS theory, design, and news. https://www.reddit.com/r/OperatingSystems/
 - **r/LowLevel** – Low-level programming, kernels, embedded, and minimal OSes. https://www.reddit.com/r/LowLevel/
 - **r/kerneldevelopment** – Kernel development (Linux-focused but welcome to systems dev generally). https://www.reddit.com/r/kerneldevelopment/
+- **r/Compilers** – Compiler and language-implementation discussion; highly relevant to the bootstrapping/ELF side of OSdev. https://www.reddit.com/r/Compilers/
+- **r/embedded** – Embedded systems and bare-metal programming; an active community for OS-adjacent hardware work. https://www.reddit.com/r/embedded/
+- **r/ReverseEngineering** – Reverse engineering of binaries and systems; useful for understanding ELF/PE, loaders, and debuggers. https://www.reddit.com/r/ReverseEngineering/
+- **r/programming** – General programming subreddit; OS-dev and low-level posts regularly surface under it. https://www.reddit.com/r/programming/
+- **r/AskComputerScience** – Ask-me-style forum for comp-sci fundamentals (OS, architecture theory). https://www.reddit.com/r/AskComputerScience/
 
 ## Mailing Lists
 
 - **LKML – Linux Kernel Mailing List** – The de-facto kernel development mailing list (not friendly to spam, but essential for learning how kernel dev by email works). https://lkml.org
+- **LKML via Lore** – The modern web/NNTP archive and interface to the Linux Kernel Mailing List (see also lkml.org). https://lore.kernel.org/lkml/
 - **vger.kernel.org list index** – Hosts the Linux kernel and related subsystem mailing lists. https://vger.kernel.org/vger-lists.html#linux-kernel
+- **Kernelnewbies Mailing List** – Beginner-friendly kernel-development list (paired with the wiki/IRC). https://kernelnewbies.org/MailingList
+- **FreeBSD — Developer & System lists (freebsd-hackers, freebsd-drivers, freebsd-arch)** – the technical lists behind a real production OS. https://www.freebsd.org/community/mailinglists.html
+- **lists.freebsd.org** – Web archives of all FreeBSD mailing lists, searchable for OS-design threads. https://lists.freebsd.org/
 - **rust-osdev** – The Rust OS-dev community runs its discussions around GitHub; see below.
 
 ## IRC
 
 - **#osdev on Libera.Chat** – The long-running (20+ year) OS-dev IRC channel; many OSDev.org regulars idle there. Connect to `irc.libera.chat` and `/join #osdev`. https://web.libera.chat/?channel=#osdev
 - **Channel logs** – Searchable public IRC history for #osdev. https://libera.irclog.whitequark.org/osdev
+- **#kernelnewbies on IRC (irc.oftc.net)** – The beginner kernel-development IRC channel (pair with the MailingList above). https://kernelnewbies.org/IRC
 
 ## GitHub Organizations & Reading Lists
 
@@ -59,5 +71,8 @@ Categorized list of real online communities for operating-system and low-level d
 ## Newsletters & Aggregators
 
 - **os.phil-opp.com** – The Rust "Writing an OS" blog; updated with new posts and a mailing-list/blog-style feed. https://os.phil-opp.com
+- **OSNews** – Long-running magazine/blog aggregating OS, kernel, UI, and hardware news. https://osnews.com/
+- **LWN.net** – Reader-supported Linux/OS news with the best kernel coverage (a key "OSdev current events" source). https://lwn.net/
+- **Kernelnewbies LinuxChanges** – A per-release plain-language summary of what's new in the kernel. https://kernelnewbies.org/LinuxChanges
 - **Hacker News** – Frequent high-quality OS-dev projects and discussions under `show hn`/`operating system`. https://news.ycombinator.com
 - **Lobsters** – Tech community where deep OS and systems posts regularly surface (invite-gated, public read of /newest). https://lobste.rs

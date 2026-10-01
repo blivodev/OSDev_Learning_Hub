@@ -159,6 +159,66 @@ These are the ground truth for the x86/ARM/RISC-V families. All free.
 
 ---
 
+## Pipelining & hazards (the "why CPUs are fast (or wrong)" layer)
+
+- **Instruction pipeline** (Wikipedia) — https://en.wikipedia.org/wiki/Instruction_pipeline — how instructions overlap across stages; the foundation of every fast CPU. *(also listed in the big-picture section)*
+- **Data hazard** (Wikipedia) — https://en.wikipedia.org/wiki/Hazard_(computer_architecture) — data/control/structural hazards and how forwarding, stalling, and speculation resolve them.
+- **Delay slot** (Wikipedia) — https://en.wikipedia.org/wiki/Delay_slot — the classic RISC (MIPS-style) solution to branch hazards where the instruction after a branch always executes.
+- **Scoreboarding vs Tomasulo** — see the classic algorithms in *CPU internals* above; the two textbook dynamic-scheduling approaches.
+- **CPU pipeline (interactive)** — part of the 6.004 course resources linked below; the classic way to *see* stages, forwarding, and interlock.
+
+## RISC-V (open ISA — specifics)
+
+- **RISC-V official specifications** — https://riscv.org/technical/specifications/ — the ratified unprivileged & privileged specs (see *Official manuals* too).
+- **RISC-V spec releases (PDF)** — https://github.com/riscv/riscv-isa-manual/releases — the canonical PDF builds of the ISA manual, including the old v2.2 snapshot at https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf for the classic 32-bit base ISA.
+- **wiki.riscv.org** — https://wiki.riscv.org/ — the RISC-V community wiki (groups, toolchains, ecosystem status).
+- **RISC-V Learn / teaching materials** — https://riscv.org/learn/ — official pointers to RISC-V education, workshops, and courseware.
+- **RISC-V ELF psABI spec** — https://github.com/riscv-non-isa/riscv-elf-psabi-doc — calling conventions, ELF sections, and relocations for RISC-V (repeated here for the arch-specific reader).
+- **riscv-arch-test** — https://github.com/riscv-non-isa/riscv-arch-test — the official architecture-compliance test suite — a great way to see exactly how an ISA feature is specified.
+- **RISC-V toolchain conventions** — https://github.com/riscv/riscv-toolchain-conventions — the spec describing how the RISC-V GCC/binutils toolchain prefixes, ABIs, and multilibs are organized.
+- **Cores-VeeR-EL2 (CHIPS Alliance)** — https://github.com/chipsalliance/Cores-VeeR-EL2 — a small, readable open-source 32-bit RISC-V core (Verilog); studying it shows the actual pipeline/memory-unit hardware.
+- **Rocket Chip** — https://github.com/chipsalliance/rocket-chip — see *RISC-V* above; the reference 64-bit in-order SoC generator.
+- **docs.riscv.org** — https://docs.riscv.org/ — the RISC-V technical docs portal (profiles, extensions, debug, trace).
+
+## ARM / AArch64 (specifics beyond the big-picture page)
+
+- **Azeria Labs — ARM assembly series** — https://azeria-labs.com/writing-arm-assembly-part-1/ — the definitive free tutorial set for ARM32 assembly (start with *part 1*, then *registers & data types*), pitched at reverse engineers/OSdevs. Full series is indexable from https://azeria-labs.com/.
+- **Azeria Labs — arm-assembly-examples (GitHub)** — https://github.com/azeria-labs/arm-assembly-examples — compilable code samples accompanying the assembly series.
+- **Azeria Labs — ARM instruction set (part 3)** — https://azeria-labs.com/arm-instruction-set-part-3/ — data-processing instructions, shifter operands, and immediates.
+- **Azeria Labs — memory & load/store (part 4)** — https://azeria-labs.com/memory-instructions-load-and-store-part-4/ — addressing modes on ARM.
+- **Azeria Labs — functions & the stack (part 7)** — https://azeria-labs.com/functions-and-the-stack-part-7/ — call frames, link register, and the ARM ABI register duties.
+- **ARM architecture (official, arm.com)** — https://www.arm.com/architecture — ARM's official overview of the A/Armv8-Armv9 architecture and profiles. *(The ARM developer documentation portal at developer.arm.com is bot-gated but live in a browser.)*
+
+## MIPS (the classic teaching RISC)
+
+- **MIPS architecture** (Wikipedia) — https://en.wikipedia.org/wiki/MIPS_architecture — the ISA behind Patterson & Hennessy's textbooks; the first RISC most people learn.
+- **MIPS-style pipelining & delay slots** — see *Delay slot* in the pipelining section above; MIPS is where these concepts originate.
+- **(Course material)** The delay-slot / five-stage pipeline model is taught in nearly every comp-arch course listed on this page — the Wikipedia articles above plus the CMU/UC course notes below give the MIPS treatment for free.
+
+## Virtual memory & MMU (deeper dives)
+
+- **Virtual memory** (Wikipedia) — https://en.wikipedia.org/wiki/Virtual_memory — full treatment: paging, demand paging, copy-on-write, swapping.
+- **Page table** (Wikipedia) — https://en.wikipedia.org/wiki/Page_table — the data structure the MMU walks; hierarchical (multi-level) page tables, TLB interaction.
+- **MMU** (Wikipedia) — https://en.wikipedia.org/wiki/Memory_management_unit — see *MMU, paging* above; here for the page-table/translation detail.
+- **Translation lookaside buffer (TLB)** (Wikipedia) — https://en.wikipedia.org/wiki/Translation_lookaside_buffer — the page-translation cache, including TLB shootdown across cores.
+- **Demand paging** (Wikipedia) — https://en.wikipedia.org/wiki/Demand_paging — the lazy-loading of pages that turns virtual memory into a practical reality.
+- **Huge pages** (Wikipedia) — https://en.wikipedia.org/wiki/Large_pages — reduced TLB pressure via large (2 MiB/1 GiB) page sizes — why kernels and databases enable them.
+- **Virtual address space** (Wikipedia) — https://en.wikipedia.org/wiki/Address_space — the per-process virtual view the MMU manufactures.
+- **X86 memory segmentation** (Wikipedia) — https://en.wikipedia.org/wiki/X86_memory_segmentation — how x86 protected-mode segmentation overlays/complements paging.
+- **Memory-mapped I/O & the physical map** — see the OSDev Wiki *Memory Management* entry above for the OS-relevant physical layout.
+
+## More computer-architecture courses & interactive tools
+
+- **CMU 15-410: Operating System Design and Implementation** — https://www.cs.cmu.edu/~410/ — heavy OS/proc/VM course; the architecture-flavored companion to the kernel projects.
+- **CMU 18-447: Computer Architecture (ECE)** — https://course.ece.cmu.edu/~ece447/s15/doku.php — a rigorous CPU-pipeline/memory-system course with lecture slides and labs.
+- **CMU 18-740: Computer Architecture (graduate)** — https://course.ece.cmu.edu/~ece740/f15/ — deeper coverage: out-of-order, branch prediction, memory systems, and chip design.
+- **UC Berkeley CS162: Operating Systems & Systems Programming** — https://www.cs.berkeley.edu/~kubitron/courses/cs162-F11/ — an OS course that doubles as architecture review (VM, caches, interrupts).
+- **Nand2Tetris — Build a Modern Computer from First Principles** — https://www.nand2tetris.org/ — build a CPU + OS of your own from NAND gates (Chapters 1–12); software-free, schematic-free way to understand hardware/software co-design.
+- **Nandgame** — https://nandgame.com/ — a playful, browser-only, step-by-step build of a working CPU out of logic gates.
+- **Udacity — High Performance Computer Architecture** — https://www.udacity.com/course/high-performance-computer-architecture--ud007 — free Georgia Tech-style course on ILP, caches, and parallel cores.
+- **Coursera — Computer Architecture (Princeton)** — https://www.coursera.org/learn/comparch — a solid, free-to-audit MIPS-based intro course by Prof. David Wentzlaff.
+- **Chisel — hardware construction language (used for RISC-V cores)** — https://www.chisel-lang.org/ — the Scala-embedded HDL used to build Rocket; useful if you want to read/generate CPU Verilog. Code: https://github.com/freechipsproject/chisel3.
+
 ## Assemblers & tooling
 
 - **NASM (Netwide Assembler)** — https://www.nasm.us/ — the assembler used throughout OSDev. Docs: https://www.nasm.us/doc/

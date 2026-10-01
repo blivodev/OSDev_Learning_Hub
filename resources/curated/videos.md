@@ -65,3 +65,22 @@ Categorized list of real YouTube channels, series, and playlists for learning op
 ### C#
 - **The Operating System Construction Kit: Cosmos! (Cosmos Quest #1)** – Building a bootable C# OS with the COSMOS kit. https://www.youtube.com/watch?v=Khff1xxyEHI
 - **COSMOS project (CosmosOS)** – the C# OS construction kit behind the video series. https://github.com/CosmosOS/Cosmos
+
+## More Low-Level / OS-Dev & Systems Channels (added 2026)
+
+- **Branch Education** – Stunning, highly produced 3D-animation explainers of how CPUs, memory, caches, and silicon actually work at the transistor/logic level — the best way to *see* computer architecture. https://www.youtube.com/@BranchEducation
+- **Molly Rocket (Casey Muratori)** – Handmade Hero and Handmade Network: building a game *and* its rendering/tooling from scratch, with relentless low-level systems focus (memory, threading, compilers, debuggers). https://www.youtube.com/@mollyrocket
+- **Robert Elder** – Deep, self-contained explainer articles-turned-videos on low-level computing, binary formats, and how programs become machine code. https://www.youtube.com/@RobertElderSoftware
+- **DevDungeon** – Practical low-level/system programming and reverse engineering tutorials (assembly, C, debugging, and the occasional OS experiment). https://www.youtube.com/@devdungeon
+- **FuzzyLogic / Fuzzy Logics** – Low-level programming, assembly, and systems-adjacent deep dives. https://www.youtube.com/@FuzzyLogics
+- **Turing Machine** – Computer-architecture and computer-science fundamentals, presented accessibly for people who want the "how it works under the hood" story. https://www.youtube.com/@turingmachine
+- **CodeAesthetic** – Systems design and low-level tradeoffs (memory, concurrency, performance) explained with clarity and clean visuals — a good complement to pure OSdev. https://www.youtube.com/@CodeAesthetic
+- **Anton Tutoveanu** – Low-level / systems programming, C/C++, and operating-systems theory tutorials. https://www.youtube.com/@antontutoveanu
+- **Computerphile** – (see *Computer Architecture* section) repeated here; episodes on OSs, kernels, and how computers boot are superb warm-ups. https://www.youtube.com/@Computerphile
+- **javidx9 / One Lone Coder** – Building things from scratch in C++: from raycasters to little emulators and OS-adjacent low-level projects. https://www.youtube.com/@javidx9
+
+## Low-level / Reverse-Engineering & Kernel-Authored Talks (added 2026)
+
+- **Dmitry Grinberg** – Hacker/OSdev talks and deep low-level writeups (he ships an intentionally small Linux clone); his conference talks are gold for kernel implementers. https://www.youtube.com/@DmitryGrinberg
+- **NCommander** – (see OS Dev YouTubers) OS archaeology and boot toolchains — repeated here for discoverability. https://www.youtube.com/@NCommander
+- **Core Dumped** – (see *Computer Architecture* section) repeated here; pipelining/memory explainers fit the OSdev low-level brief. https://www.youtube.com/@CoreDumpped
