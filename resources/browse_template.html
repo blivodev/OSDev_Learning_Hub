@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Browse by Difficulty · sektor9.dev</title>
+<style>
+:root{--fg:#e2e8f0;--muted:#94a3b8;--card:#1e293b;--bg:#0b1220;--accent:#6366f1;--good:#34d399;--warn:#fbbf24;--hard:#f87171;--adv:#c084fc}
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0}
+.wrap{max-width:900px;margin:0 auto;padding:40px 20px}
+h1{font-size:1.7rem;color:#fff;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 22px;font-size:.92rem}
+.filters{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px;align-items:center}
+.filter-group{background:var(--card);border:1px solid #334155;border-radius:12px;padding:10px 14px}
+.filter-group label{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:6px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{padding:5px 12px;border-radius:20px;border:1px solid #334155;background:#0f172a;color:var(--fg);cursor:pointer;font-size:.82rem}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip.b-all.on{background:var(--good);border-color:var(--good)}
+.chip.b-beginner.on{background:#16a34a;border-color:#16a34a}
+.chip.b-intermediate.on{background:#2563eb;border-color:#2563eb}
+.chip.b-hard.on{background:#dc2626;border-color:#dc2626}
+.chip.b-advanced.on{background:#9333ea;border-color:#9333ea}
+.count{color:var(--muted);font-size:.85rem;margin-bottom:14px}
+.results{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.item{background:var(--card);border:1px solid #334155;border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.item .t{font-weight:600;font-size:.92rem;line-height:1.4}
+.item .badges{display:flex;gap:6px;flex-wrap:wrap}
+.badge{font-size:.68rem;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:.4px}
+.bd-Beginner{background:#14532d;color:#86efac}
+.bd-Intermediate{background:#1e3a8a;color:#93c5fd}
+.bd-Hard{background:#7f1d1d;color:#fca5a5}
+.bd-Advanced{background:#581c87;color:#d8b4fe}
+.bs-OSDev{background:#312e81;color:#a5b4fc}
+.bs-Electronics{background:#134e4a;color:#5eead4}
+.item a{color:var(--accent);font-size:.8rem;text-decoration:none;margin-top:auto}
+.empty{color:var(--muted);text-align:center;padding:40px}
+</style></head><body><div class="wrap">
+<h1>📚 Browse by Difficulty</h1>
+<p class="sub">Filter the whole library — books, tutorials, videos — by level, subject and type. Click a chip to toggle it.</p>
+
+<div class="filters">
+  <div class="filter-group"><label>Difficulty</label><div class="chips" id="f-diff">
+    <span class="chip b-all on" data-v="all">All</span>
+    <span class="chip b-beginner" data-v="Beginner">Beginner</span>
+    <span class="chip b-intermediate" data-v="Intermediate">Intermediate</span>
+    <span class="chip b-hard" data-v="Hard">Hard</span>
+    <span class="chip b-advanced" data-v="Advanced">Advanced</span>
+  </div></div>
+  <div class="filter-group"><label>Subject</label><div class="chips" id="f-subj">
+    <span class="chip on" data-v="all">All</span>
+    <span class="chip" data-v="OSDev">OS Dev</span>
+    <span class="chip" data-v="Electronics">Electronics</span>
+  </div></div>
+  <div class="filter-group"><label>Type</label><div class="chips" id="f-type">
+    <span class="chip on" data-v="all">All</span>
+    <span class="chip" data-v="book">Book</span>
+    <span class="chip" data-v="tutorial">Tutorial</span>
+    <span class="chip" data-v="video">Video</span>
+  </div></div>
+</div>
+
+<div class="count" id="count"></div>
+<div class="results" id="results"></div>
+<div class="empty" id="empty" style="display:none">No items match those filters.</div>
+
+<script>
+const DATA = /*__DATA__*/[];
+const state = {diff:'all', subj:'all', type:'all'};
+
+function init(){
+  document.querySelectorAll('.filters .chip').forEach(chip=>{
+    chip.addEventListener('click',()=>{
+      const grp=chip.parentElement.id;
+      if(grp==='f-diff') state.diff=chip.dataset.v;
+      else if(grp==='f-subj') state.subj=chip.dataset.v;
+      else if(grp==='f-type') state.type=chip.dataset.v;
+      document.querySelectorAll('#'+grp+' .chip').forEach(c=>c.classList.toggle('on', c===chip));
+      render();
+    });
+  });
+  render();
+}
+function render(){
+  const items = DATA.filter(it=>{
+    if(state.diff!=='all' && it.difficulty!==state.diff) return false;
+    if(state.subj!=='all' && it.subject!==state.subj) return false;
+    if(state.type!=='all' && it.type!==state.type) return false;
+    return true;
+  });
+  document.getElementById('count').textContent = items.length + ' item' + (items.length===1?'':'s');
+  document.getElementById('empty').style.display = items.length?'none':'block';
+  const box=document.getElementById('results');
+  box.innerHTML = items.map(it=>
+    '<div class="item"><div class="t">'+esc(it.title)+'</div><div class="badges">'+
+    '<span class="badge bd-'+it.difficulty+'">'+it.difficulty+'</span>'+
+    '<span class="badge bs-'+it.subject+'">'+it.subject+'</span>'+
+    '<span class="badge" style="background:#1e293b;color:#94a3b8">'+it.type+'</span>'+
+    '</div>'+(it.url?'<a href="'+esc(it.url)+'" target="_blank" rel="noopener">Open →</a>':'')+'</div>'
+  ).join('');
+}
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+init();
+</script></body></html>
