@@ -1,0 +1,352 @@
+[
+ {
+  "shelf": "OS Development",
+  "book": "FreeBSD Architecture Handbook",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>FreeBSD Architecture Handbook</h2><p><strong>Read it here:</strong></p><p><a href=\"https://docs.freebsd.org/en/books/arch-handbook/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Hard · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "The Linux Kernel Documentation",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The Linux Kernel Documentation</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.kernel.org/doc/html/latest/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Advanced · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Linux Device Drivers, 3rd Edition (free)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Linux Device Drivers, 3rd Edition (free)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://lwn.net/Kernel/LDD3/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Advanced · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "The Linux Programming Interface (free sample chapters)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The Linux Programming Interface (free sample chapters)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://man7.org/tlpi/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "James Molloy's Kernel Development Tutorials (archived)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>James Molloy's Kernel Development Tutorials (archived)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://github.com/Exclavia/Kernel-Dev\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "OSDev.org Wiki - Recommended Reading",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>OSDev.org Wiki - Recommended Reading</h2><p><strong>Read it here:</strong></p><p><a href=\"https://wiki.osdev.org/Books\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Computer Systems: A Programmer's Perspective (CS:APP - free lectures)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Computer Systems: A Programmer's Perspective (CS:APP - free lectures)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://csapp.cs.cmu.edu/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Advanced · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "The x86 Instruction Set Reference (Felix Cloutier)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The x86 Instruction Set Reference (Felix Cloutier)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.felixcloutier.com/x86/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "RISC-V Assembly Language Programming",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>RISC-V Assembly Language Programming</h2><p><strong>Read it here:</strong></p><p><a href=\"https://github.com/riscv-non-isa/riscv-asm-manual\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "C Programming: A Modern Approach (free chapters)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>C Programming: A Modern Approach (free chapters)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://knking.com/books/c2/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Structure and Interpretation of Computer Programs (SICP)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Structure and Interpretation of Computer Programs (SICP)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Advanced · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "The Go Programming Language - Online",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The Go Programming Language - Online</h2><p><strong>Read it here:</strong></p><p><a href=\"https://go.dev/tour/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Rust Programming Language Book (free)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Rust Programming Language Book (free)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://doc.rust-lang.org/book/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "The C++ Programming Language - free online reference",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The C++ Programming Language - free online reference</h2><p><strong>Read it here:</strong></p><p><a href=\"https://en.cppreference.com/w/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Binary Hacks (low-level programming tips)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Binary Hacks (low-level programming tips)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://github.com/cirosantilli/x86-bare-metal-examples\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Hard · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Crafting a Tiny OS (tutorial series)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Crafting a Tiny OS (tutorial series)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://github.com/nicknisi/terribleos\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Writing a Bootloader from Scratch",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Writing a Bootloader from Scratch</h2><p><strong>Read it here:</strong></p><p><a href=\"https://github.com/rafaelrc7/bootloader\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Hard · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "How Linux Works (free sample)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>How Linux Works (free sample)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://nostarch.com/howlinuxworks3\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "The Art of Unix Programming (free)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The Art of Unix Programming (free)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://homepage.cs.uri.edu/~thenry/resources/unix_art/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Unix and Linux System Administration Handbook (open chapters)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Unix and Linux System Administration Handbook (open chapters)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.admin.com/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>OS Development</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "ESP32 Technical Reference Manual (Espressif)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>ESP32 Technical Reference Manual (Espressif)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Hard · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Internet of Things Projects with ESP32 (PDF)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Internet of Things Projects with ESP32 (PDF)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://else.fcim.utm.md/pluginfile.php/90372/mod_resource/content/1/esp32%20programming.pdf\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "ESP32 Development using the Arduino IDE (free)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>ESP32 Development using the Arduino IDE (free)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://freecomputerbooks.com/ESP32-Development-Using-the-Arduino-IDE.html\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Free Computer Books - Electronics collection",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Free Computer Books - Electronics collection</h2><p><strong>Read it here:</strong></p><p><a href=\"https://freecomputerbooks.com/electronics.html\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "All About Circuits - Free Textbook",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>All About Circuits - Free Textbook</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.allaboutcircuits.com/textbook/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "The Art of Electronics (free preview)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The Art of Electronics (free preview)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://artofelectronics.net/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Hard · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "STM32F4 Discovery Tutorials (free)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>STM32F4 Discovery Tutorials (free)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://github.com/MYaqoobEmbedded/STM32-Tutorials\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Embedded Systems Shape the World (UT Austin, free)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Embedded Systems Shape the World (UT Austin, free)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://users.ece.utexas.edu/~valvano/Volume1/E-Book/Cover_edn8.htm\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Introduction to RTOS - DigiKey/FreeRTOS",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Introduction to RTOS - DigiKey/FreeRTOS</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.freertos.org/Documentation/RTOS_book.html\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "KiCad like a Pro (free chapters)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>KiCad like a Pro (free chapters)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.kicad.org/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "PCB Design Tutorial (free)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>PCB Design Tutorial (free)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.alternatezone.com/electronics/files/PCBDesignTutorialRevA.pdf\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Getting Started with Raspberry Pi Pico (official PDF)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Getting Started with Raspberry Pi Pico (official PDF)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "MicroPython Documentation",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>MicroPython Documentation</h2><p><strong>Read it here:</strong></p><p><a href=\"https://docs.micropython.org/en/latest/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Digital Design and Computer Architecture (free lectures)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Digital Design and Computer Architecture (free lectures)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://pages.hmc.edu/harris/ddca/ddcaronline.html\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Hard · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Op-Amps for Everyone (TI, free PDF)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Op-Amps for Everyone (TI, free PDF)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://web.mit.edu/6.101/www/reference/op_amps_everyone.pdf\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · <strong>Electronics & Microcontrollers</strong>.</em></p>"
+   }
+  ]
+ }
+]
