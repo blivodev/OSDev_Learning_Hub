@@ -1,0 +1,268 @@
+[
+ {
+  "title": "Think OS: A Brief Introduction to Operating Systems (Downey)",
+  "url": "https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Think_OS_-_A_Brief_Introduction_to_Operating_Systems_(Downey)",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Beginner"
+ },
+ {
+  "title": "Introduction to Operating Systems (LibreTexts/Delta College)",
+  "url": "https://eng.libretexts.org/Courses/Delta_College/Introduction_to_Operating_Systems",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Beginner"
+ },
+ {
+  "title": "Linux - The Penguin Marches On (McClanahan)",
+  "url": "https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Dive into Systems (free computer systems textbook)",
+  "url": "https://diveintosystems.org/",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Computer Science from the Bottom Up",
+  "url": "https://www.bottomupcs.com/",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Operating Systems Fundamentals (Open Textbook Library, Gunnar Wolf)",
+  "url": "https://open.umn.edu/opentextbooks/textbooks/1351",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "The Little Book of Semaphores (Downey)",
+  "url": "https://greenteapress.com/wp/semaphores/",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Introduction to Computing Systems: From Bits and Gates to C/C++ Beyond",
+  "url": "https://www.engineering.pitt.edu/",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "The Linux Command Line (Sobell)",
+  "url": "https://linuxcommand.org/tlcl.php",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Beginner"
+ },
+ {
+  "title": "Crafting Interpreters",
+  "url": "https://craftinginterpreters.com/",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Advanced"
+ },
+ {
+  "title": "Software Foundations (Coq)",
+  "url": "https://softwarefoundations.cis.upenn.edu/",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Advanced"
+ },
+ {
+  "title": "The Rust Reference",
+  "url": "https://doc.rust-lang.org/reference/",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Advanced"
+ },
+ {
+  "title": "The Go Programming Language Specification",
+  "url": "https://go.dev/ref/spec",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "OSDev Wiki - Expanded Main Pages",
+  "url": "https://wiki.osdev.org/Expanded_Main_Pages",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Beginner"
+ },
+ {
+  "title": "Writing a Simple Operating System from Scratch (Nick Blundell)",
+  "url": "https://www.cs.bham.ac.uk/~exr/teaching/lectures/opsys/2005_06/notes/OS3-BareMetal.pdf",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Low-Level Programming: C, Assembly, and Program Execution (Zhirkov)",
+  "url": "https://github.com/0xAX/asm",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Advanced"
+ },
+ {
+  "title": "The Elements of Computing Systems (Nand2Tetris - free chapters)",
+  "url": "https://www.nand2tetris.org/",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Beginner"
+ },
+ {
+  "title": "Computer Organization and Design RISC-V Edition (lecture slides)",
+  "url": "https://riscv.org/learn/",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Operating Systems: Internals and Design Principles (course notes)",
+  "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Advanced"
+ },
+ {
+  "title": "Unix for Poets (Kernighan)",
+  "url": "https://www.cs.princeton.edu/~bwk/unix-poets.pdf",
+  "cover": "",
+  "shelf": "OSDev",
+  "difficulty": "Beginner"
+ },
+ {
+  "title": "Embedded Controllers Using C and Arduino (Fiore)",
+  "url": "https://www.maktaba.org/download/file/1446/Embedded_controllers_using_c_and_arduino_Jim_fiore.pdf",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Introduction to Embedded Systems: A Cyber-Physical Systems Approach (Lee & Seshia)",
+  "url": "https://ptolemy.berkeley.edu/books/leeseshia/releases/LeeSeshia_DigitalV2_2.pdf",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Advanced"
+ },
+ {
+  "title": "An Introduction to Microcontrollers and Embedded Systems (Auburn)",
+  "url": "https://www.eng.auburn.edu/~dbeale/MECH4240-50/Introduction%20to%20Microcontrollers%20and%20Embedded%20Systems.pdf",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Embedded System Design (Open Access, Springer)",
+  "url": "https://library.oapen.org/bitstream/handle/20.500.12657/46817/2021_Book_EmbeddedSystemDesign.pdf",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Advanced"
+ },
+ {
+  "title": "Embedded Intelligence: Building Intelligent Devices with Microcontrollers (Zenodo)",
+  "url": "https://zenodo.org/records/16424362",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Electronics (LibreTexts - electrical engineering)",
+  "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Beginner"
+ },
+ {
+  "title": "Introductory Electrical Engineering (LibreTexts)",
+  "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Introductory_Electrical_Engineering",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Beginner"
+ },
+ {
+  "title": "Signal Processing and Modeling (LibreTexts)",
+  "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Signal_Processing_and_Modeling",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Lessons In Electric Circuits (Kuphaldt)",
+  "url": "https://www.allaboutcircuits.com/textbook/",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Beginner"
+ },
+ {
+  "title": "Practical Electronics for Inventors (free chapters)",
+  "url": "https://www.makerspaces.com/",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Arduino Cookbook (O'Reilly open)",
+  "url": "https://www.oreilly.com/library/view/arduino-cookbook-2nd/9781449323879/",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Beginner"
+ },
+ {
+  "title": "The Datasheet Handbook (embedded)",
+  "url": "https://www.embedded.com/",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Real-Time Operating Systems Book 1 - The Theory (FreeRTOS)",
+  "url": "https://www.freertos.org/Documentation/RTOS_book.html",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Raspberry Pi Documentation (official)",
+  "url": "https://www.raspberrypi.com/documentation/",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Beginner"
+ },
+ {
+  "title": "ESP-IDF Programming Guide",
+  "url": "https://docs.espressif.com/projects/esp-idf/en/latest/",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Getting Started with MicroPython on ESP32 (official)",
+  "url": "https://docs.micropython.org/en/latest/esp32/tutorial/index.html",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Beginner"
+ },
+ {
+  "title": "KiCad Documentation",
+  "url": "https://docs.kicad.org/",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Intermediate"
+ },
+ {
+  "title": "Wokwi Docs - simulate Arduino/ESP32 in browser",
+  "url": "https://docs.wokwi.com/",
+  "cover": "",
+  "shelf": "Electronics",
+  "difficulty": "Beginner"
+ }
+]

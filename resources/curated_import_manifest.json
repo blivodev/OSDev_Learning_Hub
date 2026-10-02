@@ -1,0 +1,382 @@
+[
+ {
+  "shelf": "OS Development",
+  "book": "Think OS: A Brief Introduction to Operating Systems (Downey)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Think OS: A Brief Introduction to Operating Systems (Downey)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Think_OS_-_A_Brief_Introduction_to_Operating_Systems_(Downey)\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Introduction to Operating Systems (LibreTexts/Delta College)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Introduction to Operating Systems (LibreTexts/Delta College)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://eng.libretexts.org/Courses/Delta_College/Introduction_to_Operating_Systems\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Linux - The Penguin Marches On (McClanahan)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Linux - The Penguin Marches On (McClanahan)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Dive into Systems (free computer systems textbook)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Dive into Systems (free computer systems textbook)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://diveintosystems.org/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Computer Science from the Bottom Up",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Computer Science from the Bottom Up</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.bottomupcs.com/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Operating Systems Fundamentals (Open Textbook Library, Gunnar Wolf)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Operating Systems Fundamentals (Open Textbook Library, Gunnar Wolf)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://open.umn.edu/opentextbooks/textbooks/1351\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "The Little Book of Semaphores (Downey)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The Little Book of Semaphores (Downey)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://greenteapress.com/wp/semaphores/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Introduction to Computing Systems: From Bits and Gates to C/C++ Beyond",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Introduction to Computing Systems: From Bits and Gates to C/C++ Beyond</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.engineering.pitt.edu/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "The Linux Command Line (Sobell)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The Linux Command Line (Sobell)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://linuxcommand.org/tlcl.php\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Crafting Interpreters",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Crafting Interpreters</h2><p><strong>Read it here:</strong></p><p><a href=\"https://craftinginterpreters.com/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Advanced · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Software Foundations (Coq)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Software Foundations (Coq)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://softwarefoundations.cis.upenn.edu/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Advanced · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "The Rust Reference",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The Rust Reference</h2><p><strong>Read it here:</strong></p><p><a href=\"https://doc.rust-lang.org/reference/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Advanced · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "The Go Programming Language Specification",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The Go Programming Language Specification</h2><p><strong>Read it here:</strong></p><p><a href=\"https://go.dev/ref/spec\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "OSDev Wiki - Expanded Main Pages",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>OSDev Wiki - Expanded Main Pages</h2><p><strong>Read it here:</strong></p><p><a href=\"https://wiki.osdev.org/Expanded_Main_Pages\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Writing a Simple Operating System from Scratch (Nick Blundell)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Writing a Simple Operating System from Scratch (Nick Blundell)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.cs.bham.ac.uk/~exr/teaching/lectures/opsys/2005_06/notes/OS3-BareMetal.pdf\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Low-Level Programming: C, Assembly, and Program Execution (Zhirkov)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Low-Level Programming: C, Assembly, and Program Execution (Zhirkov)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://github.com/0xAX/asm\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Advanced · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "The Elements of Computing Systems (Nand2Tetris - free chapters)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The Elements of Computing Systems (Nand2Tetris - free chapters)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.nand2tetris.org/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Computer Organization and Design RISC-V Edition (lecture slides)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Computer Organization and Design RISC-V Edition (lecture slides)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://riscv.org/learn/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Operating Systems: Internals and Design Principles (course notes)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Operating Systems: Internals and Design Principles (course notes)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Advanced · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Unix for Poets (Kernighan)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Unix for Poets (Kernighan)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.cs.princeton.edu/~bwk/unix-poets.pdf\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>OS Development</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Embedded Controllers Using C and Arduino (Fiore)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Embedded Controllers Using C and Arduino (Fiore)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.maktaba.org/download/file/1446/Embedded_controllers_using_c_and_arduino_Jim_fiore.pdf\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Introduction to Embedded Systems: A Cyber-Physical Systems Approach (Lee & Seshia)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Introduction to Embedded Systems: A Cyber-Physical Systems Approach (Lee &amp; Seshia)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://ptolemy.berkeley.edu/books/leeseshia/releases/LeeSeshia_DigitalV2_2.pdf\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Advanced · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "An Introduction to Microcontrollers and Embedded Systems (Auburn)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>An Introduction to Microcontrollers and Embedded Systems (Auburn)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.eng.auburn.edu/~dbeale/MECH4240-50/Introduction%20to%20Microcontrollers%20and%20Embedded%20Systems.pdf\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Embedded System Design (Open Access, Springer)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Embedded System Design (Open Access, Springer)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://library.oapen.org/bitstream/handle/20.500.12657/46817/2021_Book_EmbeddedSystemDesign.pdf\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Advanced · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Embedded Intelligence: Building Intelligent Devices with Microcontrollers (Zenodo)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Embedded Intelligence: Building Intelligent Devices with Microcontrollers (Zenodo)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://zenodo.org/records/16424362\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Electronics (LibreTexts - electrical engineering)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Electronics (LibreTexts - electrical engineering)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Introductory Electrical Engineering (LibreTexts)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Introductory Electrical Engineering (LibreTexts)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Introductory_Electrical_Engineering\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Signal Processing and Modeling (LibreTexts)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Signal Processing and Modeling (LibreTexts)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Signal_Processing_and_Modeling\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Lessons In Electric Circuits (Kuphaldt)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Lessons In Electric Circuits (Kuphaldt)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.allaboutcircuits.com/textbook/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Practical Electronics for Inventors (free chapters)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Practical Electronics for Inventors (free chapters)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.makerspaces.com/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Arduino Cookbook (O'Reilly open)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Arduino Cookbook (O'Reilly open)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.oreilly.com/library/view/arduino-cookbook-2nd/9781449323879/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "The Datasheet Handbook (embedded)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>The Datasheet Handbook (embedded)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.embedded.com/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Real-Time Operating Systems Book 1 - The Theory (FreeRTOS)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Real-Time Operating Systems Book 1 - The Theory (FreeRTOS)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.freertos.org/Documentation/RTOS_book.html\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Raspberry Pi Documentation (official)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Raspberry Pi Documentation (official)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://www.raspberrypi.com/documentation/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "ESP-IDF Programming Guide",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>ESP-IDF Programming Guide</h2><p><strong>Read it here:</strong></p><p><a href=\"https://docs.espressif.com/projects/esp-idf/en/latest/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Getting Started with MicroPython on ESP32 (official)",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Getting Started with MicroPython on ESP32 (official)</h2><p><strong>Read it here:</strong></p><p><a href=\"https://docs.micropython.org/en/latest/esp32/tutorial/index.html\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "KiCad Documentation",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>KiCad Documentation</h2><p><strong>Read it here:</strong></p><p><a href=\"https://docs.kicad.org/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Intermediate · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Wokwi Docs - simulate Arduino/ESP32 in browser",
+  "pages": [
+   {
+    "name": "Overview & access",
+    "html": "<h2>Wokwi Docs - simulate Arduino/ESP32 in browser</h2><p><strong>Read it here:</strong></p><p><a href=\"https://docs.wokwi.com/\" target=\"_blank\" rel=\"noopener\" class=\"button\">📖 Open the book</a></p><p><em>Added to the sektor9.dev learning library · difficulty: Beginner · part of the <strong>Electronics & Microcontrollers</strong> shelf.</em></p>"
+   }
+  ]
+ }
+]
