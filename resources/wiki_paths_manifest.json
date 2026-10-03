@@ -1,0 +1,122 @@
+[
+ {
+  "shelf": "OS Development",
+  "book": "Path: Zero to Kernel in C",
+  "pages": [
+   {
+    "name": "Path steps",
+    "html": "<h2>Path: Zero to Kernel in C</h2><p>C basics to a real kernel in C.</p><p>Follow the steps in order — each builds on the last.</p><ol><li><a href=\"https://osdev.sektor9.dev/synthesized_tutorials/00-introduction/01-how-a-computer-boots/\" target=\"_blank\" rel=\"noopener\">1. How a Computer Boots</a> <em>(Beginner)</em></li><li><a href=\"https://osdev.sektor9.dev/synthesized_tutorials/00-introduction/02-your-toolchain/\" target=\"_blank\" rel=\"noopener\">2. Your Toolchain</a> <em>(Beginner)</em></li><li><a href=\"https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU\" target=\"_blank\" rel=\"noopener\">3. Ben Eater 8-bit computer (video)</a> <em>(Beginner)</em></li><li><a href=\"https://www.knking.com/books/c2/\" target=\"_blank\" rel=\"noopener\">4. C Programming: A Modern Approach</a> <em>(Beginner)</em></li><li><a href=\"https://wiki.osdev.org/Bare_Bones\" target=\"_blank\" rel=\"noopener\">5. OSDev Wiki Bare Bones</a> <em>(Intermediate)</em></li><li><a href=\"https://tuhdo.github.io/os01/\" target=\"_blank\" rel=\"noopener\">6. os01 (From 0 to 1)</a> <em>(Intermediate)</em></li><li><a href=\"https://littleosbook.github.io/\" target=\"_blank\" rel=\"noopener\">7. The Little OS Book</a> <em>(Intermediate)</em></li><li><a href=\"https://osdev.sektor9.dev/synthesized_tutorials/concepts/\" target=\"_blank\" rel=\"noopener\">8. VGA Text Mode &amp; Display</a> <em>(Intermediate)</em></li><li><a href=\"https://pages.cs.wisc.edu/~remzi/OSTEP/\" target=\"_blank\" rel=\"noopener\">9. OSTEP Virtualization</a> <em>(Hard)</em></li><li><a href=\"https://osdev.sektor9.dev/synthesized_tutorials/concepts/\" target=\"_blank\" rel=\"noopener\">10. Interrupts &amp; the IDT</a> <em>(Hard)</em></li><li><a href=\"https://github.com/Exclavia/Kernel-Dev\" target=\"_blank\" rel=\"noopener\">11. James Molloy Kernel Tutorials</a> <em>(Hard)</em></li><li><a href=\"https://osdev.sektor9.dev/synthesized_tutorials/concepts/\" target=\"_blank\" rel=\"noopener\">12. The Scheduler</a> <em>(Hard)</em></li></ol><p><em>Mirror of the interactive docs learning path · sektor9.dev</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Path: Rust OS Dev",
+  "pages": [
+   {
+    "name": "Path steps",
+    "html": "<h2>Path: Rust OS Dev</h2><p>Rust to a modern OS in Rust.</p><p>Follow the steps in order — each builds on the last.</p><ol><li><a href=\"https://doc.rust-lang.org/book/\" target=\"_blank\" rel=\"noopener\">1. The Rust Book</a> <em>(Beginner)</em></li><li><a href=\"https://os.phil-opp.com/freestanding-rust-binary/\" target=\"_blank\" rel=\"noopener\">2. Freestanding Rust Binary</a> <em>(Intermediate)</em></li><li><a href=\"https://docs.rust-embedded.org/book/\" target=\"_blank\" rel=\"noopener\">3. The Embedded Rust Book</a> <em>(Beginner)</em></li><li><a href=\"https://os.phil-opp.com/vga-text-mode/\" target=\"_blank\" rel=\"noopener\">4. VGA Text Mode in Rust</a> <em>(Intermediate)</em></li><li><a href=\"https://os.phil-opp.com/cpu-exceptions/\" target=\"_blank\" rel=\"noopener\">5. CPU Exceptions</a> <em>(Hard)</em></li><li><a href=\"https://os.phil-opp.com/paging-introduction/\" target=\"_blank\" rel=\"noopener\">6. Paging</a> <em>(Hard)</em></li><li><a href=\"https://os.phil-opp.com/heap-allocation/\" target=\"_blank\" rel=\"noopener\">7. Heap Allocation</a> <em>(Hard)</em></li><li><a href=\"https://os.phil-opp.com/async-await/\" target=\"_blank\" rel=\"noopener\">8. Async/Await in the kernel</a> <em>(Advanced)</em></li><li><a href=\"https://pdos.csail.mit.edu/6.S081/2023/xv6/book-riscv-rev3.pdf\" target=\"_blank\" rel=\"noopener\">9. xv6 book</a> <em>(Advanced)</em></li><li><a href=\"https://github.com/phil-opp/blog_os\" target=\"_blank\" rel=\"noopener\">10. blog_os source</a> <em>(Advanced)</em></li><li><a href=\"https://wiki.osdev.org/System_Call\" target=\"_blank\" rel=\"noopener\">11. System Calls (OSDev Wiki)</a> <em>(Advanced)</em></li><li><a href=\"https://www.youtube.com/playlist?list=PLib6-zlkjfXkdCjQgrZhmfJOWBk_C2FTY\" target=\"_blank\" rel=\"noopener\">12. Rust OS video series</a> <em>(Advanced)</em></li></ol><p><em>Mirror of the interactive docs learning path · sektor9.dev</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Path: C++ Kernel Track",
+  "pages": [
+   {
+    "name": "Path steps",
+    "html": "<h2>Path: C++ Kernel Track</h2><p>C++ to a kernel in C++.</p><p>Follow the steps in order — each builds on the last.</p><ol><li><a href=\"https://wiki.osdev.org/Bare_Bones\" target=\"_blank\" rel=\"noopener\">1. OSDev C++ Bare Bones</a> <em>(Intermediate)</em></li><li><a href=\"https://wiki.osdev.org/C%2B%2B\" target=\"_blank\" rel=\"noopener\">2. Freestanding C++</a> <em>(Intermediate)</em></li><li><a href=\"https://wiki.osdev.org/Calling_Global_Constructors\" target=\"_blank\" rel=\"noopener\">3. Calling Global Constructors</a> <em>(Hard)</em></li><li><a href=\"https://www.learncpp.com/\" target=\"_blank\" rel=\"noopener\">4. LearnCpp.com</a> <em>(Intermediate)</em></li><li><a href=\"https://www.youtube.com/playlist?list=PLZQftyCk7_SeZRitx5MjBKzTtvk0pHMtp\" target=\"_blank\" rel=\"noopener\">5. CodePulse 64-bit OS kernel (video)</a> <em>(Hard)</em></li><li><a href=\"https://wiki.osdev.org/Memory_Allocation\" target=\"_blank\" rel=\"noopener\">6. Memory Allocation (OSDev)</a> <em>(Hard)</em></li><li><a href=\"https://github.com/Exclavia/Kernel-Dev\" target=\"_blank\" rel=\"noopener\">7. James Molloy Kernel Tutorials</a> <em>(Hard)</em></li><li><a href=\"https://www.youtube.com/@CppCon\" target=\"_blank\" rel=\"noopener\">8. CppCon low-level talks</a> <em>(Hard)</em></li><li><a href=\"https://github.com/SerenityOS/serenity\" target=\"_blank\" rel=\"noopener\">9. SerenityOS</a> <em>(Hard)</em></li><li><a href=\"https://osdev.sektor9.dev/learning-paths/zero-to-kernel-c/\" target=\"_blank\" rel=\"noopener\">10. Zero to Kernel in C path</a> <em>(Intermediate)</em></li></ol><p><em>Mirror of the interactive docs learning path · sektor9.dev</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Path: Go OS Dev",
+  "pages": [
+   {
+    "name": "Path steps",
+    "html": "<h2>Path: Go OS Dev</h2><p>Go for systems and unikernels.</p><p>Follow the steps in order — each builds on the last.</p><ol><li><a href=\"https://go.dev/tour/\" target=\"_blank\" rel=\"noopener\">1. A Tour of Go</a> <em>(Beginner)</em></li><li><a href=\"https://www.gopl.io/\" target=\"_blank\" rel=\"noopener\">2. The Go Programming Language</a> <em>(Beginner)</em></li><li><a href=\"https://go.dev/src/runtime/proc.go\" target=\"_blank\" rel=\"noopener\">3. Go's scheduler (runtime)</a> <em>(Intermediate)</em></li><li><a href=\"https://go.dev/wiki/Systems\" target=\"_blank\" rel=\"noopener\">4. Go systems programming</a> <em>(Intermediate)</em></li><li><a href=\"https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/\" target=\"_blank\" rel=\"noopener\">5. Concurrency in Go (O'Reilly)</a> <em>(Intermediate)</em></li><li><a href=\"https://wiki.osdev.org/Bare_Bones\" target=\"_blank\" rel=\"noopener\">6. Go OSDev Bare Bones</a> <em>(Intermediate)</em></li><li><a href=\"https://www.oreilly.com/ideas/a-unikernel-in-go\" target=\"_blank\" rel=\"noopener\">7. A Unikernel in Go</a> <em>(Intermediate)</em></li><li><a href=\"https://gvisor.dev/docs/\" target=\"_blank\" rel=\"noopener\">8. gVisor</a> <em>(Hard)</em></li></ol><p><em>Mirror of the interactive docs learning path · sektor9.dev</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Path: C# / Cosmos Track",
+  "pages": [
+   {
+    "name": "Path steps",
+    "html": "<h2>Path: C# / Cosmos Track</h2><p>A kernel in C# with Cosmos.</p><p>Follow the steps in order — each builds on the last.</p><ol><li><a href=\"https://www.gocosmos.org/\" target=\"_blank\" rel=\"noopener\">1. Cosmos Getting Started</a> <em>(Intermediate)</em></li><li><a href=\"https://www.gocosmos.org/docs/\" target=\"_blank\" rel=\"noopener\">2. How Cosmos works (IL2CPU)</a> <em>(Intermediate)</em></li><li><a href=\"https://wiki.osdev.org/Cosmos\" target=\"_blank\" rel=\"noopener\">3. OSDev Wiki — Cosmos</a> <em>(Intermediate)</em></li><li><a href=\"https://www.gocosmos.org/docs/tutorials/\" target=\"_blank\" rel=\"noopener\">4. Cosmos Console &amp; Keyboard</a> <em>(Intermediate)</em></li><li><a href=\"https://www.gocosmos.org/docs/tutorials/\" target=\"_blank\" rel=\"noopener\">5. Cosmos command line</a> <em>(Intermediate)</em></li><li><a href=\"https://www.gocosmos.org/docs/tutorials/\" target=\"_blank\" rel=\"noopener\">6. Cosmos Graphics</a> <em>(Intermediate)</em></li><li><a href=\"https://wiki.osdev.org/Cosmos\" target=\"_blank\" rel=\"noopener\">7. Cosmos GC concepts</a> <em>(Hard)</em></li><li><a href=\"https://github.com/CosmosOS/Cosmos\" target=\"_blank\" rel=\"noopener\">8. Cosmos source</a> <em>(Hard)</em></li></ol><p><em>Mirror of the interactive docs learning path · sektor9.dev</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "OS Development",
+  "book": "Path: Systems Architecture Deep Dive",
+  "pages": [
+   {
+    "name": "Path steps",
+    "html": "<h2>Path: Systems Architecture Deep Dive</h2><p>The hardware under your OS.</p><p>Follow the steps in order — each builds on the last.</p><ol><li><a href=\"https://www.tutorialspoint.com/assembly_programming/index.htm\" target=\"_blank\" rel=\"noopener\">1. x86 assembly (NASM)</a> <em>(Intermediate)</em></li><li><a href=\"https://riscv.org/learn/\" target=\"_blank\" rel=\"noopener\">2. Computer Org and Design RISC-V</a> <em>(Intermediate)</em></li><li><a href=\"https://csapp.cs.cmu.edu/\" target=\"_blank\" rel=\"noopener\">3. CS:APP</a> <em>(Hard)</em></li><li><a href=\"https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems\" target=\"_blank\" rel=\"noopener\">4. Memory hierarchy (LibreTexts)</a> <em>(Hard)</em></li><li><a href=\"https://pages.cs.wisc.edu/~remzi/OSTEP/\" target=\"_blank\" rel=\"noopener\">5. OSTEP Virtualization</a> <em>(Hard)</em></li><li><a href=\"https://en.wikibooks.org/wiki/Microprocessor_Design\" target=\"_blank\" rel=\"noopener\">6. Microprocessor Design (Wikibooks)</a> <em>(Hard)</em></li><li><a href=\"https://riscv.org/technical/specifications/\" target=\"_blank\" rel=\"noopener\">7. RISC-V Unprivileged Spec</a> <em>(Advanced)</em></li><li><a href=\"https://docs.freebsd.org/en/books/arch-handbook/\" target=\"_blank\" rel=\"noopener\">8. FreeBSD Architecture Handbook</a> <em>(Advanced)</em></li><li><a href=\"https://www.kernel.org/doc/html/latest/\" target=\"_blank\" rel=\"noopener\">9. Linux Kernel Documentation</a> <em>(Advanced)</em></li><li><a href=\"https://diveintosystems.org/\" target=\"_blank\" rel=\"noopener\">10. Dive into Systems</a> <em>(Hard)</em></li><li><a href=\"https://www.nand2tetris.org/\" target=\"_blank\" rel=\"noopener\">11. Nand2Tetris</a> <em>(Intermediate)</em></li><li><a href=\"https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html\" target=\"_blank\" rel=\"noopener\">12. Intel SDM</a> <em>(Advanced)</em></li></ol><p><em>Mirror of the interactive docs learning path · sektor9.dev</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Path: Electronics Zero to PCB",
+  "pages": [
+   {
+    "name": "Path steps",
+    "html": "<h2>Path: Electronics Zero to PCB</h2><p>Electronics zero to a real PCB.</p><p>Follow the steps in order — each builds on the last.</p><ol><li><a href=\"https://elecdocs.sektor9.dev/concepts/01-electricity/\" target=\"_blank\" rel=\"noopener\">1. Electricity Basics</a> <em>(Beginner)</em></li><li><a href=\"https://elecdocs.sektor9.dev/concepts/02-components/\" target=\"_blank\" rel=\"noopener\">2. Ohm's Law &amp; Components</a> <em>(Beginner)</em></li><li><a href=\"https://www.allaboutcircuits.com/textbook/\" target=\"_blank\" rel=\"noopener\">3. Lessons in Electric Circuits</a> <em>(Beginner)</em></li><li><a href=\"https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU\" target=\"_blank\" rel=\"noopener\">4. Ben Eater electronics (video)</a> <em>(Beginner)</em></li><li><a href=\"https://elecdocs.sektor9.dev/concepts/03-circuits/\" target=\"_blank\" rel=\"noopener\">5. Circuits &amp; Schematics</a> <em>(Intermediate)</em></li><li><a href=\"https://elecdocs.sektor9.dev/concepts/05-projects/\" target=\"_blank\" rel=\"noopener\">6. From Breadboard to Board</a> <em>(Intermediate)</em></li><li><a href=\"https://www.youtube.com/@greatscottlab\" target=\"_blank\" rel=\"noopener\">7. GreatScott! (video)</a> <em>(Intermediate)</em></li><li><a href=\"https://www.youtube.com/@EEVblog\" target=\"_blank\" rel=\"noopener\">8. EEVblog oscilloscope</a> <em>(Intermediate)</em></li><li><a href=\"https://elecdocs.sektor9.dev/synthesized/pcb-design-kicad/\" target=\"_blank\" rel=\"noopener\">9. PCB Design with KiCad</a> <em>(Hard)</em></li><li><a href=\"https://docs.kicad.org/\" target=\"_blank\" rel=\"noopener\">10. KiCad Documentation</a> <em>(Hard)</em></li><li><a href=\"https://www.youtube.com/@PhilsLab\" target=\"_blank\" rel=\"noopener\">11. Phil's Lab PCB (video)</a> <em>(Hard)</em></li><li><a href=\"https://www.alternatezone.com/electronics/files/PCBDesignTutorialRevA.pdf\" target=\"_blank\" rel=\"noopener\">12. PCB Design Tutorial</a> <em>(Hard)</em></li></ol><p><em>Mirror of the interactive docs learning path · sektor9.dev</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Path: Arduino to Bare-Metal",
+  "pages": [
+   {
+    "name": "Path steps",
+    "html": "<h2>Path: Arduino to Bare-Metal</h2><p>Arduino to AVR register-level C.</p><p>Follow the steps in order — each builds on the last.</p><ol><li><a href=\"https://elecdocs.sektor9.dev/paths/arduino/beginner/\" target=\"_blank\" rel=\"noopener\">1. Arduino Beginner in C</a> <em>(Beginner)</em></li><li><a href=\"https://docs.arduino.cc/\" target=\"_blank\" rel=\"noopener\">2. Arduino Documentation</a> <em>(Beginner)</em></li><li><a href=\"https://elecdocs.sektor9.dev/synthesized/arduino-c/\" target=\"_blank\" rel=\"noopener\">3. Arduino Projects Book</a> <em>(Beginner)</em></li><li><a href=\"https://www.microchip.com/wwwproducts/en/ATMEGA328P\" target=\"_blank\" rel=\"noopener\">4. ATmega328P Datasheet</a> <em>(Intermediate)</em></li><li><a href=\"https://www.maktaba.org/download/file/1446/Embedded_controllers_using_c_and_arduino_Jim_fiore.pdf\" target=\"_blank\" rel=\"noopener\">5. Embedded Controllers (Fiore)</a> <em>(Intermediate)</em></li><li><a href=\"https://elecdocs.sektor9.dev/synthesized/arduino-baremetal-avr/\" target=\"_blank\" rel=\"noopener\">6. Arduino / AVR bare-metal</a> <em>(Intermediate)</em></li><li><a href=\"https://elecdocs.sektor9.dev/synthesized/arduino-baremetal-avr/\" target=\"_blank\" rel=\"noopener\">7. AVR timers (bare-metal)</a> <em>(Hard)</em></li><li><a href=\"https://www.microchip.com/wwwproducts/en/ATMEGA328P\" target=\"_blank\" rel=\"noopener\">8. AVR instruction set</a> <em>(Hard)</em></li><li><a href=\"https://elecdocs.sektor9.dev/synthesized/arduino-baremetal-avr/\" target=\"_blank\" rel=\"noopener\">9. Write a driver from scratch</a> <em>(Hard)</em></li><li><a href=\"https://www.nongnu.org/avr-libc/user-manual/\" target=\"_blank\" rel=\"noopener\">10. avr-libc</a> <em>(Hard)</em></li></ol><p><em>Mirror of the interactive docs learning path · sektor9.dev</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Path: ESP32 / IoT Mastery",
+  "pages": [
+   {
+    "name": "Path steps",
+    "html": "<h2>Path: ESP32 / IoT Mastery</h2><p>ESP32 to production IoT.</p><p>Follow the steps in order — each builds on the last.</p><ol><li><a href=\"https://elecdocs.sektor9.dev/paths/esp32/beginner/\" target=\"_blank\" rel=\"noopener\">1. ESP32 Beginner</a> <em>(Beginner)</em></li><li><a href=\"https://docs.espressif.com/projects/esp-idf/en/latest/\" target=\"_blank\" rel=\"noopener\">2. ESP-IDF Programming Guide</a> <em>(Beginner)</em></li><li><a href=\"https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf\" target=\"_blank\" rel=\"noopener\">3. ESP32 Technical Reference Manual</a> <em>(Intermediate)</em></li><li><a href=\"https://elecdocs.sektor9.dev/synthesized/esp32-advanced/\" target=\"_blank\" rel=\"noopener\">4. Wi-Fi on ESP32</a> <em>(Intermediate)</em></li><li><a href=\"https://elecdocs.sektor9.dev/synthesized/esp32-advanced/\" target=\"_blank\" rel=\"noopener\">5. BLE basics</a> <em>(Intermediate)</em></li><li><a href=\"https://else.fcim.utm.md/pluginfile.php/90372/mod_resource/content/1/esp32%20programming.pdf\" target=\"_blank\" rel=\"noopener\">6. IoT Projects with ESP32</a> <em>(Intermediate)</em></li><li><a href=\"https://www.youtube.com/@AndreasSpiess\" target=\"_blank\" rel=\"noopener\">7. Andreas Spiess (video)</a> <em>(Intermediate)</em></li><li><a href=\"https://www.hivemq.com/blog/mqtt-essentials-part-1-introducing-publish-subscribe/\" target=\"_blank\" rel=\"noopener\">8. MQTT essentials</a> <em>(Hard)</em></li><li><a href=\"https://elecdocs.sektor9.dev/synthesized/esp32-advanced/\" target=\"_blank\" rel=\"noopener\">9. ESP32 Advanced (sleep)</a> <em>(Hard)</em></li><li><a href=\"https://elecdocs.sektor9.dev/synthesized/rtos-on-mcu/\" target=\"_blank\" rel=\"noopener\">10. RTOS on MCU (FreeRTOS)</a> <em>(Hard)</em></li><li><a href=\"https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html\" target=\"_blank\" rel=\"noopener\">11. ESP-IDF OTA</a> <em>(Advanced)</em></li><li><a href=\"https://www.tensorflow.org/lite/microcontrollers\" target=\"_blank\" rel=\"noopener\">12. TensorFlow Lite Micro</a> <em>(Advanced)</em></li></ol><p><em>Mirror of the interactive docs learning path · sektor9.dev</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Path: Embedded C & Rust",
+  "pages": [
+   {
+    "name": "Path steps",
+    "html": "<h2>Path: Embedded C &amp; Rust</h2><p>Professional embedded C then Rust.</p><p>Follow the steps in order — each builds on the last.</p><ol><li><a href=\"https://users.ece.utexas.edu/~valvano/Volume1/E-Book/Cover_edn8.htm\" target=\"_blank\" rel=\"noopener\">1. Embedded Systems: Shape the World</a> <em>(Intermediate)</em></li><li><a href=\"https://ptolemy.berkeley.edu/books/leeseshia/releases/LeeSeshia_DigitalV2_2.pdf\" target=\"_blank\" rel=\"noopener\">2. Intro to Embedded Systems (Lee &amp; Seshia)</a> <em>(Hard)</em></li><li><a href=\"https://github.com/MYaqoobEmbedded/STM32-Tutorials\" target=\"_blank\" rel=\"noopener\">3. STM32 register tutorials</a> <em>(Hard)</em></li><li><a href=\"https://library.oapen.org/bitstream/handle/20.500.12657/46817/2021_Book_EmbeddedSystemDesign.pdf\" target=\"_blank\" rel=\"noopener\">4. Embedded System Design (Springer)</a> <em>(Hard)</em></li><li><a href=\"https://docs.rust-embedded.org/book/\" target=\"_blank\" rel=\"noopener\">5. The Embedded Rust Book</a> <em>(Hard)</em></li><li><a href=\"https://docs.esp-rs.org/\" target=\"_blank\" rel=\"noopener\">6. Rust on ESP32 (esp-rs)</a> <em>(Hard)</em></li><li><a href=\"https://docs.rs/embedded-hal/\" target=\"_blank\" rel=\"noopener\">7. embedded-hal</a> <em>(Hard)</em></li><li><a href=\"https://elecdocs.sektor9.dev/synthesized/embedded-rust/\" target=\"_blank\" rel=\"noopener\">8. Rust on embedded (docs)</a> <em>(Hard)</em></li><li><a href=\"https://openocd.org/\" target=\"_blank\" rel=\"noopener\">9. OpenOCD JTAG</a> <em>(Hard)</em></li><li><a href=\"https://www.freertos.org/Documentation/RTOS_book.html\" target=\"_blank\" rel=\"noopener\">10. FreeRTOS Book</a> <em>(Hard)</em></li></ol><p><em>Mirror of the interactive docs learning path · sektor9.dev</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Path: RTOS Engineer",
+  "pages": [
+   {
+    "name": "Path steps",
+    "html": "<h2>Path: RTOS Engineer</h2><p>FreeRTOS to production real-time.</p><p>Follow the steps in order — each builds on the last.</p><ol><li><a href=\"https://elecdocs.sektor9.dev/synthesized/rtos-on-mcu/\" target=\"_blank\" rel=\"noopener\">1. RTOS on Microcontrollers</a> <em>(Intermediate)</em></li><li><a href=\"https://www.freertos.org/Documentation/RTOS_book.html\" target=\"_blank\" rel=\"noopener\">2. Mastering the FreeRTOS Kernel</a> <em>(Intermediate)</em></li><li><a href=\"https://www.freertos.org/Documentation/\" target=\"_blank\" rel=\"noopener\">3. FreeRTOS Documentation</a> <em>(Intermediate)</em></li><li><a href=\"https://www.freertos.org/Documentation/02-Kernel/04-API-references/01-Task-creation/00-Task-creation\" target=\"_blank\" rel=\"noopener\">4. FreeRTOS tasks &amp; scheduling</a> <em>(Hard)</em></li><li><a href=\"https://www.freertos.org/Documentation/\" target=\"_blank\" rel=\"noopener\">5. Queues &amp; mutexes</a> <em>(Hard)</em></li><li><a href=\"https://www.santos.eng.br/\" target=\"_blank\" rel=\"noopener\">6. Real-Time Systems theory</a> <em>(Advanced)</em></li><li><a href=\"https://www.youtube.com/@digikey\" target=\"_blank\" rel=\"noopener\">7. DigiKey RTOS on STM32 (video)</a> <em>(Hard)</em></li><li><a href=\"https://docs.zephyrproject.org/latest/\" target=\"_blank\" rel=\"noopener\">8. Zephyr RTOS</a> <em>(Advanced)</em></li><li><a href=\"https://en.wikipedia.org/wiki/Priority_inversion\" target=\"_blank\" rel=\"noopener\">9. Priority inversion</a> <em>(Advanced)</em></li><li><a href=\"https://github.com/wolfgang-zhang/rtos\" target=\"_blank\" rel=\"noopener\">10. Build a tiny RTOS</a> <em>(Advanced)</em></li></ol><p><em>Mirror of the interactive docs learning path · sektor9.dev</em></p>"
+   }
+  ]
+ },
+ {
+  "shelf": "Electronics & Microcontrollers",
+  "book": "Path: Circuit Design & Test",
+  "pages": [
+   {
+    "name": "Path steps",
+    "html": "<h2>Path: Circuit Design &amp; Test</h2><p>Lab skills and test gear.</p><p>Follow the steps in order — each builds on the last.</p><ol><li><a href=\"https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter\" target=\"_blank\" rel=\"noopener\">1. Multimeter (SparkFun)</a> <em>(Beginner)</em></li><li><a href=\"https://learn.adafruit.com/adafruit-guide-excellent-soldering\" target=\"_blank\" rel=\"noopener\">2. Soldering (Adafruit)</a> <em>(Beginner)</em></li><li><a href=\"https://www.youtube.com/@EEVblog\" target=\"_blank\" rel=\"noopener\">3. EEVblog safety</a> <em>(Beginner)</em></li><li><a href=\"https://www.allaboutcircuits.com/textbook/\" target=\"_blank\" rel=\"noopener\">4. How to read schematics</a> <em>(Beginner)</em></li><li><a href=\"https://www.youtube.com/@w2aew\" target=\"_blank\" rel=\"noopener\">5. w2aew oscilloscope (video)</a> <em>(Intermediate)</em></li><li><a href=\"https://www.saleae.com/\" target=\"_blank\" rel=\"noopener\">6. Logic analyzer (Saleae)</a> <em>(Intermediate)</em></li><li><a href=\"https://learn.sparkfun.com/tutorials/how-to-troubleshoot-circuits\" target=\"_blank\" rel=\"noopener\">7. Troubleshooting (SparkFun)</a> <em>(Intermediate)</em></li><li><a href=\"https://www.allaboutcircuits.com/textbook/\" target=\"_blank\" rel=\"noopener\">8. Signal integrity</a> <em>(Intermediate)</em></li><li><a href=\"https://www.youtube.com/@TheSignalPath\" target=\"_blank\" rel=\"noopener\">9. The Signal Path (video)</a> <em>(Intermediate)</em></li><li><a href=\"https://docs.kicad.org/\" target=\"_blank\" rel=\"noopener\">10. KiCad schematic capture</a> <em>(Intermediate)</em></li></ol><p><em>Mirror of the interactive docs learning path · sektor9.dev</em></p>"
+   }
+  ]
+ }
+]
