@@ -21,6 +21,8 @@
 // constexpr + reinterpret_cast restrictions on bare metal.
 #define VGA_SCREEN ((unsigned short*)0xB8000)
 
+#include "serial.h"
+
 namespace vga {
     constexpr unsigned short WIDTH  = 80;
     constexpr unsigned short HEIGHT = 25;
@@ -59,6 +61,10 @@ extern "C" void kernel_main() {
     vga::clear();
     vga::write("Hello World!\n");
     vga::write("Welcome to your very own operating system (C++ edition).\n");
+
+    serial_init();
+    serial_write("Hello World!\n");
+    serial_write("Welcome to your very own operating system (C++ edition).\n");
 
     for (;;)   // a kernel never returns
         ;

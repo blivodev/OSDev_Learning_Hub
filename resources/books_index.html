@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📚 Book Library — sektor9.dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d1117; --panel:#161b22; --panel2:#1c2330; --border:#2d3645;
+  --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --accent2:#3fb950;
+  --hard:#f85149; --mid:#d29922; --beg:#3fb950; --mix:#8b949e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;min-height:100vh}
+.wrap{max-width:1200px;margin:0 auto;padding:24px}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+h1{font-size:26px;font-weight:800;letter-spacing:-.5px}
+h1 span{color:var(--accent)}
+.sub{color:var(--muted);font-size:13px;margin-top:4px}
+.stats{display:flex;gap:16px;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.stat b{color:var(--text);font-size:16px}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;align-items:center}
+input[type=text]{flex:1;min-width:200px;background:var(--panel);border:1px solid var(--border);color:var(--text);padding:10px 14px;border-radius:8px;font-size:14px;outline:none}
+input[type=text]:focus{border-color:var(--accent)}
+select{background:var(--panel);border:1px solid var(--border);color:var(--text);padding:10px;border-radius:8px;font-size:14px;outline:none}
+select:hover{border-color:var(--accent)}
+.badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600;white-space:nowrap}
+.badge.Beginner{background:rgba(63,185,80,.15);color:var(--beg)}
+.badge.Intermediate{background:rgba(210,153,34,.15);color:var(--mid)}
+.badge.Hard{background:rgba(248,81,73,.15);color:var(--hard)}
+.badge.Mixed{background:rgba(139,148,158,.15);color:var(--mix)}
+.badge.cat{background:rgba(88,166,255,.12);color:var(--accent)}
+.hostmark{display:inline-block;font-size:9px;background:rgba(88,166,255,.15);color:var(--accent);border:1px solid rgba(88,166,255,.4);padding:0 5px;border-radius:4px;margin-left:6px;vertical-align:middle;font-weight:700}
+table{width:100%;border-collapse:collapse;background:var(--panel);border-radius:12px;overflow:hidden;font-size:13.5px}
+thead th{background:var(--panel2);padding:12px 14px;text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);cursor:pointer;user-select:none;white-space:nowrap}
+thead th:hover{color:var(--text)}
+thead th .arrow{opacity:.5;font-size:10px}
+tbody tr{border-top:1px solid var(--border);cursor:pointer;transition:background .15s}
+tbody tr:hover{background:var(--panel2)}
+td{padding:11px 14px;vertical-align:middle}
+td.name{font-weight:600;color:var(--text);max-width:380px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+td.size{color:var(--muted);white-space:nowrap}
+td.date{color:var(--muted);white-space:nowrap}
+td.ext{color:var(--accent);font-weight:700;font-size:11px}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+.actions{display:flex;gap:8px}
+.btn{background:var(--panel2);border:1px solid var(--border);color:var(--text);padding:6px 14px;border-radius:8px;font-size:12.5px;cursor:pointer;font-weight:600;transition:all .15s}
+.btn:hover{background:var(--accent);color:#0d1117;border-color:var(--accent)}
+.btn.dl{border-color:var(--accent);color:var(--accent)}
+.btn.dl:hover{background:var(--accent);color:#0d1117}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.pill{background:var(--panel);border:1px solid var(--border);color:var(--muted);padding:6px 14px;border-radius:20px;font-size:12.5px;cursor:pointer;transition:all .15s}
+.pill.active{background:var(--accent);color:#0d1117;border-color:var(--accent);font-weight:700}
+.pill:hover{border-color:var(--accent)}
+footer{margin-top:30px;color:var(--muted);font-size:12px;text-align:center;line-height:1.7}
+/* READER OVERLAY */
+.reader-overlay{position:fixed;inset:0;background:var(--bg);z-index:100;display:none;flex-direction:column}
+.reader-overlay.open{display:flex}
+.reader-bar{display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--panel2);border-bottom:1px solid var(--border);flex-wrap:wrap}
+.reader-bar .title{font-weight:700;font-size:14px;flex:1;min-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.reader-bar .close{background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;padding:0 6px}
+.reader-bar .close:hover{color:var(--hard)}
+.reader-body{flex:1;overflow:auto;background:#1a1f2b;position:relative}
+#pdfCanvasWrap{display:flex;flex-direction:column;align-items:center;padding:20px}
+#pdfCanvasWrap canvas{background:white;box-shadow:0 4px 20px rgba(0,0,0,.4);margin-bottom:20px;max-width:100%}
+.reader-ctrl{display:flex;align-items:center;gap:10px}
+.reader-ctrl button{background:var(--panel);border:1px solid var(--border);color:var(--text);width:34px;height:34px;border-radius:8px;cursor:pointer;font-weight:700}
+.reader-ctrl button:hover{background:var(--accent);color:#0d1117}
+.reader-ctrl span{font-size:13px;color:var(--muted);min-width:60px;text-align:center}
+#epubView{height:100%;overflow-y:auto;background:#f5f1e6;color:#1a1a1a}
+#epubView iframe{width:100%;height:100%;border:none;background:#f5f1e6}
+.loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:15px;background:var(--bg)}
+.loading .spin{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 1s linear infinite;margin-right:12px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hidden{display:none!important}
+@media(max-width:700px){
+  td.name{max-width:140px}
+  thead th:nth-child(4),td:nth-child(4){display:none}
+  .stats{display:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>📚 <span>Book Library</span></h1>
+      <div class="sub">Self-hosted free &amp; open-source books — sektor9.dev</div>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="🔍 Search title, category, filename…">
+    <select id="catFilter"><option value="">All categories</option></select>
+    <select id="diffFilter"><option value="">All difficulty</option></select>
+    <select id="sortBy">
+      <option value="name">Sort: Name</option>
+      <option value="size">Sort: Size</option>
+      <option value="date">Sort: Date</option>
+      <option value="mtime">Sort: Recently added</option>
+    </select>
+    <select id="sortDir"><option value="asc">Ascending</option><option value="desc">Descending</option></select>
+  </div>
+
+  <div class="pills" id="catPills"></div>
+
+  <table id="bookTable">
+    <thead>
+      <tr>
+        <th data-sort="name">Title <span class="arrow">↕</span></th>
+        <th data-sort="cat">Category</th>
+        <th>Difficulty</th>
+        <th data-sort="date">Published</th>
+        <th data-sort="size">Size</th>
+        <th>Ext</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="bookBody"></tbody>
+  </table>
+  <div class="empty hidden" id="empty">No books match your filters.</div>
+
+  <footer>
+    All books are legally free / public domain / open source.<br>
+    Reads PDFs (PDF.js) &amp; EPUBs (epub.js) — both open source. · sektor9.dev
+  </footer>
+</div>
+
+<!-- READER OVERLAY -->
+<div class="reader-overlay" id="readerOverlay">
+  <div class="reader-bar">
+    <button class="close" id="readerClose">✕</button>
+    <div class="title" id="readerTitle"></div>
+    <div class="reader-ctrl" id="pdfCtrl">
+      <button id="pgPrev">‹</button>
+      <span id="pgInfo">0 / 0</span>
+      <button id="pgNext">›</button>
+      <button id="zoomOut" style="width:auto;padding:0 10px">−</button>
+      <button id="zoomIn" style="width:auto;padding:0 10px">+</button>
+      <button id="dlBtn" class="btn dl" style="margin-left:6px">⬇ Download</button>
+    </div>
+  </div>
+  <div class="reader-body" id="readerBody">
+    <div class="loading hidden" id="readerLoading"><div class="spin"></div><span>Loading book…</span></div>
+    <div id="pdfCanvasWrap" class="hidden"></div>
+    <div id="epubView" class="hidden"></div>
+  </div>
+</div>
+
+<!-- PDF.js via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
+<!-- epub.js via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.93/epub.min.js"></script>
+
+<script>
+// ---- STATE ----
+let DATA = [];
+let currentCat = '';
+let currentDiff = '';
+let currentSort = 'name';
+let currentDir = 'asc';
+let query = '';
+
+// PDF state
+let pdfDoc = null, pdfPage = 1, pdfScale = 1.4;
+// EPUB state
+let epubBook = null, epubRendition = null;
+
+const $ = id => document.getElementById(id);
+
+// ---- LOAD ----
+async function loadBooks(){
+  try{
+    const r = await fetch('api/books.php');
+    const j = await r.json();
+    DATA = j.books;
+    renderStats(j);
+    buildFilters();
+    render();
+  }catch(e){
+    $('empty').classList.remove('hidden');
+    $('empty').textContent = 'Failed to load library: ' + e.message;
+  }
+}
+
+function renderStats(j){
+  $('stats').innerHTML = `
+    <div class="stat"><b>${j.total}</b> books</div>
+    <div class="stat"><b>${j.categories.Magazine || 0}</b> magazines</div>
+    <div class="stat"><b>${j.categories['OS Dev / Kernel'] || 0}</b> OS-dev</div>
+    <div class="stat"><b>${j.categories['Hardware / Electronics'] || 0}</b> electronics</div>
+  `;
+}
+
+function buildFilters(){
+  const cats = [...new Set(DATA.map(b=>b.cat))].sort();
+  $('catFilter').innerHTML = '<option value="">All categories</option>' + cats.map(c=>`<option>${c}</option>`).join('');
+  $('diffFilter').innerHTML = '<option value="">All difficulty</option>' + ['Beginner','Intermediate','Hard','Mixed'].map(d=>`<option>${d}</option>`).join('');
+  $('catPills').innerHTML = '<button class="pill active" data-cat="">All</button>' + cats.map(c=>`<button class="pill" data-cat="${c}">${c}</button>`).join('');
+  document.querySelectorAll('.pill').forEach(p=>p.onclick=()=>{
+    document.querySelectorAll('.pill').forEach(x=>x.classList.remove('active'));
+    p.classList.add('active');
+    currentCat = p.dataset.cat;
+    $('catFilter').value = currentCat;
+    render();
+  });
+}
+
+// ---- RENDER ----
+function render(){
+  let list = DATA;
+  if(currentCat) list = list.filter(b=>b.cat===currentCat);
+  if(currentDiff) list = list.filter(b=>b.difficulty===currentDiff);
+  if(query){
+    const q = query.toLowerCase();
+    list = list.filter(b=>b.name.toLowerCase().includes(q) || b.cat.toLowerCase().includes(q) || b.file.toLowerCase().includes(q));
+  }
+  list.sort((a,b)=>{
+    let r = 0;
+    if(currentSort==='size') r = a.size - b.size;
+    else if(currentSort==='date') r = (a.date||'').localeCompare(b.date||'');
+    else if(currentSort==='mtime') r = a.mtime - b.mtime;
+    else r = a.name.localeCompare(b.name);
+    return currentDir==='desc' ? -r : r;
+  });
+  $('bookBody').innerHTML = list.length ? list.map(b=>row(b)).join('') : '';
+  $('empty').classList.toggle('hidden', list.length>0);
+}
+
+function fmtSize(b){
+  if(b.size > 1073741824) return (b.size/1073741824).toFixed(2)+' GB';
+  if(b.size > 1048576) return (b.size/1048576).toFixed(1)+' MB';
+  return Math.round(b.size/1024)+' KB';
+}
+
+function row(b){
+  const name = b.name.replace(/_/g,' ');
+  return `<tr data-url="${b.url}" data-ext="${b.ext}">
+    <td class="name" title="${name}">${name}${b.host==='vps'?' <span class="hostmark" title="Hosted on books VPS">VPS</span>':''}</td>
+    <td><span class="badge cat">${b.cat}</span></td>
+    <td><span class="badge ${b.difficulty}">${b.difficulty}</span></td>
+    <td class="date">${b.date||'—'}</td>
+    <td class="size">${fmtSize(b)}</td>
+    <td class="ext">${b.ext.toUpperCase()}</td>
+    <td class="actions">
+      <button class="btn read" data-url="${b.url}" data-ext="${b.ext}">📖 Read</button>
+      <a class="btn dl" href="${b.url}" download>⬇</a>
+    </td>
+  </tr>`;
+}
+
+// events
+$('search').addEventListener('input', e=>{ query=e.target.value; render(); });
+$('catFilter').addEventListener('change', e=>{ currentCat=e.target.value; render(); });
+$('diffFilter').addEventListener('change', e=>{ currentDiff=e.target.value; render(); });
+$('sortBy').addEventListener('change', e=>{ currentSort=e.target.value; render(); });
+$('sortDir').addEventListener('change', e=>{ currentDir=e.target.value; render(); });
+document.querySelectorAll('th[data-sort]').forEach(th=>th.onclick=()=>{
+  const s = th.dataset.sort;
+  if(currentSort===s){ currentDir = currentDir==='asc'?'desc':'asc'; }
+  else { currentSort=s; currentDir='asc'; }
+  render();
+});
+$('bookBody').addEventListener('click', e=>{
+  const readBtn = e.target.closest('.read');
+  if(readBtn){
+    openReader(readBtn.dataset.url, readBtn.dataset.ext);
+  }
+});
+
+// ---- READER ----
+function openReader(file, ext){
+  $('readerTitle').textContent = decodeURIComponent(file).replace(/_/g,' ');
+  $('readerOverlay').classList.add('open');
+  $('readerLoading').classList.remove('hidden');
+  $('pdfCanvasWrap').classList.add('hidden');
+  $('epubView').classList.add('hidden');
+  $('dlBtn').href = file;
+  $('dlBtn').setAttribute('download','');
+  closePdf(); closeEpub();
+  if(ext==='pdf') loadPdf(file);
+  else if(ext==='epub') loadEpub(file);
+  else {
+    $('readerLoading').classList.add('hidden');
+    // open in new tab for non-pdf/epub
+    window.open(file, '_blank');
+    $('readerOverlay').classList.remove('open');
+  }
+}
+
+function closePdf(){
+  if(pdfDoc){ try{pdfDoc.destroy();}catch(e){} }
+  pdfDoc=null; pdfPage=1;
+  $('pdfCanvasWrap').innerHTML='';
+}
+function closeEpub(){
+  if(epubBook){ try{epubBook.destroy();}catch(e){} }
+  epubBook=null; epubRendition=null;
+  $('epubView').innerHTML='';
+}
+
+async function loadPdf(file){
+  try{
+    const data = await fetch(file);
+    const buf = await data.arrayBuffer();
+    pdfDoc = await pdfjsLib.getDocument({data: buf}).promise;
+    $('readerLoading').classList.add('hidden');
+    $('pdfCanvasWrap').classList.remove('hidden');
+    $('pdfCtrl').classList.remove('hidden');
+    renderPdfPage();
+  }catch(e){
+    $('readerLoading').classList.add('hidden');
+    $('readerLoading').textContent = 'Error loading PDF: '+e.message;
+    $('readerLoading').classList.remove('hidden');
+  }
+}
+
+async function renderPdfPage(){
+  const page = await pdfDoc.getPage(pdfPage);
+  const canvas = document.createElement('canvas');
+  $('pdfCanvasWrap').innerHTML='';
+  $('pdfCanvasWrap').appendChild(canvas);
+  const viewport = page.getViewport({scale: pdfScale});
+  canvas.width = viewport.width;
+  canvas.height = viewport.height;
+  const ctx = canvas.getContext('2d');
+  await page.render({canvasContext:ctx, viewport}).promise;
+  $('pgInfo').textContent = `${pdfPage} / ${pdfDoc.numPages}`;
+}
+
+$('pgNext').onclick = ()=>{ if(pdfDoc && pdfPage<pdfDoc.numPages){ pdfPage++; renderPdfPage(); } };
+$('pgPrev').onclick = ()=>{ if(pdfDoc && pdfPage>1){ pdfPage--; renderPdfPage(); } };
+$('zoomIn').onclick = ()=>{ if(pdfDoc){ pdfScale=Math.min(4,pdfScale*1.2); renderPdfPage(); } };
+$('zoomOut').onclick = ()=>{ if(pdfDoc){ pdfScale=Math.max(.5,pdfScale/1.2); renderPdfPage(); } };
+
+function loadEpub(file){
+  try{
+    epubBook = ePub(file);
+    epubRendition = epubBook.renderTo($('epubView'), {width:'100%',height:'100%'});
+    epubRendition.display();
+    $('readerLoading').classList.add('hidden');
+    $('epubView').classList.remove('hidden');
+    $('pdfCtrl').classList.add('hidden');
+  }catch(e){
+    $('readerLoading').classList.add('hidden');
+    $('readerLoading').textContent = 'Error loading EPUB: '+e.message;
+    $('readerLoading').classList.remove('hidden');
+  }
+}
+
+$('readerClose').onclick = ()=>{ $('readerOverlay').classList.remove('open'); };
+document.addEventListener('keydown', e=>{
+  if(!$('readerOverlay').classList.contains('open')) return;
+  if(e.key==='Escape') $('readerOverlay').classList.remove('open');
+  if(e.key==='ArrowRight' && pdfDoc && pdfPage<pdfDoc.numPages){ pdfPage++; renderPdfPage(); }
+  if(e.key==='ArrowLeft' && pdfDoc && pdfPage>1){ pdfPage--; renderPdfPage(); }
+});
+
+loadBooks();
+</script>
+</body>
+</html>

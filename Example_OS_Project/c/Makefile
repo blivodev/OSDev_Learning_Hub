@@ -46,6 +46,19 @@ run: $(BIN)
 	@echo "Booting $(BIN) in QEMU..."
 	qemu-system-i386 -kernel $(BIN)
 
+# Headless run: kernel prints "Hello World!" to the terminal via COM1 serial.
+# Works inside code-server (no GUI display needed).
+run-headless: $(BIN)
+	@echo "Booting $(BIN) headless - kernel output goes to this terminal (serial)..."
+	qemu-system-i386 -kernel $(BIN) -nographic -monitor none
+
+# Same, but capture serial to a file instead of the terminal.
+run-serial: $(BIN)
+	@echo "Capturing kernel serial output to kernel_serial.txt (3s boot)..."
+	timeout 3 qemu-system-i386 -kernel $(BIN) -display none -serial file:kernel_serial.txt -monitor none || true
+	@echo "--- kernel_serial.txt ---"
+	@cat kernel_serial.txt
+
 # Optional: build a bootable ISO (requires grub-mkrescue, xorriso, mtools).
 iso: $(BIN)
 	@echo "Building bootable ISO (needs grub-mkrescue + xorriso)..."

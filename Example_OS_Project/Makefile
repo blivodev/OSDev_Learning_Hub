@@ -28,6 +28,9 @@ all:
 run-c:
 	$(MAKE) -C c run
 
+run-c-headless:
+	$(MAKE) -C c run-headless
+
 run-cpp:
 	$(MAKE) -C cpp run
 

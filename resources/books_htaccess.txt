@@ -1,0 +1,4 @@
+AuthName "Books Library (sektor9.dev)"
+AuthType Basic
+AuthUserFile /home/USER/books/www/.htpasswd
+Require valid-user

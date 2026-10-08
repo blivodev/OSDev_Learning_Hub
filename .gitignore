@@ -46,3 +46,14 @@ Cargo.lock
 repomix-*.md
 repomix.config.json
 SESSION_HANDOFF.md
+
+# ===== PRIVATE / SECRETS - NEVER COMMIT OR PUSH =====
+# Full credential map (logins, DB passwords, SSH access) + guest-access guide.
+# Local copy only; kept out of git so it never reaches GitHub/Gitea.
+# Back it up manually (e.g. into a password manager) - do NOT push this repo.
+sektor9-credentials.md
+sektor9-private/
+sektor9-private/*
+
+# Book-library config that embeds the live auth hash — never commit.
+resources/Caddyfile.new

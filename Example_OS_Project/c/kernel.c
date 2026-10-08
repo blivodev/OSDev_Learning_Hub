@@ -19,6 +19,9 @@
  * 0x0 = black, 0xF = white. 0x0F = white text on black background. */
 #define COLOR_WHITE_ON_BLACK  0x0F
 
+/* ---- Serial (COM1) output ---- */
+#include "serial.h"
+
 /* ---- Simple terminal state ----------------------------------------- */
 static int terminal_row = 0;
 static int terminal_col = 0;
@@ -76,6 +79,14 @@ void kernel_main(void)
     vga_clear();
     vga_write("Hello World!\n");
     vga_write("Welcome to your very own operating system (C edition).\n");
+
+
+    /* Also echo to COM1 serial so the kernel works in headless mode:
+     *   qemu-system-i386 -kernel kernel.bin -nographic -serial stdio
+     * prints this to the terminal (no graphical display needed). */
+    serial_init();
+    serial_write("Hello World!\n");
+    serial_write("Welcome to your very own operating system (C edition).\n");
 
     /* A kernel never returns. If it did, boot.s would hang in a loop. */
     for (;;)
