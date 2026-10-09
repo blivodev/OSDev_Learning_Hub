@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — sektor9.dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0c10;--bg2:#0f1218;--panel:#12161d;--panel2:#171c25;
+  --border:#242c39;--border2:#2e3848;
+  --text:#e8edf4;--muted:#8b95a7;--faint:#5c6675;
+  --accent:#5b9dff;--accent-soft:rgba(91,157,255,.13);
+  --green:#46d17e;--green-soft:rgba(70,209,126,.13);
+  --amber:#e3b341;--amber-soft:rgba(227,179,65,.13);
+  --red:#f06a6a;--red-soft:rgba(240,106,106,.13);
+  --gray-soft:rgba(139,149,167,.13);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding:28px 24px 60px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:26px;flex-wrap:wrap}
+.logo{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#f06a6a,#e3b341);display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 16px rgba(240,106,106,.25)}
+h1{font-size:22px;font-weight:800;letter-spacing:-.4px}
+.sub{color:var(--muted);font-size:12.5px;margin-top:3px}
+.tabs{display:flex;gap:6px;margin-bottom:22px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.tab{padding:10px 16px;background:none;border:none;color:var(--muted);font-size:13.5px;font-weight:600;cursor:pointer;border-bottom:2px solid transparent;font-family:inherit;transition:all .13s}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.panel{display:none}
+.panel.active{display:block}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-bottom:22px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:15px;display:flex;flex-direction:column;gap:7px;transition:border-color .13s}
+.card:hover{border-color:var(--border2)}
+.card .row1{display:flex;align-items:center;justify-content:space-between}
+.card .nm{font-weight:700;font-size:14px}
+.card .desc{color:var(--muted);font-size:12px}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.dot.up{background:var(--green);box-shadow:0 0 8px var(--green)}
+.dot.protected{background:var(--accent);box-shadow:0 0 8px var(--accent)}
+.dot.warn{background:var(--amber)}
+.dot.down{background:var(--red);box-shadow:0 0 8px var(--red)}
+.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:11px;font-weight:700}
+.pill.up{background:var(--green-soft);color:var(--green)}
+.pill.protected{background:var(--accent-soft);color:var(--accent)}
+.pill.warn{background:var(--amber-soft);color:var(--amber)}
+.pill.down{background:var(--red-soft);color:var(--red)}
+.meta{color:var(--faint);font-size:11px;font-variant-numeric:tabular-nums}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-bottom:24px}
+.stat{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px}
+.stat b{display:block;font-size:26px;font-weight:800;letter-spacing:-.5px}
+.stat span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+
+h2{font-size:15px;font-weight:700;margin:22px 0 12px;display:flex;align-items:center;gap:8px}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--border);border-radius:12px;overflow:hidden;font-size:13px}
+thead th{background:var(--bg2);padding:11px 14px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);font-weight:700;border-bottom:1px solid var(--border)}
+td{padding:11px 14px;border-top:1px solid var(--border);vertical-align:middle}
+tbody tr:first-child td{border-top:none}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px}
+.tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600;background:var(--gray-soft);color:var(--muted);margin-right:5px}
+.tag.caddy{background:var(--accent-soft);color:var(--accent)}
+.tag.htpasswd{background:var(--amber-soft);color:var(--amber)}
+.btn{background:var(--panel2);border:1px solid var(--border);color:var(--text);padding:8px 14px;border-radius:8px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .13s;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{background:var(--accent);color:#0a0c10;border-color:var(--accent)}
+.btn.danger{border-color:rgba(240,106,106,.4);color:var(--red)}
+.btn.danger:hover{background:var(--red);color:#0a0c10;border-color:var(--red)}
+.btn.sm{padding:5px 10px;font-size:11.5px}
+input,select{background:var(--panel2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:9px;font-size:13px;outline:none;font-family:inherit}
+input:focus,select:focus{border-color:var(--accent)}
+.form-row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:18px}
+.field{display:flex;flex-direction:column;gap:5px}
+.field label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;font-weight:600}
+pre.log{background:#07090d;border:1px solid var(--border);border-radius:10px;padding:14px;font-size:12px;line-height:1.5;font-family:ui-monospace,Menlo,Consolas,monospace;color:#c9d4e3;max-height:520px;overflow:auto;white-space:pre-wrap;word-break:break-word}
+.msg{padding:11px 15px;border-radius:9px;font-size:13px;margin-bottom:14px;display:none}
+.msg.ok{display:block;background:var(--green-soft);color:var(--green);border:1px solid rgba(70,209,126,.3)}
+.msg.err{display:block;background:var(--red-soft);color:var(--red);border:1px solid rgba(240,106,106,.3)}
+.loading{color:var(--muted);font-size:13px;padding:16px 0}
+footer{margin-top:34px;color:var(--faint);font-size:12px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">⚙️</div>
+    <div>
+      <h1>Admin Console</h1>
+      <div class="sub">Central administration — sektor9.dev</div>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="overview">📊 Overview</button>
+    <button class="tab" data-tab="access">🔑 Access</button>
+    <button class="tab" data-tab="logs">📜 Logs</button>
+  </div>
+
+  <div class="msg" id="msg"></div>
+
+  <!-- OVERVIEW -->
+  <div class="panel active" id="panel-overview">
+    <div class="stats" id="stats"></div>
+    <h2>🛰️ Services</h2>
+    <div class="cards" id="cards"><div class="loading">Loading…</div></div>
+  </div>
+
+  <!-- ACCESS -->
+  <div class="panel" id="panel-access">
+    <h2>➕ Add a user</h2>
+    <div class="form-row">
+      <div class="field"><label>Service</label><select id="addService"></select></div>
+      <div class="field"><label>Username</label><input id="addUser" placeholder="e.g. guest"></div>
+      <div class="field"><label>Password</label><input id="addPass" type="password" placeholder="min 8 chars"></div>
+      <button class="btn" onclick="addUser()">Add user</button>
+    </div>
+    <h2>👥 Users by service</h2>
+    <table>
+      <thead><tr><th>Service</th><th>Auth type</th><th>Users</th><th></th></tr></thead>
+      <tbody id="usersBody"><tr><td colspan="4" class="loading">Loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <!-- LOGS -->
+  <div class="panel" id="panel-logs">
+    <h2>📜 Logs</h2>
+    <div class="form-row">
+      <div class="field"><label>Source</label>
+        <select id="logSource">
+          <option value="caddy">Caddy (VPS1)</option>
+          <option value="run">run-service (runvps)</option>
+          <option value="fail2ban">fail2ban (runvps)</option>
+        </select>
+      </div>
+      <div class="field"><label>Lines</label><input id="logLines" type="number" value="120" min="10" max="500" style="width:100px"></div>
+      <button class="btn" onclick="loadLogs()">Refresh</button>
+    </div>
+    <pre class="log" id="logOut">Choose a source and click Refresh.</pre>
+  </div>
+
+  <footer>sektor9.dev admin · behind osdev basic-auth · changes are logged</footer>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+function msg(t,ok){const m=$('msg');m.textContent=t;m.className='msg '+(ok?'ok':'err');setTimeout(()=>{m.className='msg';},6000);}
+
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  $('panel-'+t.dataset.tab).classList.add('active');
+});
+
+async function loadOverview(){
+  try{
+    const r=await fetch('api/overview');
+    const d=await r.json();
+    $('stats').innerHTML=`
+      <div class="stat"><b>${d.services.length}</b><span>services</span></div>
+      <div class="stat"><b>${d.services.filter(s=>s.health!=='down').length}</b><span>online</span></div>
+      <div class="stat"><b>${d.books??'—'}</b><span>books</span></div>
+      <div class="stat"><b>${d.wiki_pages??'—'}</b><span>wiki pages</span></div>`;
+    $('cards').innerHTML=d.services.map(s=>`
+      <div class="card">
+        <div class="row1"><span class="nm"><span class="dot ${s.health}"></span> ${s.key}</span>
+        <span class="pill ${s.health}">${s.health}</span></div>
+        <div class="desc">${s.desc}</div>
+        <div class="meta">HTTP ${s.code} · ${s.ms} ms</div>
+      </div>`).join('');
+  }catch(e){ $('cards').innerHTML='<div class="loading">Failed: '+e.message+'</div>'; }
+}
+
+async function loadUsers(){
+  try{
+    const r=await fetch('api/users');
+    const d=await r.json();
+    let rows='';
+    for(const [svc,info] of Object.entries(d)){
+      const users=(info.users||[]).map(u=>`<span class="tag">${u}</span>`).join('')||'<span class="meta">none</span>';
+      rows+=`<tr>
+        <td><b>${svc}</b></td>
+        <td><span class="tag ${info.kind}">${info.kind}</span></td>
+        <td>${users}</td>
+        <td>${info.kind==='htpasswd'?(info.users||[]).filter(u=>u!=='osdev').map(u=>`<button class="btn danger sm" onclick="removeUser('${svc}','${u}')">remove ${u}</button>`).join(' '):'<span class="meta">edit in Caddyfile</span>'}</td>
+      </tr>`;
+    }
+    $('usersBody').innerHTML=rows;
+    // fill the add-user dropdown
+    $('addService').innerHTML=Object.entries(d).map(([k,v])=>`<option value="${k}">${k} (${v.kind})</option>`).join('');
+  }catch(e){ $('usersBody').innerHTML='<tr><td colspan="4" class="loading">Failed: '+e.message+'</td></tr>'; }
+}
+
+async function addUser(){
+  const service=$('addService').value, user=$('addUser').value.trim(), password=$('addPass').value;
+  if(!user||!password){msg('Enter a username and password',false);return;}
+  const r=await fetch('api/users/add',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({service,user,password})});
+  const d=await r.json();
+  if(r.ok&&d.ok){msg(`Added ${user} to ${service}`,true);$('addUser').value='';$('addPass').value='';loadUsers();}
+  else if(d.manual){msg(`Caddy service — add this line to the Caddyfile basicauth block, then reload:  ${d.line}`,false);}
+  else{msg(d.detail||'Failed',false);}
+}
+async function removeUser(service,user){
+  if(!confirm(`Remove ${user} from ${service}?`))return;
+  const r=await fetch('api/users/remove',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({service,user})});
+  const d=await r.json();
+  if(r.ok&&d.ok){msg(`Removed ${user} from ${service}`,true);loadUsers();}
+  else{msg(d.detail||'Failed',false);}
+}
+
+async function loadLogs(){
+  $('logOut').textContent='Loading…';
+  try{
+    const r=await fetch('api/logs?source='+$('logSource').value+'&lines='+$('logLines').value);
+    const d=await r.json();
+    $('logOut').textContent=(d.lines||[]).join('\n')||'(empty)';
+  }catch(e){ $('logOut').textContent='Failed: '+e.message; }
+}
+
+loadOverview(); loadUsers();
+setInterval(loadOverview, 30000);
+</script>
+</body>
+</html>
