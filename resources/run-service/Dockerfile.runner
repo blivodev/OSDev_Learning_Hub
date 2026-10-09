@@ -1,0 +1,27 @@
+# Runner sandbox for the Level-3 "Run" feature.
+# Compiles + boots a kernel headless inside an isolated container.
+# Non-root, resource-limited, disposable — guests can never escape.
+FROM ubuntu:24.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Toolchain needed to build & boot the example kernels headless.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc g++ binutils make \
+    qemu-system-x86 \
+    nasm \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Non-root user the run happens as.
+RUN useradd -m -s /bin/bash runner
+
+# The workspace gets mounted here per-run.
+RUN mkdir -p /work && chown runner:runner /work
+
+USER runner
+WORKDIR /work
+
+# Default: compile + boot headless, print serial output.
+# Overridden per-request by the API.
+CMD ["/bin/bash"]
