@@ -1,0 +1,193 @@
+/* ==========================================================================
+   s9dark v26 additions — books library grid + v26 class-name targets
+   Appended to styles.css (BookStack v26.09.1). Matches sektor9 docs look.
+   ========================================================================== */
+
+/* ---- books library grid ---- */
+.grid, .grid.third, .grid.half, .grid.full {
+  gap: 18px !important;
+}
+.grid-card {
+  background: var(--s9-panel) !important;
+  border: 1px solid var(--s9-border) !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease !important;
+  display: flex !important;
+  flex-direction: column !important;
+  text-decoration: none !important;
+}
+.grid-card:hover {
+  transform: translateY(-4px) !important;
+  border-color: var(--s9-accent) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,.45) !important;
+}
+.grid-card .featured-image-container-wrap {
+  background: var(--s9-panel2) !important;
+}
+.grid-card .featured-image-container {
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 140px !important;
+  border-radius: 14px 14px 0 0 !important;
+}
+.grid-card .svg-icon[data-icon="book"] {
+  color: var(--s9-faint) !important;
+  width: 42px !important;
+  height: 42px !important;
+}
+.grid-card .grid-card-content {
+  padding: 14px 16px 6px !important;
+  flex: 1 !important;
+}
+.grid-card .grid-card-content h2, .grid-card .grid-card-content .text-limit-lines-2 {
+  color: var(--s9-text) !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  margin: 0 0 4px !important;
+}
+.grid-card .grid-card-content p, .grid-card .grid-card-content .text-muted {
+  color: var(--s9-muted) !important;
+  font-size: .82rem !important;
+}
+.grid-card .grid-card-footer {
+  padding: 8px 16px 14px !important;
+  border-top: 1px solid var(--s9-border) !important;
+  margin-top: auto !important;
+  display: flex !important;
+  gap: 14px !important;
+  font-size: .75rem !important;
+}
+.grid-card .grid-card-footer p {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  margin: 0 !important;
+  color: var(--s9-faint) !important;
+}
+.grid-card .grid-card-footer .svg-icon {
+  width: 13px !important;
+  height: 13px !important;
+  color: var(--s9-faint) !important;
+}
+
+/* ---- list sort controls ---- */
+.list-sort-container, .list-sort, .list-sort-toggle, .list-sort-label {
+  color: var(--s9-muted) !important;
+}
+.list-sort a, .list-sort-label {
+  color: var(--s9-muted) !important;
+}
+.list-sort a:hover { color: var(--s9-accent) !important; }
+.list-sort-toggle { color: var(--s9-accent) !important; }
+.list-sort-dir { color: var(--s9-accent) !important; }
+
+/* ---- page list (chapters/pages sidebar) ---- */
+.page-item {
+  background: transparent !important;
+  border-radius: 8px !important;
+  border: 1px solid transparent !important;
+  transition: all .12s ease !important;
+}
+.page-item:hover {
+  background: var(--s9-panel2) !important;
+  border-color: var(--s9-border) !important;
+}
+.page-item a { color: var(--s9-muted) !important; }
+.page-item a:hover { color: var(--s9-accent) !important; }
+.entity-item-snippet { color: var(--s9-faint) !important; font-size: .8rem !important; }
+
+/* ---- tri-layout ---- */
+.tri-layout-container { background: var(--s9-bg) !important; }
+.tri-layout-sides-content, .tri-layout-right-contents, .tri-layout-left-contents {
+  background: var(--s9-bg2) !important;
+}
+.tri-layout-mobile-tabs { background: var(--s9-bg2) !important; border-color: var(--s9-border) !important; }
+
+/* ---- search box ---- */
+.search-box {
+  background: var(--s9-panel) !important;
+  border: 1px solid var(--s9-border) !important;
+  border-radius: 10px !important;
+  color: var(--s9-text) !important;
+}
+.search-box input { color: var(--s9-text) !important; }
+.search-box .svg-icon { color: var(--s9-faint) !important; }
+
+/* ---- pagination ---- */
+.pagination { color: var(--s9-muted) !important; }
+.pagination a {
+  background: var(--s9-panel) !important;
+  border: 1px solid var(--s9-border) !important;
+  border-radius: 8px !important;
+  color: var(--s9-muted) !important;
+  padding: 4px 10px !important;
+}
+.pagination a:hover {
+  background: var(--s9-accent-soft) !important;
+  border-color: var(--s9-accent) !important;
+  color: var(--s9-accent) !important;
+}
+
+/* ---- icon list (homepage categories) ---- */
+.icon-list-item {
+  background: var(--s9-panel) !important;
+  border: 1px solid var(--s9-border) !important;
+  border-radius: 12px !important;
+  padding: 10px 14px !important;
+  transition: all .13s ease !important;
+}
+.icon-list-item:hover {
+  border-color: var(--s9-accent) !important;
+  background: var(--s9-panel2) !important;
+}
+.icon-list-item a { color: var(--s9-text) !important; font-weight: 600; }
+.icon-list-item .svg-icon { color: var(--s9-accent) !important; }
+
+/* ---- book/chapter "entity" action buttons row ---- */
+.action-buttons .button, .dropdown-container > .button {
+  border-radius: 9px !important;
+}
+
+/* ---- heading / list heading ---- */
+.list-heading {
+  color: var(--s9-text) !important;
+  font-weight: 700 !important;
+  border-bottom: 1px solid var(--s9-border) !important;
+}
+
+/* ---- breadcrumbs ---- */
+.breadcrumbs { color: var(--s9-muted) !important; font-size: .82rem !important; }
+.breadcrumbs a { color: var(--s9-accent) !important; }
+.breadcrumbs .sep { color: var(--s9-faint) !important; }
+
+/* ---- content cards on book/chapter pages ---- */
+.card, .panel {
+  border-radius: 14px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,.25) !important;
+}
+
+/* ---- featured image on book view (hero) ---- */
+.featured-image-container.large, .featured-image-container.feature {
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,.5) !important;
+}
+
+/* ---- page content typography ---- */
+.page-content { line-height: 1.7 !important; }
+.page-content h1, .page-content h2, .page-content h3 {
+  letter-spacing: -.01em !important;
+}
+.page-content blockquote {
+  border-left: 3px solid var(--s9-accent) !important;
+  background: var(--s9-accent-soft) !important;
+  border-radius: 0 8px 8px 0 !important;
+  padding: 10px 16px !important;
+}
+
+/* ---- login page polish ---- */
+.login-page .card {
+  border-radius: 16px !important;
+  box-shadow: 0 16px 48px rgba(0,0,0,.5) !important;
+}
