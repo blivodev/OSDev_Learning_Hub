@@ -117,6 +117,70 @@ of these concepts ([bootloaders](../../GLOSSARY/bootloader.md "A small program t
 | GRUB "no multiboot header found" on real disk | use a cross-compiler (`i686-elf-gcc`); see OSDev wiki |
 | QEMU shows nothing / black screen on **Windows PowerShell** | run QEMU from WSL or use `-nographic -serial stdio` |
 
+## Debugging with QEMU + gdb (the real OSDev workflow)
+
+QEMU has a built-in **gdb stub** — boot the kernel paused, attach gdb, and you
+get full source-level debugging: breakpoints, single-stepping, registers, and
+memory inspection, just like an embedded developer. This is *the* standard way
+OSDev is actually done.
+
+### Quick start (one command)
+
+```bash
+make debug-c-script      # boots QEMU, attaches gdb, breaks at kernel_main, dumps registers
+```
+
+You'll see the Multiboot magic in `eax` (`0x2BADB002`), the info-struct pointer
+in `ebx`, and the disassembly at `kernel_main`. That alone proves your debug
+toolchain works.
+
+### Interactive (two terminals)
+
+Terminal 1 — boot the kernel paused, gdb stub on `localhost:1234`:
+
+```bash
+make debug-c            # or: make -C c debug
+```
+
+Terminal 2 — attach and drive:
+
+```bash
+cd c
+gdb -x kernel.gdb kernel.dbg
+# now inside gdb:
+#   continue          -> run to kernel_main (breakpoints are preset)
+#   bootregs          -> show Multiboot magic + registers (custom macro)
+#   break serial_write / break vga_write / break kernel.c:90
+#   nexti / stepi     -> single-step machine instructions
+#   p/x $eax          -> print register
+#   x/20bx 0xB8000    -> dump VGA text memory
+#   info registers    -> all registers
+#   Ctrl-C            -> interrupt the guest and return to the gdb prompt
+#   quit              -> detach (guest keeps running unless killed)
+```
+
+### What's happening under the hood
+
+- `make debug-c` builds `kernel.dbg` — the kernel compiled with `-Og -g` so gdb
+  can map addresses to your `kernel.c` source lines (the normal `-O2` build is
+  too optimized to step through nicely).
+- QEMU launches with `-s -S`: `-s` opens the gdb server on `tcp::1234`, `-S`
+  freezes the CPU before the first instruction so gdb can attach in time.
+- `kernel.gdb` is a helper script: it connects, presets breakpoints on
+  `kernel_main` / `vga_write` / `serial_write`, and defines the `bootregs` and
+  `hb` macros.
+
+### What you can do with it
+
+- Set a breakpoint at `kernel.c:90` (after the serial write) and inspect that
+  the VGA buffer actually holds your string at `0xB8000`.
+- Step through `vga_write` and watch characters land in memory.
+- Break on `serial_write`, step, and read the `COM1` I/O port writes.
+- `make debug-c-gui` gives you the VGA window too (adds `-serial mon:stdio`).
+
+> If `make debug-c` says `qemu-system-i386: command not found`, install QEMU
+> (`sudo apt install qemu-system-x86` on WSL/Ubuntu, or winget on Windows).
+
 
 ## Watch and learn
 

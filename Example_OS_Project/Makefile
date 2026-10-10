@@ -16,7 +16,7 @@
 #   - Rust uses the bootloader crate / bootimage, so it boots as a disk image
 #     with qemu-system-x86_64 -drive.
 
-.PHONY: all run-c run-cpp run-rust run-go iso-c clean
+.PHONY: all run-c run-cpp run-rust run-go debug-c debug-c-gui iso-c clean
 
 all:
 	$(MAKE) -C c
@@ -42,6 +42,16 @@ run-go:
 
 iso-c:
 	$(MAKE) -C c iso
+
+# Debug the C kernel with QEMU's gdb stub (see c/Makefile for the workflow).
+debug-c:
+	$(MAKE) -C c debug
+
+debug-c-gui:
+	$(MAKE) -C c debug-gui
+
+debug-c-script:
+	$(MAKE) -C c debug-script
 
 clean:
 	$(MAKE) -C c clean
