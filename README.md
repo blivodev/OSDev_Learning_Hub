@@ -87,14 +87,6 @@ make iso-c      # builds a bootable ISO for the C kernel
 
 See [`Example_OS_Project/docs/setup.md`](Example_OS_Project/docs/setup.md) for a full environment setup guide (GCC, NASM, Rust nightly + `bootimage`, Go/[gccgo](GLOSSARY/gccgo.md "GCC's Go front-end, used to compile Go kernels bare-metal") [cross-compiler](GLOSSARY/cross-compiler.md "A compiler that builds code for a different CPU/OS than the one it runs on"), [QEMU](GLOSSARY/qemu.md "A free emulator you can boot your kernel in for testing"), [Make](GLOSSARY/make.md "A build tool that runs compile commands from a Makefile")).
 
----
-
-## 🔒 Remotes
-
-Private mirrors of this repository:
-
-- **GitHub:** https://github.com/YOUR_USERNAME/OSDev_Learning_Hub (private)
-- **Gitea:**  https://git.example.com/YOUR_USERNAME/OSDev_Learning_Hub (private)
 
 ---
 
